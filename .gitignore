@@ -1,0 +1,9 @@
+node_modules
+temp
+reports
+cypress/screenshots
+cypress/results
+cypress.env.json
+allure*
+**/*.mp4
+*.log
