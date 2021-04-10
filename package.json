@@ -1,22 +1,20 @@
 {
-    "name": "bntu-cypress",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "dependencies": {},
-    "devDependencies": {
-        "@shelex/cypress-allure-plugin": "^2.4.0",
-        "allure-commandline": "^2.13.8",
-        "cypress": "^6.8.0",
-        "cypress-cucumber-preprocessor": "^4.0.3",
-        "typescript": "^4.2.3"
+    "name": "cypress-cucumber-webpack-example",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@types/node": "^10.17.56"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "cypress run --spec \"**/*.feature\"",
+        "test:all": "cypress run --spec \"**/*.features\""
     },
-    "author": "",
-    "license": "ISC",
-    "cypress-cucumber-preprocessor": {
-        "nonGlobalStepDefinitions": true
+    "devDependencies": {
+        "@cypress/webpack-preprocessor": "^5.7.0",
+        "cypress": "^6.8.0",
+        "cypress-cucumber-preprocessor": "4.0.3",
+        "ts-loader": "^8.1.0",
+        "typescript": "^4.2.3",
+        "webpack": "^4.46.0"
     }
 }
