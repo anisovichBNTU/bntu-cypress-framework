@@ -23,3 +23,9 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+// import '../../customCommands/element';
+// import '../../customCommands/checkbox';
+// import '../../customCommands/dropdown';
+// import '../../customCommands/iframe';
+// import '../../customCommands/table';
