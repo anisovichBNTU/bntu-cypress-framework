@@ -13,6 +13,7 @@
         "@cypress/webpack-preprocessor": "^5.7.0",
         "cypress": "^6.8.0",
         "cypress-cucumber-preprocessor": "4.0.3",
+        "cypress-iframe": "^1.0.1",
         "ts-loader": "^8.1.0",
         "typescript": "^4.2.3",
         "webpack": "^4.46.0"
