@@ -1,9 +1,10 @@
-type CypressOptions = Partial<Cypress.Loggable & Cypress.Timeoutable & Cypress.Withinable & Cypress.Shadow> & { reverse: boolean } | undefined
+import { CypressOptions, ElementOptions } from "../types";
 
 export class Element {
     protected selector: string;
     readonly name: string;
     readonly text: string | undefined;
+    readonly options: ElementOptions | undefined;
 
     /**
      * The element
@@ -11,19 +12,29 @@ export class Element {
      * @param name - the name of the element
      * @param text - the text contains of the element
      */
-    constructor(selector: string, name: string, text?: string) {
+    constructor(selector: string, name: string, text?: string, options?: ElementOptions) {
         this.selector = selector;
         this.name = name;
         this.text = text;
+        this.options = options;
     }
 
     protected get$(options?: CypressOptions): Cypress.Chainable<JQuery<HTMLElement>> {
-        if (!this.text) {
-            return cy.get(this.selector, options);
+        if (!(this.options && this.options.intoIFrame)) {
+            if (!this.text) {
+                return cy.get(this.selector, options);
+            } else {
+                return cy.get(this.selector, options).contains(this.text);
+            }
         } else {
-            return cy.get(this.selector, options).contains(this.text);
+            cy.frameLoaded(this.options.frameSelector);
+            if (!this.text) {
+                
+                return cy.iframe(this.options.frameSelector).find(this.selector, options);
+            } else {
+                return cy.iframe(this.options.frameSelector).find(this.selector, options).contains(this.text);
+            }
         }
-
     }
 
     /**
@@ -32,6 +43,14 @@ export class Element {
     click() {
         this.get$()
             .click();
+    }
+
+    /**
+     * Get the text content from a DOM-element
+     */
+    getText() {
+        return this.get$()
+            .invoke('text');
     }
 
     /**
@@ -99,7 +118,7 @@ export class Element {
     waitUntilInnerTextMatches(text: string, options?: CypressOptions) {
         this._waitForExistAndDisplayed(options);
 
-        this.get$().invoke('text').should('include', text);
+        this.getText().should('include', text);
 
         return true;
     }

@@ -1,4 +1,5 @@
 import { Element, Button } from ".";
+import { ElementOptions } from "../types";
 
 interface SelectOptions {
     dropdownListSelector?: string,
@@ -20,8 +21,8 @@ export class Select extends Element {
      * @param name - the name of the element
      * @param options - the options for customization of the select if needed
      */
-    constructor(selector: string, name: string, options?: SelectOptions) {
-        super(selector, name);
+    constructor(selector: string, name: string, text?: string, options?: SelectOptions & ElementOptions) {
+        super(selector, name, text, options);
 
         this.valueNodeSelector =
             options && options.dropdownListItemSelector || 'a span.menu-link-item';
