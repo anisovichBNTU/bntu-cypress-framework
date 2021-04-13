@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 // import '@shelex/cypress-allure-plugin';
 import 'cypress-iframe'
+import 'cypress-wait-until';
 import './commands'
 
 // Alternatively you can use CommonJS syntax:

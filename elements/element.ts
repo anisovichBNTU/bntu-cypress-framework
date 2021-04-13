@@ -29,7 +29,7 @@ export class Element {
         } else {
             cy.frameLoaded(this.options.frameSelector);
             if (!this.text) {
-                
+
                 return cy.iframe(this.options.frameSelector).find(this.selector, options);
             } else {
                 return cy.iframe(this.options.frameSelector).find(this.selector, options).contains(this.text);
@@ -41,8 +41,18 @@ export class Element {
      * Click the element
      */
     click() {
-        this.get$()
-            .click();
+        this._waitForExist();
+        this._click();
+    }
+
+    protected _click(options?: { element: Cypress.Chainable<JQuery<HTMLElement>> }) {
+        this._waitForLogWrapper(() => {
+            if (options && options.element) {
+                options.element.click();
+            } else {
+                this.get$().click();
+            }
+        });
     }
 
     /**
@@ -58,18 +68,39 @@ export class Element {
      * @param value
      * @param options
      */
-    setValue(value: string, options?: { keys: boolean }) {
-        this.get$()
-            .click()
-            .type(value);
+    setValue(value: string) {
+        this._waitForExist();
+        this._waitForEnabled();
+        this._setValue(value);
+    }
+
+    protected _setValue(value: string, options?: { element: Cypress.Chainable<JQuery<HTMLElement>> }) {
+        return this._waitForLogWrapper(() => {
+            if (options && options.element) {
+                options.element.click().type(value);
+            } else {
+                this.get$().click().type(value);
+            }
+        });
     }
 
     /**
      * Clear the element (input)
      */
     clearValue() {
-        this.get$()
-            .clear();
+        this._waitForExist();
+        this._waitForEnabled();
+        this._clearValue();
+    }
+
+    protected _clearValue(options?: { element: Cypress.Chainable<JQuery<HTMLElement>> }) {
+        this._waitForLogWrapper(() => {
+            if (options && options.element) {
+                options.element.clear();;
+            } else {
+                this.get$().clear();
+            }
+        });
     }
 
     /**
@@ -81,33 +112,20 @@ export class Element {
     }
 
     /**
-     * Wait until the element exist and displayed
-     */
-    _waitForExistAndDisplayed(options?: CypressOptions) {
-        this.waitForExist(options);
-        this.waitForDisplayed(options);
-    }
-
-    /**
      * Wait until the element is displayed
      */
     waitForDisplayed(options?: CypressOptions) {
-        const isReverse = options && options.reverse
-        const shouldOption = isReverse ? 'not.' : '';
-
-        this.get$(options)
-            .should(`${shouldOption}be.visible`)
+        this._waitForExistAndDisplayed(options);
     }
 
     /**
      * Wait until the element is exist
      */
     waitForExist(options?: CypressOptions) {
-        const isReverse = options && options.reverse
-        const shouldOption = isReverse ? 'not.' : '';
-
-        this.get$(options)
-            .should(`${shouldOption}exist`)
+        this._waitForExist({
+            timeout: options && options.timeout,
+            reverse: options && options.reverse,
+        });
     }
 
     /**
@@ -161,5 +179,81 @@ export class Element {
         this.get$()
             .invoke('attr', attributeName)
             .should('include', attributeValue);
+    }
+
+    /**
+     * Wait until the element exist and displayed
+     */
+    protected _waitForExistAndDisplayed(options?: CypressOptions) {
+        const option = {
+            timeout: options && options.timeout,
+            reverse: options && options.reverse,
+        }
+        this._waitForExist(option);
+        if (!(options && options.reverse)){
+            this._waitForDisplayed(option);
+        }
+    }
+
+    protected _waitForEnabled(options?: CypressOptions & { element?: Cypress.Chainable<JQuery<HTMLElement>> }) {
+        // const negateMsg = options && options.reverse ? ' ' : ' not ';
+        // const timeout = options && options.timeout || browser.config.waitforTimeout;
+        // const timeoutMsg = `Element "${this.name}" ('${this.selector}') still${negateMsg}enabled after ${timeout}ms`;
+
+        // const element = options && options.element || await this.get$();
+
+        return this._waitForLogWrapper(() => {
+            if (options && options.element) {
+                return options.element.should('be.enabled');
+            } else {
+                return this.get$().should('be.enabled');
+            }
+        });
+    }
+
+    protected _waitForDisplayed(options?: CypressOptions & { element?: Cypress.Chainable<JQuery<HTMLElement>> }) {
+        // const negateMsg = options && options.reverse ? ' ' : ' not ';
+        // const timeout = options && options.timeout || browser.config.waitforTimeout;
+        // const timeoutMsg = `Element "${this.name}" ('${this.selector}') still${negateMsg}displaying after ${timeout}ms`;
+
+        // const element = options && options.element || await this.get$();
+        const isReverse = options && options.reverse
+        const shouldOption = isReverse ? 'not.' : '';
+
+        return this._waitForLogWrapper(() => {
+            if (options && options.element) {
+                return options.element.should(`${shouldOption}be.visible`);
+            } else {
+                return this.get$().should(`${shouldOption}be.visible`);
+            }
+        });
+    }
+
+    protected _waitForExist(options?: CypressOptions & { element?: Cypress.Chainable<JQuery<HTMLElement>> }) {
+        // const negateMsg = options && options.reverse ? ' ' : ' not ';
+        // const timeout = options && options.timeout || browser.config.waitforTimeout;
+        // const timeoutMsg = `Element "${this.name}" ('${this.selector}') still${negateMsg}existing after ${timeout}ms`;
+
+        // const element = options && options.element ||  this.get$();
+        const isReverse = options && options.reverse
+        const shouldOption = isReverse ? 'not.' : '';
+
+        return this._waitForLogWrapper(() => {
+            if (options && options.element) {
+                return options.element.should(`${shouldOption}exist`);
+            } else {
+                return this.get$().should(`${shouldOption}exist`);
+            }
+        });
+    }
+
+
+    protected _waitForLogWrapper(_waitForFunction: any) {
+        try {
+            return _waitForFunction();
+        } catch (e) {
+            cy.log(`Element error "${this.name}": ${e.message}`);
+            throw e;
+        }
     }
 }

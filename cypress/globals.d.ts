@@ -1,1 +1,2 @@
 ///<reference types="cypress-iframe" />
+///<reference types="cypress-wait-until" />
