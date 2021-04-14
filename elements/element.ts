@@ -96,7 +96,7 @@ export class Element {
     protected _clearValue(options?: { element: Cypress.Chainable<JQuery<HTMLElement>> }) {
         this._waitForLogWrapper(() => {
             if (options && options.element) {
-                options.element.clear();;
+                options.element.clear();
             } else {
                 this.get$().clear();
             }
