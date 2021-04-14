@@ -20,18 +20,19 @@ export class Element {
     }
 
     protected get$(options?: CypressOptions): Cypress.Chainable<JQuery<HTMLElement>> {
-        if (!(this.options && this.options.intoIFrame && this.options.frameSelector)) {
+        if (!(this.options && this.options.intoIFrame)) {
             if (!this.text) {
                 return cy.get(this.selector, options);
             } else {
                 return cy.get(this.selector, options).contains(this.text);
             }
         } else {
-            cy.frameLoaded(this.options.frameSelector, options);
+            const frameSelector = this.options.frameSelector || 'iframe';
+            cy.frameLoaded(frameSelector, options);
             if (!this.text) {
-                return cy.iframe(this.options.frameSelector).find(this.selector, options);
+                return cy.iframe(frameSelector).find(this.selector, options);
             } else {
-                return cy.iframe(this.options.frameSelector).find(this.selector, options).contains(this.text);
+                return cy.iframe(frameSelector).find(this.selector, options).contains(this.text);
             }
         }
     }
