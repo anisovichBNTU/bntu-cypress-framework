@@ -35,8 +35,9 @@ export class Select extends Element {
      * @param value - the textual value from the dropdown list item
      */
     selectByVisibleText(value: string) {
-        const selectedItem = new Button(`${this.valueNodeSelector} ${this.dropdownListSelector}`, `Selected item "${value}"`, { text: value })
-        this.click();
+        const selectedItem = new Button(`${this.dropdownListSelector} ${this.valueNodeSelector}`, `Selected item "${value}"`, { text: value })
+        this._waitForExist();
+        this._click();
         selectedItem.click();
     }
 

@@ -8,5 +8,6 @@ Given(/^I am logged in with password to the platform as test user$/, () => {
     cy.visit(url);
     loginPage.validateUrl();
     loginPage.loginWithPassword('testLecturer', 'testLecturer');
+    mainSchedulePage.validateUrl();
     mainSchedulePage.waitUntilScheduleIsDisplayed();
 });

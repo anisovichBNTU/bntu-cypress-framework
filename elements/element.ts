@@ -119,6 +119,14 @@ export class Element {
     }
 
     /**
+     * Wait until the iFrame element is loaded
+     */
+    waitForFrameLoaded(options?: CypressOptions) {
+        this._waitForExist(options);
+        this.get$().frameLoaded();
+    }
+
+    /**
      * Wait until the element is exist
      */
     waitForExist(options?: CypressOptions) {

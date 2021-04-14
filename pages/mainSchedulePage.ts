@@ -4,11 +4,11 @@ import BasePage from './basePage';
 
 class MainSchedulePage extends BasePage {
     headerForm: typeof headerForm;
-    
+
     scheduleLabel: Label;
 
     constructor() {
-        super(/login/);
+        super(/web\/dashboard/);
         this.headerForm = headerForm;
 
         this.scheduleLabel = new Label('.schedule', 'Main page: Schedule label', { intoIFrame: true });
