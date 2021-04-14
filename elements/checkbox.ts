@@ -4,8 +4,8 @@ import { Element } from "./element";
 const DEFAULT_CHECKBOX_SELECTOR = 'input[type="checkbox"]';
 
 export class Checkbox extends Element {
-    constructor(selector: string, name: string, text?: string, options?: ElementOptions) {
-        super(selector, name, text, options);
+    constructor(selector: string, name: string, options?: ElementOptions) {
+        super(selector, name, options);
     }
 
     /**

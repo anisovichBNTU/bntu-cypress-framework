@@ -1,3 +1,5 @@
 {
-    "testFiles": "**/*.{feature,features}"
+    "testFiles": "**/*.{feature,features}",
+    "defaultCommandTimeout": 10000,
+    "chromeWebSecurity": false
 }

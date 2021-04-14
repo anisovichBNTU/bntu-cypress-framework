@@ -12,24 +12,23 @@ export class Element {
      * @param name - the name of the element
      * @param text - the text contains of the element
      */
-    constructor(selector: string, name: string, text?: string, options?: ElementOptions) {
+    constructor(selector: string, name: string, options?: ElementOptions) {
         this.selector = selector;
         this.name = name;
-        this.text = text;
+        this.text = options?.text;
         this.options = options;
     }
 
     protected get$(options?: CypressOptions): Cypress.Chainable<JQuery<HTMLElement>> {
-        if (!(this.options && this.options.intoIFrame)) {
+        if (!(this.options && this.options.intoIFrame && this.options.frameSelector)) {
             if (!this.text) {
                 return cy.get(this.selector, options);
             } else {
                 return cy.get(this.selector, options).contains(this.text);
             }
         } else {
-            cy.frameLoaded(this.options.frameSelector);
+            cy.frameLoaded(this.options.frameSelector, options);
             if (!this.text) {
-
                 return cy.iframe(this.options.frameSelector).find(this.selector, options);
             } else {
                 return cy.iframe(this.options.frameSelector).find(this.selector, options).contains(this.text);
@@ -206,7 +205,7 @@ export class Element {
             if (options && options.element) {
                 return options.element.should('be.enabled');
             } else {
-                return this.get$().should('be.enabled');
+                return this.get$(options).should('be.enabled');
             }
         });
     }
@@ -224,7 +223,7 @@ export class Element {
             if (options && options.element) {
                 return options.element.should(`${shouldOption}be.visible`);
             } else {
-                return this.get$().should(`${shouldOption}be.visible`);
+                return this.get$(options).should(`${shouldOption}be.visible`);
             }
         });
     }
@@ -242,7 +241,7 @@ export class Element {
             if (options && options.element) {
                 return options.element.should(`${shouldOption}exist`);
             } else {
-                return this.get$().should(`${shouldOption}exist`);
+                return this.get$(options).should(`${shouldOption}exist`);
             }
         });
     }

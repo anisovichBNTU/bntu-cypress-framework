@@ -21,8 +21,8 @@ export class Select extends Element {
      * @param name - the name of the element
      * @param options - the options for customization of the select if needed
      */
-    constructor(selector: string, name: string, text?: string, options?: SelectOptions & ElementOptions) {
-        super(selector, name, text, options);
+    constructor(selector: string, name: string, options?: SelectOptions & ElementOptions) {
+        super(selector, name, options);
 
         this.valueNodeSelector =
             options && options.dropdownListItemSelector || 'a span.menu-link-item';
@@ -35,7 +35,7 @@ export class Select extends Element {
      * @param value - the textual value from the dropdown list item
      */
     selectByVisibleText(value: string) {
-        const selectedItem = new Button(`${this.valueNodeSelector} ${this.dropdownListSelector}`, `Selected item "${value}"`, value)
+        const selectedItem = new Button(`${this.valueNodeSelector} ${this.dropdownListSelector}`, `Selected item "${value}"`, { text: value })
         this.click();
         selectedItem.click();
     }

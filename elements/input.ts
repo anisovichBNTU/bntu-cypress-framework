@@ -2,8 +2,8 @@ import { CypressOptions, ElementOptions } from '../types';
 import { Element } from './element';
 
 export class Input extends Element {
-    constructor(selector: string, name: string, text?: string, options?: ElementOptions) {
-        super(selector, name, text, options);
+    constructor(selector: string, name: string, options?: ElementOptions) {
+        super(selector, name, options);
     }
 
     /**

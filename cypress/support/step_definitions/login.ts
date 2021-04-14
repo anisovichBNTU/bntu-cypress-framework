@@ -1,16 +1,12 @@
+import { Given, Before, When, Then } from 'cypress-cucumber-preprocessor/steps';
 import loginPage from "../../../pages/loginPage";
-
-const {
-    Given, Before, When, Then
-} = require("cypress-cucumber-preprocessor/steps");
+import mainSchedulePage from '../../../pages/mainSchedulePage';
 
 const url = 'https://educats.by/';
 
-Given(`I open EduCats page`, () => {
+Given(`I am logged in with password to the platform as test user`, () => {
     cy.visit(url);
     loginPage.validateUrl();
-});
-
-When(`I logged in as test user`, () => {
-    loginPage.loginWithPassword('testLecturer', 'testLecturer')
+    loginPage.loginWithPassword('testLecturer', 'testLecturer');
+    mainSchedulePage.waitUntilScheduleIsDisplayed();
 });
