@@ -1,9 +1,7 @@
 import { Button, Label, Select } from '../../elements';
-import headerForm from '../../forms/headerForm';
 import BasePage from '../basePage';
 
 class SubjectPage extends BasePage {
-    headerForm: typeof headerForm;
 
     subjectSelect: Select;
     subjectModuleButton: (moduleName: string) => Button;
@@ -11,7 +9,6 @@ class SubjectPage extends BasePage {
 
     constructor() {
         super(/web\/viewer\/main/);
-        this.headerForm = headerForm;
 
         // TODO Correct word 'Выберете'
         this.subjectSelect = new Select('.mat-button-base', 'Subject page: subject select', { text: 'Выберете предмет' });
