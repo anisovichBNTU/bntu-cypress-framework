@@ -1,7 +1,7 @@
 import { Button } from '../elements';
 import BaseForm from './baseForm';
 
-export class HeaderForm extends BaseForm {
+class HeaderForm extends BaseForm {
 
     subjectsButton: Button;
 

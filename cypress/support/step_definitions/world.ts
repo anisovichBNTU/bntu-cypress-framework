@@ -1,5 +1,7 @@
-declare module "cucumber" {
-    interface World {
-        titleExample: string
-    }
-}
+
+// ///<reference types="cucumber" />
+// declare module "cucumber" {
+//     interface  {
+//         titleExample: string
+//     }
+// }

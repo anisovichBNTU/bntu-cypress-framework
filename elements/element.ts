@@ -10,7 +10,7 @@ export class Element {
      * The element
      * @param selector - the selector to the element
      * @param name - the name of the element
-     * @param text - the text contains of the element
+     * @param options 
      */
     constructor(selector: string, name: string, options?: ElementOptions) {
         this.selector = selector;
@@ -24,7 +24,12 @@ export class Element {
             if (!this.text) {
                 return cy.get(this.selector, options);
             } else {
-                return cy.get(this.selector, options).contains(this.text);
+                if (this.options && this.options.parentSelector) {
+                    return cy.get(this.selector, options).contains(this.text)
+                        .parent(this.options.parentSelector);
+                } else {
+                    return cy.get(this.selector, options).contains(this.text)
+                }
             }
         } else {
             const frameSelector = this.options.frameSelector || 'iframe';
@@ -32,7 +37,12 @@ export class Element {
             if (!this.text) {
                 return cy.iframe(frameSelector).find(this.selector, options);
             } else {
-                return cy.iframe(frameSelector).find(this.selector, options).contains(this.text);
+                if (this.options && this.options.parentSelector) {
+                    return cy.iframe(frameSelector).find(this.selector, options).contains(this.text)
+                        .parent(this.options.parentSelector);
+                } else {
+                    return cy.iframe(frameSelector).find(this.selector, options).contains(this.text);
+                }
             }
         }
     }
@@ -45,12 +55,48 @@ export class Element {
         this._click();
     }
 
+    /**
+     * Double click the element
+     */
+    rightClick() {
+        this._waitForExist();
+        this._rightClick();
+    }
+
+    /**
+     * Double click the element
+     */
+    doubleClick() {
+        this._waitForExist();
+        this._doubleClick();
+    }
+
     protected _click(options?: { element: Cypress.Chainable<JQuery<HTMLElement>> }) {
         this._waitForLogWrapper(() => {
             if (options && options.element) {
-                options.element.click();
+                options.element.click({ force: true });
             } else {
-                this.get$().click();
+                this.get$().click({ force: true });
+            }
+        });
+    }
+
+    protected _doubleClick(options?: { element: Cypress.Chainable<JQuery<HTMLElement>> }) {
+        this._waitForLogWrapper(() => {
+            if (options && options.element) {
+                options.element.dblclick({ force: true });
+            } else {
+                this.get$().dblclick({ force: true });
+            }
+        });
+    }
+
+    protected _rightClick(options?: { element: Cypress.Chainable<JQuery<HTMLElement>> }) {
+        this._waitForLogWrapper(() => {
+            if (options && options.element) {
+                options.element.rightclick({ force: true });
+            } else {
+                this.get$().rightclick({ force: true });
             }
         });
     }
@@ -198,7 +244,7 @@ export class Element {
             reverse: options && options.reverse,
         }
         this._waitForExist(option);
-        if (!(options && options.reverse)){
+        if (!(options && options.reverse)) {
             this._waitForDisplayed(option);
         }
     }

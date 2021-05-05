@@ -1,6 +1,6 @@
 {
     "testFiles": "**/*.{feature,features}",
-    "defaultCommandTimeout": 10000,
+    "defaultCommandTimeout": 20000,
     "chromeWebSecurity": false,
     "viewportHeight": 1000,
     "viewportWidth": 1900

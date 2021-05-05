@@ -11,6 +11,7 @@
     },
     "devDependencies": {
         "@cypress/webpack-preprocessor": "^5.7.0",
+        "@types/cucumber": "^7.0.0",
         "cypress": "^6.8.0",
         "cypress-cucumber-preprocessor": "4.0.3",
         "cypress-iframe": "^1.0.1",

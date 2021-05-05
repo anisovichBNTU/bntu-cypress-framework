@@ -2,5 +2,6 @@ export type CypressOptions = Partial<Cypress.Loggable & Cypress.Timeoutable & Cy
 export interface ElementOptions {
     intoIFrame?: boolean;
     frameSelector?: string;
-    text?: string
+    text?: string;
+    parentSelector?: string;
 }
