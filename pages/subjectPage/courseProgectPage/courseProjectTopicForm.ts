@@ -19,7 +19,7 @@ class CourseProjectTopicForm extends BaseForm {
         this.saveTopicButton = new Button('.mat-button-base', 'Course project topic: Save topic button',
             { text: 'Сохранить', intoIFrame: true });
 
-        this.topicRowLabel = (topicName: string) => new Label('.mdc-data-table__table .ng-star-inserted',
+        this.topicRowLabel = (topicName: string) => new Label('.mdc-data-table__table .mdc-data-table__row.ng-star-inserted',
             `Course project topic: topic (${topicName}) row`,
             { text: topicName, intoIFrame: true });
     }
@@ -29,7 +29,7 @@ class CourseProjectTopicForm extends BaseForm {
     }
 
     assertThatTopicIsDisplayed(topicName: string) {
-        this.topicRowLabel(topicName).waitForDisplayed();
+        this.topicRowLabel(topicName).waitForDisplayed({ delay: 2000 });
     }
 
     fillTopicInfo(options: { name: string, groups?: string[] }) {

@@ -50,7 +50,7 @@ class InteractiveBookPage extends BasePage {
     }
 
     assertThatTopicIsDisplayed(topicTitle: string) {
-        this.bookTopic(topicTitle).waitForDisplayed();
+        this.bookTopic(topicTitle).waitForDisplayed({ delay: 2000 });
     }
 }
 

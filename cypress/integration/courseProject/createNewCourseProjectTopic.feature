@@ -1,7 +1,7 @@
 
-Feature: Interactive Book
+Feature: Course Project
 
-    Scenario: Create new interactive book topic
+    Scenario: Create new course project topic
         Given I am logged in with password to the platform as test user
         When Select 'Subject' module on header on Main page
         And Select "Для тестов ИНC" subject on Subject page

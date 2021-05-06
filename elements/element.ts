@@ -24,9 +24,14 @@ export class Element {
             if (!this.text) {
                 return cy.get(this.selector, options);
             } else {
-                if (this.options && this.options.parentSelector) {
-                    return cy.get(this.selector, options).contains(this.text)
-                        .parent(this.options.parentSelector);
+                if (this.options && this.options.parent) {
+                    if (this.options && this.options.childSelector) {
+                        return cy.get(this.selector, options).contains(this.text)
+                            .parent(this.selector).find(this.options.childSelector);
+                    } else {
+                        return cy.get(this.selector, options).contains(this.text)
+                            .parent(this.selector);
+                    }
                 } else {
                     return cy.get(this.selector, options).contains(this.text)
                 }
@@ -37,9 +42,14 @@ export class Element {
             if (!this.text) {
                 return cy.iframe(frameSelector).find(this.selector, options);
             } else {
-                if (this.options && this.options.parentSelector) {
-                    return cy.iframe(frameSelector).find(this.selector, options).contains(this.text)
-                        .parent(this.options.parentSelector);
+                if (this.options && this.options.parent) {
+                    if (this.options && this.options.childSelector) {
+                        return cy.iframe(frameSelector).find(this.selector, options).contains(this.text)
+                            .parent(this.selector).find(this.options.childSelector);
+                    } else {
+                        return cy.iframe(frameSelector).find(this.selector, options).contains(this.text)
+                            .parent(this.selector);
+                    }
                 } else {
                     return cy.iframe(frameSelector).find(this.selector, options).contains(this.text);
                 }
@@ -240,6 +250,7 @@ export class Element {
      */
     protected _waitForExistAndDisplayed(options?: CypressOptions) {
         const option = {
+            delay: options && options.delay,
             timeout: options && options.timeout,
             reverse: options && options.reverse,
         }
@@ -291,6 +302,9 @@ export class Element {
         // const element = options && options.element ||  this.get$();
         const isReverse = options && options.reverse
         const shouldOption = isReverse ? 'not.' : '';
+        if (options && options.delay) {
+            cy.wait(options.delay);
+        }
 
         return this._waitForLogWrapper(() => {
             if (options && options.element) {
