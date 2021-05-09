@@ -29,3 +29,9 @@
 // import '../../customCommands/dropdown';
 // import '../../customCommands/iframe';
 // import '../../customCommands/table';
+
+Cypress.Commands.add("findByText", { prevSubject: true }, (subject, text) => {
+    if (subject) {
+        return cy.wrap(subject, { log: false }).contains(text);
+    }
+});

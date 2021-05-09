@@ -12,6 +12,7 @@ interface SelectOptions {
  */
 export class Select extends Element {
 
+    private intoIFrame: boolean;
     private dropdownListSelector: string;
     private valueNodeSelector: string;
 
@@ -24,6 +25,7 @@ export class Select extends Element {
     constructor(selector: string, name: string, options?: SelectOptions & ElementOptions) {
         super(selector, name, options);
 
+        this.intoIFrame = options && options.intoIFrame || false;
         this.valueNodeSelector =
             options && options.dropdownListItemSelector || 'a span.menu-link-item';
         this.dropdownListSelector =
@@ -35,7 +37,8 @@ export class Select extends Element {
      * @param value - the textual value from the dropdown list item
      */
     selectByVisibleText(value: string) {
-        const selectedItem = new Button(`${this.dropdownListSelector} ${this.valueNodeSelector}`, `Selected item "${value}"`, { text: value })
+        const selectedItem = new Button(`${this.dropdownListSelector} ${this.valueNodeSelector}`, 
+        `Selected item "${value}"`, { text: value, intoIFrame: this.intoIFrame })
         this._waitForExist();
         this._click();
         selectedItem.click();

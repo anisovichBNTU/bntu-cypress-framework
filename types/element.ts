@@ -7,4 +7,5 @@ export interface ElementOptions {
     text?: string;
     parent?: boolean;
     childSelector?: string;
+    index?: number;
 }

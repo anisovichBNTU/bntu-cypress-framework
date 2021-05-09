@@ -57,12 +57,27 @@ export class Element {
         }
     }
 
+    // /**
+    //  * Return element found by text
+    //  */
+    // findByText(text: string): Cypress.Chainable<JQuery<HTMLElement>> {
+    //     this._waitForExist();
+    //     return this.get$().contains(text);
+    // }
+
+    // /**
+    //  * Return child element
+    //  */
+    // find(element: Element): Cypress.Chainable<JQuery<HTMLElement>> {
+    //     return this.get$().find(element.selector);
+    // }
+
     /**
      * Click the element
      */
-    click() {
+    click(index?: number) {
         this._waitForExist();
-        this._click();
+        this._click({ index });
     }
 
     /**
@@ -81,12 +96,17 @@ export class Element {
         this._doubleClick();
     }
 
-    protected _click(options?: { element: Cypress.Chainable<JQuery<HTMLElement>> }) {
+    protected _click(options?: { element?: Cypress.Chainable<JQuery<HTMLElement>>, index?: number }) {
         this._waitForLogWrapper(() => {
             if (options && options.element) {
                 options.element.click({ force: true });
             } else {
-                this.get$().click({ force: true });
+                if (options && options.index) {
+                    this.get$().eq(options.index - 1).click({ force: true });
+                }
+                else {
+                    this.get$().click({ force: true });
+                }
             }
         });
     }
