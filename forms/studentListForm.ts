@@ -1,5 +1,5 @@
-import { Button, Input, Select } from "../../elements";
-import BaseForm from "../../forms/baseForm";
+import { Button, Input, Select } from "../elements";
+import BaseForm from "./baseForm";
 
 class StudentListForm extends BaseForm {
 

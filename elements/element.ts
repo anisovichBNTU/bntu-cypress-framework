@@ -220,9 +220,13 @@ export class Element {
      * @param text - the expression to be matched
      * @param options - the wait options
      */
-    waitUntilInnerTextMatches(text: string, options?: CypressOptions) {
+    waitUntilInnerTextMatches(text: string | RegExp, options?: CypressOptions) {
         this._waitForExistAndDisplayed(options);
-        this.getText().should('include', text);
+        if (typeof text === 'string') {
+            this.getText().should('include', text);
+        } else {
+            this.getText().should('match', text);
+        }
         return true;
     }
 
@@ -231,9 +235,13 @@ export class Element {
      * @param text - the expression to be matched
      * @param options - the wait options
      */
-    waitUntilInnerTextNotMatches(text: string, options?: CypressOptions) {
+    waitUntilInnerTextNotMatches(text: string | RegExp, options?: CypressOptions) {
         this._waitForExistAndDisplayed(options);
-        this.getText().should('not.include', text);
+        if (typeof text === 'string') {
+            this.getText().should('not.include', text);
+        } else {
+            this.getText().should('not.match', text);
+        }
         return true;
     }
 

@@ -1,16 +1,16 @@
 import { Button } from '../../elements';
 import BasePage from '../basePage';
-import graduationProjectTopicForm from './graduationProjectTopicForm';
+import projectTopicForm from '../../forms/projectTopicForm';
 
 class GraduationProjectPage extends BasePage {
 
     graduationProjectTab: (tabName: string) => Button;
-    graduationProjectTopicForm: typeof graduationProjectTopicForm
+    graduationProjectTopicForm: typeof projectTopicForm
 
     constructor() {
         super(/web\/diplom/);
 
-        this.graduationProjectTopicForm = graduationProjectTopicForm;
+        this.graduationProjectTopicForm = projectTopicForm;
 
         this.graduationProjectTab = (tabName: string) => new Button('.mdc-tab-bar button',
             `Graduation project: tab (${tabName})`,
