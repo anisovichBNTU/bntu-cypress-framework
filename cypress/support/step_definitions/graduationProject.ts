@@ -14,6 +14,11 @@ When(/^Delete topic on Graduation project page$/, () => {
     graduationProjectPage.dialogForm.clickAcceptButton();
 });
 
+When(/^Cancel assignment student to topic on Graduation project page$/, () => {
+    graduationProjectPage.graduationProjectTopicForm.cancelAssignmentToTopic('autotest name');
+    graduationProjectPage.dialogForm.clickAcceptButton();
+});
+
 When(/^Fill new graduation project topic info on Graduation project page$/, () => {
     graduationProjectPage.graduationProjectTopicForm.fillTopicInfo({ name: 'autotest name' });
 });
@@ -38,4 +43,8 @@ Then(/^I should see deleted graduation project topic on Graduation project page$
 
 Then(/^I should assigned student "(.*)" to topic on Graduation project page$/, (studentName: string) => {
     graduationProjectPage.graduationProjectTopicForm.assertThatTopicHasStudent('autotest name', studentName);
+});
+
+Then(/^I should unassigned student "(.*)" to topic on Graduation project page$/, (studentName: string) => {
+    graduationProjectPage.graduationProjectTopicForm.assertThatTopicHasStudent('autotest name', studentName, true);
 });

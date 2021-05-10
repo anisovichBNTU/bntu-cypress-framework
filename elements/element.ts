@@ -219,9 +219,18 @@ export class Element {
      */
     waitUntilInnerTextMatches(text: string, options?: CypressOptions) {
         this._waitForExistAndDisplayed(options);
-
         this.getText().should('include', text);
+        return true;
+    }
 
+    /**
+     * Wait until innerText not matches
+     * @param text - the expression to be matched
+     * @param options - the wait options
+     */
+    waitUntilInnerTextNotMatches(text: string, options?: CypressOptions) {
+        this._waitForExistAndDisplayed(options);
+        this.getText().should('not.include', text);
         return true;
     }
 

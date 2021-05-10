@@ -86,8 +86,12 @@ class GraduationProjectTopicForm extends BaseForm {
         this.topicNameLabel(topicName).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
     }
 
-    assertThatTopicHasStudent(topicName: string, studentName: string) {
-        this.topicRowLabel(topicName).waitUntilInnerTextMatches(studentName, { delay: 2000 });
+    assertThatTopicHasStudent(topicName: string, studentName: string, reverse = false) {
+        if (!reverse) {
+            this.topicRowLabel(topicName).waitUntilInnerTextMatches(studentName, { delay: 2000 });
+        } else {
+            this.topicRowLabel(topicName).waitUntilInnerTextNotMatches(studentName, { delay: 2000 });
+        }
     }
 
     fillTopicInfo(options: { name: string, groups?: string[] }) {
