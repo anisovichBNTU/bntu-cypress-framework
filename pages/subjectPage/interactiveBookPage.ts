@@ -9,27 +9,35 @@ class InteractiveBookPage extends BasePage {
     newBookTitleSaveButton: Button;
     bookTopic: (topicTitle: string) => Select;
 
+    bookContentInput: TextArea;
+    bookContentSaveButton: Button;
+
     constructor() {
         super(/web\/viewer\/subject.*libBook/);
 
         this.addBookButton = new Button('.mat-drawer .flex-search-btn-holder button',
-            'Interactive book: add new book button', { intoIFrame: true });
+            'Interactive book: Add new book button', { intoIFrame: true });
 
         this.newBookTitleInput = new TextArea('.cdk-overlay-pane .ck-editor__editable',
-            'Interactive book: new book title text area', { intoIFrame: true });
+            'Interactive book: New book title text area', { intoIFrame: true });
         this.newBookTitleSaveButton = new Button('.mat-dialog-actions button',
-            'Interactive book: save new book button',
+            'Interactive book: Save new book button',
             {
                 text: 'Сохранить',
                 intoIFrame: true
             });
 
         this.bookTopic = (topicTitle: string) => new Select('li.mat-tree-node',
-            `Interactive book: book topic (${topicTitle})`,
+            `Interactive book: Book topic (${topicTitle})`,
             {
                 text: topicTitle,
                 intoIFrame: true
             });
+
+        this.bookContentInput = new TextArea('#editor .ck-content', 'Interactive book: Book content text area',
+            { intoIFrame: true });
+        this.bookContentSaveButton = new Button('.flex-editor-container .btn-holder button',
+            'Interactive book: Book content Save button', { intoIFrame: true, text: 'Сохранить' });
     }
 
     clickAddNewBook() {
@@ -49,8 +57,30 @@ class InteractiveBookPage extends BasePage {
         this.newBookTitleSaveButton.click();
     }
 
+    openInteractiveBook(topicTitle: string) {
+        this.bookTopic(topicTitle).doubleClick();
+    }
+
+    openInteractiveBookToFill(topicTitle: string) {
+        this.bookTopic(topicTitle).doubleClick();
+    }
+
+    fillBookContent(text: string) {
+        this.bookContentInput.setValue(text);
+    }
+
+    saveBookContent() {
+        this.bookContentSaveButton.click();
+    }
+
     assertThatTopicIsDisplayed(topicTitle: string) {
         this.bookTopic(topicTitle).waitForDisplayed({ delay: 2000 });
+    }
+
+    assertThatBookContentHasText(text: string[]) {
+        for (const textItem of text) {
+            this.bookContentInput.waitUntilInnerTextMatches(textItem);
+        }
     }
 }
 
