@@ -63,6 +63,10 @@ class GraduationProjectTopicForm extends BaseForm {
         this.addTopicButton.click();
     }
 
+    clickEditTopic(topicName: string) {
+        this.topicEditButton(topicName).click();
+    }
+
     assignStudentToTopic(topicName: string, student: { group: string, random?: boolean, name?: string }) {
         this.topicAssignButton(topicName).click();
         studentListForm.selectGroup(student.group);
@@ -95,7 +99,7 @@ class GraduationProjectTopicForm extends BaseForm {
     }
 
     fillTopicInfo(options: { name: string, groups?: string[] }) {
-        this.topicNameTextArea.setValue(options.name);
+        this.topicNameTextArea.setValue(options.name, true);
         this.saveTopicButton.click();
     }
 

@@ -9,6 +9,11 @@ When(/^Add new graduation project topic on Graduation project page$/, () => {
     graduationProjectPage.graduationProjectTopicForm.addNewTopic();
 });
 
+When(/^Edit graduation project topic on Graduation project page$/, () => {
+    graduationProjectPage.graduationProjectTopicForm.clickEditTopic('autotest name');
+    graduationProjectPage.graduationProjectTopicForm.fillTopicInfo({ name: 'autotest name edited' });
+});
+
 When(/^Delete topic on Graduation project page$/, () => {
     graduationProjectPage.graduationProjectTopicForm.deleteTopic('autotest name');
     graduationProjectPage.dialogForm.clickAcceptButton();
@@ -35,6 +40,10 @@ When(/^Assign student from "(.*)" group to topic on Graduation project page$/, (
 
 Then(/^I should see created graduation project topic on Graduation project page$/, () => {
     graduationProjectPage.graduationProjectTopicForm.assertThatTopicIsDisplayed('autotest name');
+});
+
+Then(/^I should see edited graduation project topic on Graduation project page$/, () => {
+    graduationProjectPage.graduationProjectTopicForm.assertThatTopicIsDisplayed('autotest name edited');
 });
 
 Then(/^I should see deleted graduation project topic on Graduation project page$/, () => {

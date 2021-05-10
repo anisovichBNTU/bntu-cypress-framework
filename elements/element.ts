@@ -144,9 +144,12 @@ export class Element {
      * @param value
      * @param options
      */
-    setValue(value: string) {
+    setValue(value: string, clear = false) {
         this._waitForExist();
         this._waitForEnabled();
+        if (clear) {
+            this._clearValue();
+        }
         this._setValue(value);
     }
 

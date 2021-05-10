@@ -11,8 +11,11 @@ export class TextArea extends Element {
      * @param value
      * @param options
      */
-     setValue(value: string) {
+    setValue(value: string, clear = false) {
         this._waitForExist();
+        if (clear) {
+            this._clearValue();
+        }
         this._setValue(value);
     }
 }
