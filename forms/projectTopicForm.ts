@@ -4,16 +4,16 @@ import studentListForm from "./studentListForm";
 
 class ProjectTopicForm extends BaseForm {
 
-    addTopicButton: Button;
-    topicNameTextArea: TextArea;
-    saveTopicButton: Button;
+    private addTopicButton: Button;
+    private topicNameTextArea: TextArea;
+    private saveTopicButton: Button;
 
-    topicRowLabel: (topicName: string) => Label;
-    topicNameLabel: (topicName: string) => Label;
-    topicDeleteButton: (topicName: string) => Button;
-    topicAssignButton: (topicName: string) => Button;
-    topicCancelAssignmentButton: (topicName: string) => Button;
-    topicEditButton: (topicName: string) => Button;
+    private topicRowLabel: (topicName: string) => Label;
+    private topicNameLabel: (topicName: string) => Label;
+    private topicDeleteButton: (topicName: string) => Button;
+    private topicAssignButton: (topicName: string) => Button;
+    private topicCancelAssignmentButton: (topicName: string) => Button;
+    private topicEditButton: (topicName: string) => Button;
 
     constructor() {
         super();

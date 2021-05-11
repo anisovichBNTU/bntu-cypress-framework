@@ -3,10 +3,10 @@ import BaseForm from "./baseForm";
 
 class StudentListForm extends BaseForm {
 
-    groupSelect: Select;
-    studentSearchInput: Input;
-    studentAssignButton: Button;
-    studentAssignButtonByName: (topicName: string) => Button;
+    private groupSelect: Select;
+    private studentSearchInput: Input;
+    private studentAssignButton: Button;
+    private studentAssignButtonByName: (topicName: string) => Button;
 
     constructor() {
         super();

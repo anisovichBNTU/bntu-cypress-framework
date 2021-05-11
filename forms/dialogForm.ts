@@ -3,7 +3,7 @@ import BaseForm from './baseForm';
 
 class DialogForm extends BaseForm {
 
-    acceptButton: Button;
+    private acceptButton: Button;
 
     constructor() {
         super();

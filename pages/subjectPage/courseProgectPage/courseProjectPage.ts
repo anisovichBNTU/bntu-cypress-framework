@@ -4,7 +4,7 @@ import BasePage from '../../basePage';
 
 class CourseProjectPage extends BasePage {
 
-    courseProjectTab: (tabName: string) => Button;
+    private courseProjectTab: (tabName: string) => Button;
     courseProjectTopicForm: typeof projectTopicForm;
 
     constructor() {

@@ -4,14 +4,16 @@ import BasePage from '../basePage';
 
 class InteractiveBookPage extends BasePage {
 
-    addBookButton: Button;
+    private addBookButton: Button;
 
-    newBookTitleInput: TextArea;
-    newBookTitleSaveButton: Button;
-    bookTopic: (topicTitle: string) => ContextMenu;
+    private newBookTitleInput: TextArea;
+    private newBookTitleSaveButton: Button;
+    private bookTopic: (topicTitle: string) => ContextMenu;
+    private bookParentTopic: (topicTitle: string) => ContextMenu;
+    private bookOpenChildButton: (topicTitle: string) => Button;
 
-    bookContentInput: TextArea;
-    bookContentSaveButton: Button;
+    private bookContentInput: TextArea;
+    private bookContentSaveButton: Button;
 
     constructor() {
         super(/web\/viewer\/subject.*libBook/);
@@ -28,13 +30,23 @@ class InteractiveBookPage extends BasePage {
                 intoIFrame: true
             });
 
-        this.bookTopic = (topicTitle: string) => new ContextMenu('li.mat-tree-node',
+        this.bookTopic = (topicTitle: string) => new ContextMenu('mat-tree-node .mat-tree-node',
             `Interactive book: Book topic (${topicTitle})`,
             {
                 dropdownListSelector: '.mat-menu-content', dropdownListItemSelector: '[role="menuitem"]',
                 text: topicTitle,
                 intoIFrame: true
             });
+        this.bookParentTopic = (topicTitle: string) => new ContextMenu('mat-nested-tree-node .mat-tree-node',
+            `Interactive book: Book parent topic (${topicTitle})`,
+            {
+                dropdownListSelector: '.mat-menu-content', dropdownListItemSelector: '[role="menuitem"]',
+                text: topicTitle,
+                intoIFrame: true
+            });
+        this.bookOpenChildButton = (topicTitle: string) => new Button('mat-nested-tree-node .mat-tree-node',
+            `Interactive book: Book parent topic (${topicTitle})`,
+            { text: topicTitle, intoIFrame: true, parent: true, childSelector: 'button.mat-button-base' });
 
         this.bookContentInput = new TextArea('#editor .ck-content', 'Interactive book: Book content text area',
             { intoIFrame: true });
@@ -72,6 +84,14 @@ class InteractiveBookPage extends BasePage {
         this.bookTopic(topicTitle).click();
     }
 
+    openInteractiveBookParent(topicTitle: string) {
+        this.bookParentTopic(topicTitle).click();
+    }
+
+    openChildBookTopics(topicTitle: string) {
+        this.bookOpenChildButton(topicTitle).click();
+    }
+
     openInteractiveBookToFill(topicTitle: string) {
         this.bookTopic(topicTitle).doubleClick();
     }
@@ -84,8 +104,8 @@ class InteractiveBookPage extends BasePage {
         this.bookContentSaveButton.click();
     }
 
-    assertThatTopicIsDisplayed(topicTitle: string) {
-        this.bookTopic(topicTitle).waitForDisplayed({ delay: 2000 });
+    assertThatTopicIsDisplayed(topicTitle: string, isDisplayed = true) {
+        this.bookTopic(topicTitle).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
     }
 
     assertThatBookContentHasText(text: string[]) {

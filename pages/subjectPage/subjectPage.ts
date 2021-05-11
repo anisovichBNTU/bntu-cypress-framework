@@ -3,9 +3,9 @@ import BasePage from '../basePage';
 
 class SubjectPage extends BasePage {
 
-    subjectSelect: Select;
-    subjectModuleButton: (moduleName: string) => Button;
-    baseModuleLabel: Label;
+    private subjectSelect: Select;
+    private subjectModuleButton: (moduleName: string) => Button;
+    private baseModuleLabel: Label;
 
     constructor() {
         super(/web\/viewer\/main/);

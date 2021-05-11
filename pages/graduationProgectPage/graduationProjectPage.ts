@@ -4,7 +4,7 @@ import projectTopicForm from '../../forms/projectTopicForm';
 
 class GraduationProjectPage extends BasePage {
 
-    graduationProjectTab: (tabName: string) => Button;
+    private graduationProjectTab: (tabName: string) => Button;
     graduationProjectTopicForm: typeof projectTopicForm
 
     constructor() {

@@ -4,7 +4,7 @@ import BasePage from './basePage';
 
 class MainSchedulePage extends BasePage {
 
-    scheduleLabel: Label;
+    private scheduleLabel: Label;
 
     constructor() {
         super(/web\/dashboard/);

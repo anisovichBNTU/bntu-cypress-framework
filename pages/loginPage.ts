@@ -2,9 +2,9 @@ import { Button, Input } from '../elements';
 import BasePage from './basePage';
 
 class LoginPage extends BasePage {
-    usernameInput: Input;
-    passwordInput: Input;
-    submitButton: Button;
+    private usernameInput: Input;
+    private passwordInput: Input;
+    private submitButton: Button;
 
     constructor() {
         super(/login/);

@@ -9,6 +9,6 @@ Feature: Interactive Book
         And Click add interactive book on Interactive book page
         And Create new book "autotest book" on Interactive book page
         Then I should see created book topic "autotest book" on Interactive book page
-        When Open book "autotest book" on Interactive book page
+        When Open book topic "autotest book" on Interactive book page
         Then I should see book topic "autotest book" in book content on Interactive book page
     

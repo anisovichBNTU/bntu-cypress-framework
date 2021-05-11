@@ -3,8 +3,8 @@ import BaseForm from './baseForm';
 
 class HeaderForm extends BaseForm {
 
-    subjectsButton: Button;
-    graduationProjectButton: Button;
+    private subjectsButton: Button;
+    private graduationProjectButton: Button;
 
     constructor() {
         super();
