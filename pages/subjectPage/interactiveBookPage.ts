@@ -73,7 +73,7 @@ class InteractiveBookPage extends BasePage {
     }
 
     fillNewBookTitle(bookTitle: string) {
-        this.newBookTitleInput.setValue(bookTitle);
+        this.newBookTitleInput.setValue(bookTitle, true);
     }
 
     clickSaveNewBookTitle() {

@@ -18,13 +18,17 @@ When(/^Select "(.*)" option on "(.*)" book context menu on Interactive book page
             dialogForm.clickAcceptButton();
             break;
         default:
-            // throw new Error("error");
-            
+            // throw new Error("error");    
     }
 });
 
 When(/^Create new book child topic "(.*)" on Interactive book page$/, function (childTopicName: string) {
     interactiveBookPage.createChildTopic(childTopicName);
+});
+
+When(/^Edit book topic using name "(.*)" on Interactive book page$/, function (editedTopicName: string) {
+    interactiveBookPage.fillNewBookTitle(editedTopicName);
+    interactiveBookPage.clickSaveNewBookTitle();
 });
 
 When(/^Open child topics on book "(.*)" on Interactive book page$/, function (topicName: string) {
