@@ -1,5 +1,4 @@
-import { Button, TextArea } from '../../elements';
-import { ContextMenu } from '../../elements/contextMenu';
+import { Button, TextArea, ContextMenu } from '../../elements';
 import BasePage from '../basePage';
 
 class InteractiveBookPage extends BasePage {

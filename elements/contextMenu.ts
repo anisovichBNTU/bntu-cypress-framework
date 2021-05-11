@@ -1,4 +1,4 @@
-import { Element, Button } from ".";
+import { Button } from ".";
 import { ElementOptions, SelectOptions } from "../types";
 import { Select } from "./select";
 
@@ -29,8 +29,8 @@ export class ContextMenu extends Select {
      * @param value - the textual value from the dropdown list item
      */
     selectByVisibleText(value: string) {
-        const selectedItem = new Button(`${this.dropdownListSelector} ${this.valueNodeSelector}`, 
-        `Selected item "${value}"`, { text: value, intoIFrame: this.intoIFrame })
+        const selectedItem = new Button(`${this.dropdownListSelector} ${this.valueNodeSelector}`,
+            `Selected item "${value}"`, { text: value, intoIFrame: this.intoIFrame })
         this._waitForExist();
         this._rightClick();
         selectedItem.click();

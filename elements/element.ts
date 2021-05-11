@@ -22,55 +22,42 @@ export class Element {
     protected get$(options?: CypressOptions): Cypress.Chainable<JQuery<HTMLElement>> {
         if (!(this.options && this.options.intoIFrame)) {
             if (!this.text) {
-                return cy.get(this.selector, options);
+                return cy.get(this.selector, { log: false, ...options });
             } else {
                 if (this.options && this.options.parent) {
                     if (this.options && this.options.childSelector) {
-                        return cy.get(this.selector, options).contains(this.text)
-                            .parent(this.selector).find(this.options.childSelector);
+                        return cy.get(this.selector, { log: false, ...options }).contains(this.text, { log: false })
+                            .parent(this.selector, { log: false }).find(this.options.childSelector, { log: false });
                     } else {
-                        return cy.get(this.selector, options).contains(this.text)
-                            .parent(this.selector);
+                        return cy.get(this.selector, { log: false, ...options }).contains(this.text, { log: false })
+                            .parent(this.selector, { log: false });
                     }
                 } else {
-                    return cy.get(this.selector, options).contains(this.text)
+                    return cy.get(this.selector, { log: false, ...options }).contains(this.text, { log: false })
                 }
             }
         } else {
             const frameSelector = this.options.frameSelector || 'iframe';
-            cy.frameLoaded(frameSelector, options);
+            cy.frameLoaded(frameSelector, { log: false, ...options });
             if (!this.text) {
-                return cy.iframe(frameSelector).find(this.selector, options);
+                return cy.iframe(frameSelector, { log: false }).find(this.selector, { log: false, ...options });
             } else {
                 if (this.options && this.options.parent) {
                     if (this.options && this.options.childSelector) {
-                        return cy.iframe(frameSelector).find(this.selector, options).contains(this.text)
-                            .parent(this.selector).find(this.options.childSelector);
+                        return cy.iframe(frameSelector, { log: false }).find(this.selector, { log: false, ...options })
+                            .contains(this.text, { log: false }).parent(this.selector, { log: false })
+                            .find(this.options.childSelector, { log: false });
                     } else {
-                        return cy.iframe(frameSelector).find(this.selector, options).contains(this.text)
-                            .parent(this.selector);
+                        return cy.iframe(frameSelector, { log: false }).find(this.selector, { log: false, ...options })
+                            .contains(this.text, { log: false }).parent(this.selector, { log: false });
                     }
                 } else {
-                    return cy.iframe(frameSelector).find(this.selector, options).contains(this.text);
+                    return cy.iframe(frameSelector, { log: false }).find(this.selector, { log: false, ...options })
+                    .contains(this.text, { log: false });
                 }
             }
         }
     }
-
-    // /**
-    //  * Return element found by text
-    //  */
-    // findByText(text: string): Cypress.Chainable<JQuery<HTMLElement>> {
-    //     this._waitForExist();
-    //     return this.get$().contains(text);
-    // }
-
-    // /**
-    //  * Return child element
-    //  */
-    // find(element: Element): Cypress.Chainable<JQuery<HTMLElement>> {
-    //     return this.get$().find(element.selector);
-    // }
 
     /**
      * Click the element
@@ -352,11 +339,11 @@ export class Element {
             } else {
                 return this.get$(options).should(`${shouldOption}exist`);
             }
-        });
+        }, 'teeeeeeeeeeeeeeeeeest');
     }
 
 
-    protected _waitForLogWrapper(_waitForFunction: any) {
+    protected _waitForLogWrapper(_waitForFunction: any, msg?: string) {
         try {
             return _waitForFunction();
         } catch (e) {
