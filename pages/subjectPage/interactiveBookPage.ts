@@ -1,4 +1,5 @@
-import { Button, Select, TextArea } from '../../elements';
+import { Button, TextArea } from '../../elements';
+import { ContextMenu } from '../../elements/contextMenu';
 import BasePage from '../basePage';
 
 class InteractiveBookPage extends BasePage {
@@ -7,7 +8,7 @@ class InteractiveBookPage extends BasePage {
 
     newBookTitleInput: TextArea;
     newBookTitleSaveButton: Button;
-    bookTopic: (topicTitle: string) => Select;
+    bookTopic: (topicTitle: string) => ContextMenu;
 
     bookContentInput: TextArea;
     bookContentSaveButton: Button;
@@ -27,9 +28,10 @@ class InteractiveBookPage extends BasePage {
                 intoIFrame: true
             });
 
-        this.bookTopic = (topicTitle: string) => new Select('li.mat-tree-node',
+        this.bookTopic = (topicTitle: string) => new ContextMenu('li.mat-tree-node',
             `Interactive book: Book topic (${topicTitle})`,
             {
+                dropdownListSelector: '.mat-menu-content', dropdownListItemSelector: '[role="menuitem"]',
                 text: topicTitle,
                 intoIFrame: true
             });
@@ -49,6 +51,15 @@ class InteractiveBookPage extends BasePage {
         this.clickSaveNewBookTitle();
     }
 
+    selectTopicOption(topicTitle: string, option: string) {
+        this.bookTopic(topicTitle).selectByVisibleText(option)
+    }
+
+    createChildTopic(childTopicName: string) {
+        this.fillNewBookTitle(childTopicName);
+        this.clickSaveNewBookTitle();
+    }
+
     fillNewBookTitle(bookTitle: string) {
         this.newBookTitleInput.setValue(bookTitle);
     }
@@ -58,7 +69,7 @@ class InteractiveBookPage extends BasePage {
     }
 
     openInteractiveBook(topicTitle: string) {
-        this.bookTopic(topicTitle).doubleClick();
+        this.bookTopic(topicTitle).click();
     }
 
     openInteractiveBookToFill(topicTitle: string) {

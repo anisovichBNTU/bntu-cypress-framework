@@ -6,8 +6,9 @@ Feature: Interactive Book
         When Select 'Subject' module on header on Main page
         And Select "Для тестов ИНC" subject on Subject page
         And Click "Интерактивный учебник" subject module on Subject page
-        And Open book to fill content on Interactive book page
+        And Open book "autotest book" to fill content on Interactive book page
         And Fill content to book on Interactive book page
         And Save book content on Interactive book page
-        Then I should see correct book content with text on Interactive book page
+        Then I should see book topic "autotest book" in book content on Interactive book page
+        Then I should see correct book content on Interactive book page
     

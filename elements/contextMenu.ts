@@ -1,18 +1,15 @@
 import { Element, Button } from ".";
 import { ElementOptions, SelectOptions } from "../types";
+import { Select } from "./select";
 
 /**
- * This implements non-standard select element
+ * This implements context menu element
  * The list of options is not an inner element of the selector
  */
-export class Select extends Element {
-
-    protected intoIFrame: boolean;
-    protected dropdownListSelector: string;
-    protected valueNodeSelector: string;
+export class ContextMenu extends Select {
 
     /**
-     * The non-standard select
+     * The context menu select
      * @param selector - the selector to the select button
      * @param name - the name of the element
      * @param options - the options for customization of the select if needed
@@ -35,7 +32,7 @@ export class Select extends Element {
         const selectedItem = new Button(`${this.dropdownListSelector} ${this.valueNodeSelector}`, 
         `Selected item "${value}"`, { text: value, intoIFrame: this.intoIFrame })
         this._waitForExist();
-        this._click();
+        this._rightClick();
         selectedItem.click();
     }
 

@@ -7,8 +7,8 @@ Feature: Interactive Book
         And Select "Для тестов ИНC" subject on Subject page
         And Click "Интерактивный учебник" subject module on Subject page
         And Click add interactive book on Interactive book page
-        And Create new book on Interactive book page
-        Then I should see created book topic on Interactive book page
-        When Open book on Interactive book page
-        Then I should see correct book content on Interactive book page
+        And Create new book "autotest book" on Interactive book page
+        Then I should see created book topic "autotest book" on Interactive book page
+        When Open book "autotest book" on Interactive book page
+        Then I should see book topic "autotest book" in book content on Interactive book page
     

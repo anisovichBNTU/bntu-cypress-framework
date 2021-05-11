@@ -9,3 +9,8 @@ export interface ElementOptions {
     childSelector?: string;
     index?: number;
 }
+
+export interface SelectOptions {
+    dropdownListSelector?: string,
+    dropdownListItemSelector?: string
+}
