@@ -32,21 +32,22 @@ When(/^Select topic on Graduation project page$/, () => {
 });
 
 When(/^Confirm student on topic on Graduation project page$/, () => {
-    graduationProjectPage.graduationProjectTopicForm.convirmTopic('autotest name');
+    graduationProjectPage.graduationProjectTopicForm.confirmTopic('autotest name');
 });
 
 When(/^Fill new graduation project "(.*)" topic info on Graduation project page$/, (projectName: string) => {
     graduationProjectPage.graduationProjectTopicForm.fillTopicInfo({ name: projectName });
 });
 
-When(/^Assign student "(.*)" from "(.*)" group to topic on Graduation project page$/, (studentName: string, group: string) => {
-    graduationProjectPage.graduationProjectTopicForm.assignStudentToTopic('autotest name', {
-        group, name: studentName
+When(/^Assign student "(.*)" from "(.*)" group to topic "(.*)" on Graduation project page$/,
+    (studentName: string, group: string, projectName: string) => {
+        graduationProjectPage.graduationProjectTopicForm.assignStudentToTopic(projectName, {
+            group, name: studentName
+        });
     });
-});
 
-When(/^Assign student from "(.*)" group to topic on Graduation project page$/, (group: string) => {
-    graduationProjectPage.graduationProjectTopicForm.assignStudentToTopic('autotest name', { group, random: true });
+When(/^Assign student from "(.*)" group to topic "(.*)" on Graduation project page$/, (group: string, projectName: string) => {
+    graduationProjectPage.graduationProjectTopicForm.assignStudentToTopic(projectName, { group, random: true });
 });
 
 Then(/^I should see created graduation project topic "(.*)" on Graduation project page$/, (projectName: string) => {
@@ -61,8 +62,8 @@ Then(/^I should see deleted graduation project topic on Graduation project page$
     graduationProjectPage.graduationProjectTopicForm.assertThatTopicIsDisplayed('autotest name', false);
 });
 
-Then(/^I should see assigned student "(.*)" to topic on Graduation project page$/, (studentName: string) => {
-    graduationProjectPage.graduationProjectTopicForm.assertThatTopicHasStudent('autotest name', studentName);
+Then(/^I should see assigned student "(.*)" to topic "(.*)" on Graduation project page$/, (studentName: string, projectName: string) => {
+    graduationProjectPage.graduationProjectTopicForm.assertThatTopicHasStudent(projectName, studentName);
 });
 
 Then(/^I should see unassigned student "(.*)" to topic on Graduation project page$/, (studentName: string) => {

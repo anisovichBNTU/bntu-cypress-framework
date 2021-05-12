@@ -78,11 +78,11 @@ class ProjectTopicForm extends BaseForm {
     }
 
     clickEditTopic(topicName: string) {
-        this.topicEditButton(topicName).click();
+        this.topicEditButton(this.getShortName(topicName)).click();
     }
 
     assignStudentToTopic(topicName: string, student: { group?: string, random?: boolean, name?: string, search?: boolean }) {
-        this.topicAssignButton(topicName).click();
+        this.topicAssignButton(this.getShortName(topicName)).click();
         if (student.group) {
             studentListForm.selectGroup(student.group);
         }
@@ -95,31 +95,30 @@ class ProjectTopicForm extends BaseForm {
     }
 
     selectTopic(topicName: string) {
-        this.topicSelectButton(topicName).click();
+        this.topicSelectButton(this.getShortName(topicName)).click();
     }
 
-    convirmTopic(topicName: string) {
-        this.topicConfirmButton(topicName).click();
+    confirmTopic(topicName: string) {
+        this.topicConfirmButton(this.getShortName(topicName)).click();
     }
 
     cancelAssignmentToTopic(topicName: string) {
-        this.topicCancelAssignmentButton(topicName).click();
+        this.topicCancelAssignmentButton(this.getShortName(topicName)).click();
     }
 
     deleteTopic(topicName: string) {
-        this.topicDeleteButton(topicName).click();
+        this.topicDeleteButton(this.getShortName(topicName)).click();
     }
 
     assertThatTopicIsDisplayed(topicName: string, isDisplayed = true) {
-        const topicNameTrim = topicName.substr(0, 100);
-        this.topicNameLabel(topicNameTrim).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
+        this.topicNameLabel(this.getShortName(topicName)).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
     }
 
     assertThatTopicHasStudent(topicName: string, studentName: string | RegExp, reverse = false) {
         if (!reverse) {
-            this.topicRowLabel(topicName).waitUntilInnerTextMatches(studentName, { delay: 2000 });
+            this.topicRowLabel(this.getShortName(topicName)).waitUntilInnerTextMatches(studentName, { delay: 2000 });
         } else {
-            this.topicRowLabel(topicName).waitUntilInnerTextNotMatches(studentName, { delay: 2000 });
+            this.topicRowLabel(this.getShortName(topicName)).waitUntilInnerTextNotMatches(studentName, { delay: 2000 });
         }
     }
 
@@ -128,6 +127,9 @@ class ProjectTopicForm extends BaseForm {
         this.saveTopicButton.click();
     }
 
+    private getShortName(topicName: string) {
+        return topicName.substr(0, 100);
+    }
 }
 
 export default new ProjectTopicForm();
