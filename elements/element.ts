@@ -1,3 +1,4 @@
+import { fakeServer } from "cypress/types/sinon";
 import { CypressOptions, ElementOptions } from "../types";
 
 export class Element {
@@ -20,6 +21,7 @@ export class Element {
     }
 
     protected get$(options?: CypressOptions): Cypress.Chainable<JQuery<HTMLElement>> {
+        cy.wait(200, { log: false });
         if (!(this.options && this.options.intoIFrame)) {
             if (!this.text) {
                 return cy.get(this.selector, { log: false, ...options });
@@ -53,7 +55,7 @@ export class Element {
                     }
                 } else {
                     return cy.iframe(frameSelector, { log: false }).find(this.selector, { log: false, ...options })
-                    .contains(this.text, { log: false });
+                        .contains(this.text, { log: false });
                 }
             }
         }
@@ -337,13 +339,17 @@ export class Element {
             if (options && options.element) {
                 return options.element.should(`${shouldOption}exist`);
             } else {
-                return this.get$(options).should(`${shouldOption}exist`);
+                Cypress.log({
+                    displayName: 'test',
+                    message: `${this.name}`
+                })
+                return this.get$(options).should(`${shouldOption}exist`, { message: 'qwerqwerqweqweqwe' });
             }
-        }, 'teeeeeeeeeeeeeeeeeest');
+        });
     }
 
 
-    protected _waitForLogWrapper(_waitForFunction: any, msg?: string) {
+    protected _waitForLogWrapper(_waitForFunction: any) {
         try {
             return _waitForFunction();
         } catch (e) {

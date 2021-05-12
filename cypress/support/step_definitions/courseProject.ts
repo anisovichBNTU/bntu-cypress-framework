@@ -38,8 +38,8 @@ When(/^Assign student from "(.*)" group to topic on Course project page$/, (grou
     courseProjectPage.courseProjectTopicForm.assignStudentToTopic('autotest name', { group, random: true });
 });
 
-When(/^Assign student to topic on Course project page$/, (group: string) => {
-    courseProjectPage.courseProjectTopicForm.assignStudentToTopic('autotest name', { random: true });
+When(/^Assign student "(.*)" to topic on Course project page$/, (studentName: string) => {
+    courseProjectPage.courseProjectTopicForm.assignStudentToTopic('autotest name', { name: studentName, search: false });
 });
 
 Then(/^I should see created course project topic on Course project page$/, () => {

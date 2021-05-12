@@ -12,3 +12,8 @@ When(/^Select 'Graduation Project' module on header on Main page$/, () => {
     mainSchedulePage.headerForm.clickGraduationProjectButtonButton();
     graduationProjectPage.validateUrl();
 });
+
+When(/^Go to 'Graduation Project' module by Link$/, () => {
+    cy.visit('https://educats.by/web/diplom')
+    graduationProjectPage.validateUrl();
+});

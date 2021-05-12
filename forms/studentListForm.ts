@@ -34,8 +34,10 @@ class StudentListForm extends BaseForm {
         this.studentAssignButton.click(1);
     }
 
-    assignToStudentByName(studentName: string) {
-        this.studentSearchInput.setValue(studentName);
+    assignToStudentByName(studentName: string, search = true) {
+        if (search) {
+            this.studentSearchInput.setValue(studentName);
+        }
         this.studentAssignButtonByName(studentName).click();
     }
 

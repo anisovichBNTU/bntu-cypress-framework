@@ -11,6 +11,7 @@ class ProjectTopicForm extends BaseForm {
     private topicRowLabel: (topicName: string) => Label;
     private topicNameLabel: (topicName: string) => Label;
     private topicDeleteButton: (topicName: string) => Button;
+    private topicSelectButton: (topicName: string) => Button;
     private topicAssignButton: (topicName: string) => Button;
     private topicCancelAssignmentButton: (topicName: string) => Button;
     private topicEditButton: (topicName: string) => Button;
@@ -37,6 +38,12 @@ class ProjectTopicForm extends BaseForm {
             `Project topic: topic (${topicName}) "Delete" button`,
             {
                 childSelector: '.mat-button-base[mattooltip="Удалить"]',
+                text: topicName, intoIFrame: true, parent: true
+            });
+        this.topicSelectButton = (topicName: string) => new Button('.mdc-data-table__table .mdc-data-table__row.ng-star-inserted',
+            `Project topic: topic (${topicName}) "Select" button`,
+            {
+                childSelector: '.mat-button-base[mattooltip="Выбрать тему"]',
                 text: topicName, intoIFrame: true, parent: true
             });
         this.topicAssignButton = (topicName: string) => new Button('.mdc-data-table__table .mdc-data-table__row.ng-star-inserted',
@@ -67,7 +74,7 @@ class ProjectTopicForm extends BaseForm {
         this.topicEditButton(topicName).click();
     }
 
-    assignStudentToTopic(topicName: string, student: { group?: string, random?: boolean, name?: string }) {
+    assignStudentToTopic(topicName: string, student: { group?: string, random?: boolean, name?: string, search?: boolean }) {
         this.topicAssignButton(topicName).click();
         if (student.group) {
             studentListForm.selectGroup(student.group);
@@ -78,6 +85,10 @@ class ProjectTopicForm extends BaseForm {
         if (student.name) {
             studentListForm.assignToStudentByName(student.name);
         }
+    }
+
+    selectTopic(topicName: string) {
+        this.topicSelectButton(topicName).click();
     }
 
     cancelAssignmentToTopic(topicName: string) {

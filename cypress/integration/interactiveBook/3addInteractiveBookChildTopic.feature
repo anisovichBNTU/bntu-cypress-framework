@@ -4,7 +4,7 @@ Feature: Interactive Book
     Scenario: Add interactive book child topic
         Given I am logged in with password to the platform as test user
         When Select 'Subject' module on header on Main page
-        And Select "Для тестов ИНC" subject on Subject page
+        And Select "Test Subject Autotest" subject on Subject page
         And Click "Интерактивный учебник" subject module on Subject page
         And Select "Добавить новую тему" option on "autotest book" book context menu on Interactive book page
         And Create new book child topic "child topic" on Interactive book page
