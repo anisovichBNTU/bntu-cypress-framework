@@ -12,6 +12,7 @@ class ProjectTopicForm extends BaseForm {
     private topicNameLabel: (topicName: string) => Label;
     private topicDeleteButton: (topicName: string) => Button;
     private topicSelectButton: (topicName: string) => Button;
+    private topicConfirmButton: (topicName: string) => Button;
     private topicAssignButton: (topicName: string) => Button;
     private topicCancelAssignmentButton: (topicName: string) => Button;
     private topicEditButton: (topicName: string) => Button;
@@ -44,6 +45,12 @@ class ProjectTopicForm extends BaseForm {
             `Project topic: topic (${topicName}) "Select" button`,
             {
                 childSelector: '.mat-button-base[mattooltip="Выбрать тему"]',
+                text: topicName, intoIFrame: true, parent: true
+            });
+        this.topicConfirmButton = (topicName: string) => new Button('.mdc-data-table__table .mdc-data-table__row.ng-star-inserted',
+            `Project topic: topic (${topicName}) "Select" button`,
+            {
+                childSelector: '.mat-button-base[mattooltip="Подтвердить выбранную тему"]',
                 text: topicName, intoIFrame: true, parent: true
             });
         this.topicAssignButton = (topicName: string) => new Button('.mdc-data-table__table .mdc-data-table__row.ng-star-inserted',
@@ -91,6 +98,10 @@ class ProjectTopicForm extends BaseForm {
         this.topicSelectButton(topicName).click();
     }
 
+    convirmTopic(topicName: string) {
+        this.topicConfirmButton(topicName).click();
+    }
+
     cancelAssignmentToTopic(topicName: string) {
         this.topicCancelAssignmentButton(topicName).click();
     }
@@ -100,7 +111,8 @@ class ProjectTopicForm extends BaseForm {
     }
 
     assertThatTopicIsDisplayed(topicName: string, isDisplayed = true) {
-        this.topicNameLabel(topicName).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
+        const topicNameTrim = topicName.substr(0, 100);
+        this.topicNameLabel(topicNameTrim).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
     }
 
     assertThatTopicHasStudent(topicName: string, studentName: string | RegExp, reverse = false) {

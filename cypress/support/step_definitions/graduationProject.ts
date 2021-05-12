@@ -31,8 +31,12 @@ When(/^Select topic on Graduation project page$/, () => {
     cy.reload();
 });
 
-When(/^Fill new graduation project topic info on Graduation project page$/, () => {
-    graduationProjectPage.graduationProjectTopicForm.fillTopicInfo({ name: 'autotest name' });
+When(/^Confirm student on topic on Graduation project page$/, () => {
+    graduationProjectPage.graduationProjectTopicForm.convirmTopic('autotest name');
+});
+
+When(/^Fill new graduation project "(.*)" topic info on Graduation project page$/, (projectName: string) => {
+    graduationProjectPage.graduationProjectTopicForm.fillTopicInfo({ name: projectName });
 });
 
 When(/^Assign student "(.*)" from "(.*)" group to topic on Graduation project page$/, (studentName: string, group: string) => {
@@ -45,8 +49,8 @@ When(/^Assign student from "(.*)" group to topic on Graduation project page$/, (
     graduationProjectPage.graduationProjectTopicForm.assignStudentToTopic('autotest name', { group, random: true });
 });
 
-Then(/^I should see created graduation project topic on Graduation project page$/, () => {
-    graduationProjectPage.graduationProjectTopicForm.assertThatTopicIsDisplayed('autotest name');
+Then(/^I should see created graduation project topic "(.*)" on Graduation project page$/, (projectName: string) => {
+    graduationProjectPage.graduationProjectTopicForm.assertThatTopicIsDisplayed(projectName);
 });
 
 Then(/^I should see edited graduation project topic on Graduation project page$/, () => {
