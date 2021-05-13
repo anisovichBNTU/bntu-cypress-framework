@@ -12,10 +12,10 @@ Given(/^I am logged in with password to the platform as test user$/, () => {
     mainSchedulePage.waitUntilScheduleIsDisplayed();
 });
 
-Given(/^I am logged in with password to the platform as student$/, () => {
+Given(/^I am logged in with password to the platform as (.*)$/, (student: string) => {
     cy.visit(url);
     loginPage.validateUrl();
-    loginPage.loginWithPassword('testStudentAutotest', 'testStudentAutotest');
+    loginPage.loginWithPassword(student, student);
     mainSchedulePage.validateUrl();
     mainSchedulePage.waitUntilScheduleIsDisplayed();
 });

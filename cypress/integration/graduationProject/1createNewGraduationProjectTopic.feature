@@ -10,8 +10,7 @@ Feature: Graduation Project
         Then I should see created graduation project topic "<ProjectName>" on Graduation project page
 
         Examples:
-            | ProjectName                                                                                                                                                                                                                                                     |
-            | autotest name                                                                                                                                                                                                                                                   |
-            | SPN                                                                                                                                                                                                                                                             |
-            | Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name  Very Long Name |
-            
+            | ProjectName |
+            | NormalValue |
+            | ShortValue  |
+            | LongValue   |
