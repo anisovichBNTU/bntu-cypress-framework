@@ -90,7 +90,7 @@ class ProjectTopicForm extends BaseForm {
             studentListForm.assignToStudent();
         }
         if (student.name) {
-            studentListForm.assignToStudentByName(student.name);
+            studentListForm.assignToStudentByName(student.name, Boolean(student.search));
         }
     }
 

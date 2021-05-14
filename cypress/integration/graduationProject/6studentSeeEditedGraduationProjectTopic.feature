@@ -1,7 +1,7 @@
 
 Feature: Graduation Project
 
-    Scenario Outline: Student see edited graduation project topic (Student cases)
+    Scenario Outline: Student see edited graduation project topic
         Given I am logged in with password to the platform as <StudentUser>
         When Go to 'Graduation Project' module by Link
         And Select "Темы проектов" tab on Course project page

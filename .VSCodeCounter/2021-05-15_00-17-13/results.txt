@@ -1,0 +1,120 @@
+Date : 2021-05-15 00:17:13
+Directory : e:\Предметы 4 курс\bntu-cypress
+Total : 69 files,  10465 codes, 213 comments, 357 blanks, all 11035 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          6 |      8,905 |          5 |          2 |      8,912 |
+| TypeScript |         32 |      1,081 |        145 |        245 |      1,471 |
+| feature    |         20 |        255 |          0 |         66 |        321 |
+| JavaScript |         10 |        223 |         63 |         44 |        330 |
+| Markdown   |          1 |          1 |          0 |          0 |          1 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                          | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                             |         69 |     10,465 |        213 |        357 |     11,035 |
+| cypress                                                                                                                       |         34 |        614 |         63 |        140 |        817 |
+| cypress\fixtures                                                                                                              |          1 |          5 |          0 |          0 |          5 |
+| cypress\integration                                                                                                           |         20 |        255 |          0 |         66 |        321 |
+| cypress\integration\courseProject                                                                                             |          7 |        103 |          0 |         23 |        126 |
+| cypress\integration\graduationProject                                                                                         |          7 |         89 |          0 |         23 |        112 |
+| cypress\integration\interactiveBook                                                                                           |          6 |         63 |          0 |         20 |         83 |
+| cypress\plugins                                                                                                               |          1 |         23 |          4 |          4 |         31 |
+| cypress\support                                                                                                               |         10 |        304 |         56 |         70 |        430 |
+| cypress\support\step_definitions                                                                                              |          8 |        296 |          8 |         66 |        370 |
+| elements                                                                                                                      |          9 |        374 |        129 |         71 |        574 |
+| forms                                                                                                                         |          5 |        186 |          0 |         45 |        231 |
+| pages                                                                                                                         |          7 |        209 |          6 |         62 |        277 |
+| pages\graduationProgectPage                                                                                                   |          1 |         21 |          0 |          8 |         29 |
+| pages\subjectPage                                                                                                             |          3 |        139 |          0 |         39 |        178 |
+| pages\subjectPage\courseProgectPage                                                                                           |          1 |         21 |          0 |          8 |         29 |
+| testData                                                                                                                      |          1 |         14 |          0 |          0 |         14 |
+| types                                                                                                                         |          2 |         16 |          0 |          1 |         17 |
+| utils                                                                                                                         |          6 |        165 |         10 |         36 |        211 |
+| utils\apiUtils                                                                                                                |          1 |         39 |         10 |         10 |         59 |
+| utils\arrayUtils                                                                                                              |          1 |         26 |          0 |          4 |         30 |
+| utils\databaseUtils                                                                                                           |          1 |         37 |          0 |          6 |         43 |
+| utils\randomGenerateUtils                                                                                                     |          2 |         41 |          0 |         10 |         51 |
+| utils\stringUtils                                                                                                             |          1 |         22 |          0 |          6 |         28 |
++-------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                                      | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| e:\Предметы 4 курс\bntu-cypress\README.md                                                                                     | Markdown   |          1 |          0 |          0 |          1 |
+| e:\Предметы 4 курс\bntu-cypress\cypress.json                                                                                  | JSON       |          2 |          5 |          0 |          7 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\fixtures\example.json                                                                 | JSON       |          5 |          0 |          0 |          5 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\globals.d.ts                                                                          | TypeScript |          0 |          2 |          0 |          2 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\courseProject\1createNewCourseProjectTopic.feature                        | feature    |         15 |          0 |          4 |         19 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\courseProject\2selectCourseProjectTopicByStudent.feature                  | feature    |         14 |          0 |          3 |         17 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\courseProject\3confirmStudentCourseProjectTopicByLecturer.feature         | feature    |         16 |          0 |          3 |         19 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\courseProject\4assignToStudentCourseProjectTopic.feature                  | feature    |         14 |          0 |          4 |         18 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\courseProject\5editCourseProjectTopic.feature                             | feature    |         14 |          0 |          3 |         17 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\courseProject\6studentSeeEditedCourseProjectTopic.feature                 | feature    |         14 |          0 |          3 |         17 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\courseProject\7deleteCourseProjectTopic.feature                           | feature    |         16 |          0 |          3 |         19 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\graduationProject\1createNewGraduationProjectTopic.feature                | feature    |         13 |          0 |          4 |         17 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\graduationProject\2selectGraduationProjectTopicByStudent.feature          | feature    |         12 |          0 |          3 |         15 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\graduationProject\3confirmStudentGraduationProjectTopicByLecturer.feature | feature    |         14 |          0 |          3 |         17 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\graduationProject\4assignToStudentGraduationProjectTopic.feature          | feature    |         12 |          0 |          4 |         16 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\graduationProject\5editGraduationProjectTopic.feature                     | feature    |         12 |          0 |          3 |         15 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\graduationProject\6studentSeeEditedGraduationProjectTopic.feature         | feature    |         12 |          0 |          3 |         15 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\graduationProject\7deleteGraduationProjectTopic.feature                   | feature    |         14 |          0 |          3 |         17 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\interactiveBook\1createNewInteractiveBookTopic.feature                    | feature    |         11 |          0 |          3 |         14 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\interactiveBook\2addTextToInteractiveBookTopic.feature                    | feature    |         11 |          0 |          3 |         14 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\interactiveBook\3addInteractiveBookChildTopic.feature                     | feature    |         13 |          0 |          3 |         16 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\interactiveBook\4deleteInteractiveBookChildTopic.feature                  | feature    |          9 |          0 |          3 |         12 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\interactiveBook\5editInteractiveBookTopic.feature                         | feature    |         11 |          0 |          4 |         15 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\integration\interactiveBook\6deleteInteractiveBookTopic.feature                       | feature    |          8 |          0 |          4 |         12 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\plugins\index.js                                                                      | JavaScript |         23 |          4 |          4 |         31 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\support\commands.js                                                                   | JavaScript |          5 |         30 |          2 |         37 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\support\index.js                                                                      | JavaScript |          3 |         18 |          2 |         23 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\support\step_definitions\courseProject.ts                                             | TypeScript |         91 |          0 |         17 |        108 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\support\step_definitions\graduationProject.ts                                         | TypeScript |         99 |          0 |         18 |        117 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\support\step_definitions\hooks.ts                                                     | TypeScript |          8 |          1 |          4 |         13 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\support\step_definitions\interactiveBook.ts                                           | TypeScript |         56 |          1 |         16 |         73 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\support\step_definitions\login.ts                                                     | TypeScript |         18 |          0 |          4 |         22 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\support\step_definitions\mainSchedule.ts                                              | TypeScript |         16 |          0 |          3 |         19 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\support\step_definitions\subject.ts                                                   | TypeScript |          8 |          0 |          3 |         11 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\support\step_definitions\world.ts                                                     | TypeScript |          0 |          6 |          1 |          7 |
+| e:\Предметы 4 курс\bntu-cypress\cypress\webpack.config.js                                                                     | JavaScript |         27 |          1 |          0 |         28 |
+| e:\Предметы 4 курс\bntu-cypress\elements\button.ts                                                                            | TypeScript |         20 |          3 |          3 |         26 |
+| e:\Предметы 4 курс\bntu-cypress\elements\checkbox.ts                                                                          | TypeScript |         25 |          6 |          6 |         37 |
+| e:\Предметы 4 курс\bntu-cypress\elements\contextMenu.ts                                                                       | TypeScript |         20 |         14 |          6 |         40 |
+| e:\Предметы 4 курс\bntu-cypress\elements\element.ts                                                                           | TypeScript |        242 |         79 |         40 |        361 |
+| e:\Предметы 4 курс\bntu-cypress\elements\index.ts                                                                             | TypeScript |          8 |          0 |          1 |          9 |
+| e:\Предметы 4 курс\bntu-cypress\elements\input.ts                                                                             | TypeScript |         16 |          8 |          5 |         29 |
+| e:\Предметы 4 курс\bntu-cypress\elements\label.ts                                                                             | TypeScript |          7 |          0 |          1 |          8 |
+| e:\Предметы 4 курс\bntu-cypress\elements\select.ts                                                                            | TypeScript |         22 |         14 |          7 |         43 |
+| e:\Предметы 4 курс\bntu-cypress\elements\textArea.ts                                                                          | TypeScript |         14 |          5 |          2 |         21 |
+| e:\Предметы 4 курс\bntu-cypress\forms\baseForm.ts                                                                             | TypeScript |          2 |          0 |          0 |          2 |
+| e:\Предметы 4 курс\bntu-cypress\forms\dialogForm.ts                                                                           | TypeScript |         14 |          0 |          7 |         21 |
+| e:\Предметы 4 курс\bntu-cypress\forms\headerForm.ts                                                                           | TypeScript |         19 |          0 |          8 |         27 |
+| e:\Предметы 4 курс\bntu-cypress\forms\projectTopicForm.ts                                                                     | TypeScript |        115 |          0 |         20 |        135 |
+| e:\Предметы 4 курс\bntu-cypress\forms\studentListForm.ts                                                                      | TypeScript |         36 |          0 |         10 |         46 |
+| e:\Предметы 4 курс\bntu-cypress\package-lock.json                                                                             | JSON       |      8,852 |          0 |          1 |      8,853 |
+| e:\Предметы 4 курс\bntu-cypress\package.json                                                                                  | JSON       |         24 |          0 |          1 |         25 |
+| e:\Предметы 4 курс\bntu-cypress\pages\basePage.ts                                                                             | TypeScript |         16 |          0 |          4 |         20 |
+| e:\Предметы 4 курс\bntu-cypress\pages\graduationProgectPage\graduationProjectPage.ts                                          | TypeScript |         21 |          0 |          8 |         29 |
+| e:\Предметы 4 курс\bntu-cypress\pages\loginPage.ts                                                                            | TypeScript |         19 |          6 |          5 |         30 |
+| e:\Предметы 4 курс\bntu-cypress\pages\mainSchedulePage.ts                                                                     | TypeScript |         14 |          0 |          6 |         20 |
+| e:\Предметы 4 курс\bntu-cypress\pages\subjectPage\courseProgectPage\courseProjectPage.ts                                      | TypeScript |         21 |          0 |          8 |         29 |
+| e:\Предметы 4 курс\bntu-cypress\pages\subjectPage\interactiveBookPage.ts                                                      | TypeScript |         93 |          0 |         24 |        117 |
+| e:\Предметы 4 курс\bntu-cypress\pages\subjectPage\subjectPage.ts                                                              | TypeScript |         25 |          0 |          7 |         32 |
+| e:\Предметы 4 курс\bntu-cypress\testData\graduationProject.json                                                               | JSON       |         14 |          0 |          0 |         14 |
+| e:\Предметы 4 курс\bntu-cypress\tsconfig.json                                                                                 | JSON       |          8 |          0 |          0 |          8 |
+| e:\Предметы 4 курс\bntu-cypress\types\element.ts                                                                              | TypeScript |         15 |          0 |          1 |         16 |
+| e:\Предметы 4 курс\bntu-cypress\types\index.ts                                                                                | TypeScript |          1 |          0 |          0 |          1 |
+| e:\Предметы 4 курс\bntu-cypress\utils\apiUtils\requests.js                                                                    | JavaScript |         39 |         10 |         10 |         59 |
+| e:\Предметы 4 курс\bntu-cypress\utils\arrayUtils\arrayUtils.js                                                                | JavaScript |         26 |          0 |          4 |         30 |
+| e:\Предметы 4 курс\bntu-cypress\utils\databaseUtils\database.js                                                               | JavaScript |         37 |          0 |          6 |         43 |
+| e:\Предметы 4 курс\bntu-cypress\utils\randomGenerateUtils\randomNumber.js                                                     | JavaScript |         27 |          0 |          8 |         35 |
+| e:\Предметы 4 курс\bntu-cypress\utils\randomGenerateUtils\randomString.js                                                     | JavaScript |         14 |          0 |          2 |         16 |
+| e:\Предметы 4 курс\bntu-cypress\utils\stringUtils\stringUtils.js                                                              | JavaScript |         22 |          0 |          6 |         28 |
+| Total                                                                                                                         |            |     10,465 |        213 |        357 |     11,035 |
++-------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

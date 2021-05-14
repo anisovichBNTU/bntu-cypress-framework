@@ -10,9 +10,8 @@ class SubjectPage extends BasePage {
     constructor() {
         super(/web\/viewer\/main/);
 
-        // TODO Correct word 'Выберете'
         this.subjectSelect = new Select('.mat-button-base', 'Subject page: subject select',
-            { text: 'Выберете предмет' });
+            { text: 'Выберите предмет' });
         this.subjectModuleButton = (moduleName: string) => new Button('.mat-list-base .mat-list-text',
             `Subject page: module "${moduleName}"`,
             { text: moduleName });
