@@ -63,7 +63,7 @@ class InteractiveBookPage extends BasePage {
     }
 
     selectTopicOption(topicTitle: string, option: string) {
-        this.bookTopic(topicTitle).selectByVisibleText(option)
+        this.bookTopic(this.getShortName(topicTitle)).selectByVisibleText(option)
     }
 
     createChildTopic(childTopicName: string) {
@@ -80,19 +80,19 @@ class InteractiveBookPage extends BasePage {
     }
 
     openInteractiveBook(topicTitle: string) {
-        this.bookTopic(topicTitle).click();
+        this.bookTopic(this.getShortName(topicTitle)).click();
     }
 
     openInteractiveBookParent(topicTitle: string) {
-        this.bookParentTopic(topicTitle).click();
+        this.bookParentTopic(this.getShortName(topicTitle)).click();
     }
 
     openChildBookTopics(topicTitle: string) {
-        this.bookOpenChildButton(topicTitle).click();
+        this.bookOpenChildButton(this.getShortName(topicTitle)).click();
     }
 
     openInteractiveBookToFill(topicTitle: string) {
-        this.bookTopic(topicTitle).doubleClick();
+        this.bookTopic(this.getShortName(topicTitle)).doubleClick();
     }
 
     fillBookContent(text: string) {
@@ -104,13 +104,17 @@ class InteractiveBookPage extends BasePage {
     }
 
     assertThatTopicIsDisplayed(topicTitle: string, isDisplayed = true) {
-        this.bookTopic(topicTitle).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
+        this.bookTopic(this.getShortName(topicTitle)).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
     }
 
     assertThatBookContentHasText(text: string[]) {
         for (const textItem of text) {
-            this.bookContentInput.waitUntilInnerTextMatches(textItem);
+            this.bookContentInput.waitUntilInnerTextMatches(this.getShortName(textItem));
         }
+    }
+
+    private getShortName(topicName: string) {
+        return topicName.substr(0, 100);
     }
 }
 

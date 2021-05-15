@@ -12,35 +12,35 @@ When(/^Add new graduation project topic on Graduation project page$/, () => {
 });
 
 When(/^Edit graduation project topic "(.*)" on Graduation project page$/, (projectNameType: string) => {
-    let name = project[projectNameType].projectName;
-    const nameEdited = project[projectNameType].projectNameEdited;
+    let name = project.projectName[projectNameType];
+    const nameEdited = project.projectNameEdited[projectNameType];
     name = name.replace(/\s+/g, ' ').trim();
     graduationProjectPage.graduationProjectTopicForm.clickEditTopic(name);
     graduationProjectPage.graduationProjectTopicForm.fillTopicInfo({ name: nameEdited });
 });
 
 When(/^Delete topic "(.*)" on Graduation project page$/, (projectNameType: string) => {
-    let name = project[projectNameType].projectNameEdited;
+    let name = project.projectNameEdited[projectNameType];
     name = name.replace(/\s+/g, ' ').trim();
     graduationProjectPage.graduationProjectTopicForm.deleteTopic(name);
     graduationProjectPage.dialogForm.clickAcceptButton();
 });
 
 When(/^Cancel assignment student to topic "(.*)" on Graduation project page$/, (projectNameType: string) => {
-    let name = project[projectNameType].projectName;
+    let name = project.projectName[projectNameType];
     name = name.replace(/\s+/g, ' ').trim();
     graduationProjectPage.graduationProjectTopicForm.cancelAssignmentToTopic(name);
     graduationProjectPage.dialogForm.clickAcceptButton();
 });
 When(/^Cancel assignment student to edited topic "(.*)" on Graduation project page$/, (projectNameType: string) => {
-    let name = project[projectNameType].projectNameEdited;
+    let name = project.projectNameEdited[projectNameType];
     name = name.replace(/\s+/g, ' ').trim();
     graduationProjectPage.graduationProjectTopicForm.cancelAssignmentToTopic(name);
     graduationProjectPage.dialogForm.clickAcceptButton();
 });
 
 When(/^Select topic "(.*)" on Graduation project page$/, (projectNameType: string) => {
-    let name = project[projectNameType].projectName;
+    let name = project.projectName[projectNameType];
     name = name.replace(/\s+/g, ' ').trim();
     graduationProjectPage.graduationProjectTopicForm.selectTopic(name);
     graduationProjectPage.dialogForm.clickAcceptButton();
@@ -49,19 +49,19 @@ When(/^Select topic "(.*)" on Graduation project page$/, (projectNameType: strin
 });
 
 When(/^Confirm student on topic "(.*)" on Graduation project page$/, (projectNameType: string) => {
-    let name = project[projectNameType].projectName;
+    let name = project.projectName[projectNameType];
     name = name.replace(/\s+/g, ' ').trim();
     graduationProjectPage.graduationProjectTopicForm.confirmTopic(name);
 });
 
 When(/^Fill new graduation project "(.*)" topic info on Graduation project page$/, (projectNameType: string) => {
-    const name = project[projectNameType].projectName;
+    const name = project.projectName[projectNameType];
     graduationProjectPage.graduationProjectTopicForm.fillTopicInfo({ name });
 });
 
 When(/^Assign student "(.*)" from "(.*)" group to topic "(.*)" on Graduation project page$/,
     (studentName: string, group: string, projectNameType: string) => {
-        let name = project[projectNameType].projectName;
+        let name = project.projectName[projectNameType];
         name = name.replace(/\s+/g, ' ').trim();
         graduationProjectPage.graduationProjectTopicForm.assignStudentToTopic(name, {
             group, name: studentName
@@ -69,49 +69,49 @@ When(/^Assign student "(.*)" from "(.*)" group to topic "(.*)" on Graduation pro
     });
 
 When(/^Assign student from "(.*)" group to topic "(.*)" on Graduation project page$/, (group: string, projectNameType: string) => {
-    let name = project[projectNameType].projectName;
+    let name = project.projectName[projectNameType];
     name = name.replace(/\s+/g, ' ').trim();
     graduationProjectPage.graduationProjectTopicForm.assignStudentToTopic(name, { group, random: true });
 });
 
 Then(/^I should see created graduation project topic "(.*)" on Graduation project page$/, (projectNameType: string) => {
-    let name = project[projectNameType].projectName;
+    let name = project.projectName[projectNameType];
     name = name.replace(/\s+/g, ' ').trim();
     graduationProjectPage.graduationProjectTopicForm.assertThatTopicIsDisplayed(name);
 });
 
 Then(/^I should see edited graduation project topic "(.*)" on Graduation project page$/, (projectNameType: string) => {
-    let name = project[projectNameType].projectNameEdited;
+    let name = project.projectNameEdited[projectNameType];
     name = name.replace(/\s+/g, ' ').trim();
     graduationProjectPage.graduationProjectTopicForm.assertThatTopicIsDisplayed(name);
 });
 
 Then(/^I should see deleted graduation project topic "(.*)" on Graduation project page$/, (projectNameType: string) => {
-    let name = project[projectNameType].projectNameEdited;
+    let name = project.projectNameEdited[projectNameType];
     name = name.replace(/\s+/g, ' ').trim();
     graduationProjectPage.graduationProjectTopicForm.assertThatTopicIsDisplayed(name, false);
 });
 
 Then(/^I should see assigned student "(.*)" to topic "(.*)" on Graduation project page$/, (studentName: string, projectNameType: string) => {
-    let name = project[projectNameType].projectName;
+    let name = project.projectName[projectNameType];
     name = name.replace(/\s+/g, ' ').trim();
     graduationProjectPage.graduationProjectTopicForm.assertThatTopicHasStudent(name, studentName);
 });
 
 Then(/^I should see assigned student "(.*)" to edited topic "(.*)" on Graduation project page$/, (studentName: string, projectNameType: string) => {
-    let name = project[projectNameType].projectNameEdited;
+    let name = project.projectNameEdited[projectNameType];
     name = name.replace(/\s+/g, ' ').trim();
     graduationProjectPage.graduationProjectTopicForm.assertThatTopicHasStudent(name, studentName);
 });
 
 Then(/^I should see unassigned student "(.*)" to topic "(.*)" on Graduation project page$/, (studentName: string, projectNameType: string) => {
-    let name = project[projectNameType].projectName;
+    let name = project.projectName[projectNameType];
     name = name.replace(/\s+/g, ' ').trim();
     graduationProjectPage.graduationProjectTopicForm.assertThatTopicHasStudent(name, studentName, true);
 });
 
 Then(/^I should see unassigned student "(.*)" to edited topic "(.*)" on Graduation project page$/, (studentName: string, projectNameType: string) => {
-    let name = project[projectNameType].projectNameEdited;
+    let name = project.projectNameEdited[projectNameType];
     name = name.replace(/\s+/g, ' ').trim();
     graduationProjectPage.graduationProjectTopicForm.assertThatTopicHasStudent(name, studentName, true);
 });

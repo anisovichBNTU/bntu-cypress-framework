@@ -1,14 +1,12 @@
 {
-    "NormalValue": {
-        "projectName": "autotest name",
-        "projectNameEdited": "autotest name edited"
+    "projectName": {
+        "NormalValue": "autotest name",
+        "ShortValue": "SPN",
+        "LongValue": "Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name  Very Long Name"
     },
-    "ShortValue": {
-        "projectName": "SPN",
-        "projectNameEdited": "123"
-    },
-    "LongValue": {
-        "projectName": "Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name  Very Long Name",
-        "projectNameEdited": "QWERTYUIOasdfghjkl                  QWERTYUIOasdfghjklQWERTYUIOasdfghjkl                  QWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWE"
+    "projectNameEdited": {
+        "NormalValue": "autotest name edited",
+        "ShortValue": "123",
+        "LongValue": "QWERTYUIOasdfghjkl                  QWERTYUIOasdfghjklQWERTYUIOasdfghjkl                  QWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWE"
     }
 }
