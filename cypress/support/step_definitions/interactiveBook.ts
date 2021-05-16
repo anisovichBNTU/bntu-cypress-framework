@@ -75,10 +75,28 @@ Then(/^I should see created book topic "(.*)" on Interactive book page$/, (topic
     interactiveBookPage.assertThatTopicIsDisplayed(name);
 });
 
+Then(/^I should see displayed book topic "(.*)" Hide icon on Interactive book page$/, (topicNameType: string) => {
+    let name = book.bookTopicName[topicNameType];
+    name = name.replace(/\s+/g, ' ').trim();
+    interactiveBookPage.assertThatTopicHideIconIsDisplayed(name);
+});
+
 Then(/^I should see deleted book topic "(.*)" on Interactive book page$/, (topicNameType: string) => {
     let name = book.bookTopicName[topicNameType];
     name = name.replace(/\s+/g, ' ').trim();
     interactiveBookPage.assertThatTopicIsDisplayed(name, false);
+});
+
+Then(/^I should see hide book topic "(.*)" on Interactive book page$/, (topicNameType: string) => {
+    let name = book.bookTopicName[topicNameType];
+    name = name.replace(/\s+/g, ' ').trim();
+    interactiveBookPage.assertThatTopicIsDisplayed(name, false);
+});
+
+Then(/^I should not see book topic "(.*)" Hide icon on Interactive book page$/, (topicNameType: string) => {
+    let name = book.bookTopicName[topicNameType];
+    name = name.replace(/\s+/g, ' ').trim();
+    interactiveBookPage.assertThatTopicHideIconIsDisplayed(name, false);
 });
 
 Then(/^I should see book topic "(.*)" in book content on Interactive book page$/, (topicNameType: string) => {
@@ -92,4 +110,26 @@ Then(/^I should see book topic "(.*)" in book content on Interactive book page$/
 
 Then(/^I should see correct book content on Interactive book page$/, () => {
     interactiveBookPage.assertThatBookContentHasText(['qwertyuiop']);
+});
+
+Then(/^Student should see book topic "(.*)" in book content on Interactive book page$/, (topicNameType: string) => {
+    let topics = topicNameType.split(', ');
+    topics = topics.map((topicType) => {
+        return book.bookTopicName[topicType]
+        // .replace(/\s+/g, ' ').trim();
+    });
+    interactiveBookPage.assertThatNotEditableBookContentHasText(topics);
+});
+
+Then(/^Student should not see book topic "(.*)" in book content on Interactive book page$/, (topicNameType: string) => {
+    let topics = topicNameType.split(', ');
+    topics = topics.map((topicType) => {
+        return book.bookTopicName[topicType]
+        // .replace(/\s+/g, ' ').trim();
+    });
+    interactiveBookPage.assertThatNotEditableBookContentHasText(topics, false);
+});
+
+Then(/^Student should see correct book content on Interactive book page$/, () => {
+    interactiveBookPage.assertThatNotEditableBookContentHasText(['qwertyuiop']);
 });

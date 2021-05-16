@@ -1,4 +1,4 @@
-import { Button, TextArea, ContextMenu } from '../../elements';
+import { Button, TextArea, ContextMenu, Label } from '../../elements';
 import BasePage from '../basePage';
 
 class InteractiveBookPage extends BasePage {
@@ -10,8 +10,10 @@ class InteractiveBookPage extends BasePage {
     private bookTopic: (topicTitle: string) => ContextMenu;
     private bookParentTopic: (topicTitle: string) => ContextMenu;
     private bookOpenChildButton: (topicTitle: string) => Button;
+    private bookTopicHideIconLabel: (topicTitle: string) => Label;
 
     private bookContentInput: TextArea;
+    private bookContentLabel: TextArea;
     private bookContentSaveButton: Button;
 
     constructor() {
@@ -46,8 +48,18 @@ class InteractiveBookPage extends BasePage {
         this.bookOpenChildButton = (topicTitle: string) => new Button('mat-nested-tree-node .mat-tree-node',
             `Interactive book: Book parent topic (${topicTitle})`,
             { text: topicTitle, intoIFrame: true, parent: true, childSelector: 'button.mat-button-base' });
+        this.bookTopicHideIconLabel = (topicTitle: string) => new Label('mat-tree-node .mat-tree-node',
+            `Interactive book: Book topic (${topicTitle})`,
+            {
+                text: topicTitle,
+                intoIFrame: true,
+                parent: true,
+                childSelector: 'mat-icon[role="img"]'
+            });
 
         this.bookContentInput = new TextArea('#editor .ck-content', 'Interactive book: Book content text area',
+            { intoIFrame: true });
+        this.bookContentLabel = new Label('#editor', 'Interactive book: Book content label (not editable)',
             { intoIFrame: true });
         this.bookContentSaveButton = new Button('.flex-editor-container .btn-holder button',
             'Interactive book: Book content Save button', { intoIFrame: true, text: 'Сохранить' });
@@ -107,9 +119,26 @@ class InteractiveBookPage extends BasePage {
         this.bookTopic(this.getShortName(topicTitle)).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
     }
 
+    assertThatTopicHideIconIsDisplayed(topicTitle: string, isDisplayed = true) {
+        this.bookTopicHideIconLabel(this.getShortName(topicTitle))
+            .waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
+    }
+
     assertThatBookContentHasText(text: string[]) {
         for (const textItem of text) {
-            this.bookContentInput.waitUntilInnerTextMatches(this.getShortName(textItem));
+            this.bookContentInput.waitUntilInnerTextMatches(textItem);
+        }
+    }
+
+    assertThatNotEditableBookContentHasText(text: string[], isDisplayed = true) {
+        if (isDisplayed) {
+            for (const textItem of text) {
+                this.bookContentLabel.waitUntilInnerTextMatches(textItem);
+            }
+        } else {
+            for (const textItem of text) {
+                this.bookContentLabel.waitUntilInnerTextNotMatches(textItem);
+            }
         }
     }
 
