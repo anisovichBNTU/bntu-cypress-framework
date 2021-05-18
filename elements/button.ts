@@ -7,20 +7,16 @@ export class Button extends Element {
     }
 
     /**
-     * Click the element
+     * Double click the element
      */
     doubleClick() {
         this._waitForExist();
-        this._doubleClick();
-    }
-
-    protected _doubleClick(options?: { element: Cypress.Chainable<JQuery<HTMLElement>> }) {
-        this._waitForLogWrapper(() => {
-            if (options && options.element) {
-                options.element.dblclick();
-            } else {
-                this.get$().dblclick();
-            }
+        this._doubleClick().then(() => {
+            Cypress.log({
+                displayName: this.getName(),
+                message: `Double click by "${this.name}"`
+            });
         });
     }
+
 }

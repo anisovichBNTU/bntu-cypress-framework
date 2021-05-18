@@ -18,19 +18,37 @@ export class Checkbox extends Element {
 
         if (toCheck) {
             try {
-                this.get$().check({ force: true });
+                this.get$().check({ force: true }).then(() => {
+                    Cypress.log({
+                        displayName: this.getName(),
+                        message: `Checkbox "${this.name}" is checked`
+                    });
+                });
             } catch (_) {
-                this.get$().find(DEFAULT_CHECKBOX_SELECTOR).check({ force: true });
+                this.get$().find(DEFAULT_CHECKBOX_SELECTOR).check({ force: true }).then(() => {
+                    Cypress.log({
+                        displayName: this.getName(),
+                        message: `Checkbox "${this.name}" is checked`
+                    });
+                });
             }
-            // log.info(`Checkbox "${this.name}" is checked`);
 
         } else {
             try {
-                this.get$().uncheck({ force: true });
+                this.get$().uncheck({ force: true }).then(() => {
+                    Cypress.log({
+                        displayName: this.getName(),
+                        message: `Checkbox "${this.name}" is unchecked`
+                    });
+                });
             } catch (_) {
-                this.get$().find(DEFAULT_CHECKBOX_SELECTOR).uncheck({ force: true });
+                this.get$().find(DEFAULT_CHECKBOX_SELECTOR).uncheck({ force: true }).then(() => {
+                    Cypress.log({
+                        displayName: this.getName(),
+                        message: `Checkbox "${this.name}" is unchecked`
+                    });
+                });
             }
-            // log.info(`Checkbox "${this.name}" is unchecked`);
         }
     }
 

@@ -37,6 +37,10 @@ export class Select extends Element {
         this._waitForExist();
         this._click();
         selectedItem.click();
+        Cypress.log({
+            displayName: this.getName(),
+            message: `Select option in "${this.name}" by value "${value}"`
+        });
     }
 
 }

@@ -16,6 +16,11 @@ export class TextArea extends Element {
         if (clear) {
             this._clearValue();
         }
-        this._setValue(value);
+        this._setValue(value).then(() => {
+            Cypress.log({
+                displayName: this.getName(),
+                message: `Set value "${value}" to "${this.name}"`
+            });
+        });
     }
 }

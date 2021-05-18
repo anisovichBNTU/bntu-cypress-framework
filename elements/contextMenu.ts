@@ -34,6 +34,10 @@ export class ContextMenu extends Select {
         this._waitForExist();
         this._rightClick();
         selectedItem.click();
+        Cypress.log({
+            displayName: this.getName(),
+            message: `Select context menu option in "${this.name}" by value "${value}"`
+        });
     }
 
 }

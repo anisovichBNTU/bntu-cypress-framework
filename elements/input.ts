@@ -10,8 +10,14 @@ export class Input extends Element {
      * Get the text content from a DOM-element
      */
     getValue() {
-        return this.get$()
-            .invoke('val');
+        return this.get$().then($elem => {
+            let text = $elem.val();
+            Cypress.log({
+                displayName: this.getName(),
+                message: `Get text of "${this.name.substr(0, 80)}${this.name.length > 80 ? '...' : ''}": "${text}"`
+            });
+            return String(text);
+        });
     }
 
     /**
@@ -22,7 +28,12 @@ export class Input extends Element {
     waitUntilValueMatches(text: string | number, options?: CypressOptions) {
         this._waitForExistAndDisplayed(options);
 
-        this.getValue().should('include', text);
+        this.getValue().should('include', text).then(() => {
+            Cypress.log({
+                displayName: this.getName(),
+                message: `Value of "${this.name}" is include to "${text}"`
+            });
+        });
 
         return true;
     }
