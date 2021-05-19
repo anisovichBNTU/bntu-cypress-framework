@@ -1,5 +1,5 @@
 import { When, Then } from 'cypress-cucumber-preprocessor/steps';
-import graduationProjectPage from '../../../pages/graduationProgectPage/graduationProjectPage';
+import graduationProjectPage from '../../../pages/graduationProjectPage/graduationProjectPage';
 import mainSchedulePage from '../../../pages/mainSchedulePage';
 import subjectPage from '../../../pages/subjectPage/subjectPage';
 

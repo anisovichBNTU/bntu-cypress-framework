@@ -27,12 +27,13 @@ export class Element {
                 return cy.get(this.selector, { log: false, ...options });
             } else {
                 if (this.options && this.options.parent) {
+                    const parentSelector = this.options && this.options.parentSelector || false;
                     if (this.options && this.options.childSelector) {
                         return cy.get(this.selector, { log: false, ...options }).contains(this.text, { log: false })
-                            .parent(this.selector, { log: false }).find(this.options.childSelector, { log: false });
+                            .closest(parentSelector || this.selector, { log: false }).find(this.options.childSelector, { log: false });
                     } else {
                         return cy.get(this.selector, { log: false, ...options }).contains(this.text, { log: false })
-                            .parent(this.selector, { log: false });
+                            .closest(parentSelector || this.selector, { log: false });
                     }
                 } else {
                     return cy.get(this.selector, { log: false, ...options }).contains(this.text, { log: false })
@@ -45,13 +46,14 @@ export class Element {
                 return cy.iframe(frameSelector, { log: false }).find(this.selector, { log: false, ...options });
             } else {
                 if (this.options && this.options.parent) {
+                    const parentSelector = this.options && this.options.parentSelector || false;
                     if (this.options && this.options.childSelector) {
                         return cy.iframe(frameSelector, { log: false }).find(this.selector, { log: false, ...options })
-                            .contains(this.text, { log: false }).parent(this.selector, { log: false })
+                            .contains(this.text, { log: false }).closest(parentSelector || this.selector, { log: false })
                             .find(this.options.childSelector, { log: false });
                     } else {
                         return cy.iframe(frameSelector, { log: false }).find(this.selector, { log: false, ...options })
-                            .contains(this.text, { log: false }).parent(this.selector, { log: false });
+                            .contains(this.text, { log: false }).closest(parentSelector || this.selector, { log: false });
                     }
                 } else {
                     return cy.iframe(frameSelector, { log: false }).find(this.selector, { log: false, ...options })
@@ -219,6 +221,7 @@ export class Element {
                     message: `Scroll to "${this.name}"`
                 });
             });
+        cy.wait(300);
     }
 
     /**

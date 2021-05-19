@@ -6,6 +6,7 @@ export interface ElementOptions {
     frameSelector?: string;
     text?: string;
     parent?: boolean;
+    parentSelector?: string;
     childSelector?: string;
     index?: number;
 }

@@ -1,6 +1,6 @@
-import { Button, Label } from '../../../elements';
-import projectTopicForm from '../../../forms/projectTopicForm';
-import BasePage from '../../basePage';
+import { Button, Label } from '../../elements';
+import projectTopicForm from '../../forms/projectTopicForm';
+import BasePage from '../basePage';
 
 class CourseProjectPage extends BasePage {
 

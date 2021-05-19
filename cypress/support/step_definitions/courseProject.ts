@@ -1,5 +1,5 @@
 import { When, Then } from 'cypress-cucumber-preprocessor/steps';
-import courseProjectPage from '../../../pages/subjectPage/courseProgectPage/courseProjectPage';
+import courseProjectPage from '../../../pages/subjectPage/courseProjectPage';
 
 const project = require('../../../testData/graduationProject.json');
 
