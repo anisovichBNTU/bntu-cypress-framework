@@ -1,6 +1,7 @@
 node_modules
 temp
 reports
+report
 cypress/screenshots
 cypress/videos
 cypress/results

@@ -7,13 +7,16 @@
     },
     "scripts": {
         "test": "cypress run --spec \"**/*.feature\"",
-        "test:all": "cypress run --spec \"**/*.features\""
+        "test:all": "cypress run --spec \"**/*.features\"",
+        "pretest": "npm run clean:reports",
+        "combine-reports": "mochawesome-merge ./cypress/reports/mocha/*.json > cypress/reports/report.json",
+        "generate-report": "marge cypress/reports/report.json -f report -o cypress/reports/mochareports"
     },
     "devDependencies": {
         "@cypress/webpack-preprocessor": "^5.7.0",
+        "@shelex/cypress-allure-plugin": "^2.5.1",
         "@types/cucumber": "^7.0.0",
         "cypress": "^6.8.0",
-        "cypress-cucumber-preprocessor": "4.0.3",
         "cypress-iframe": "^1.0.1",
         "cypress-wait-until": "^1.7.1",
         "mysql": "^2.18.1",

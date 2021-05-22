@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
-// /// <reference types="@shelex/cypress-allure-plugin" />
+/// <reference types="@shelex/cypress-allure-plugin" />
 
-// const AllureWriter = require('@shelex/cypress-allure-plugin/writer');
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 const webpack = require("@cypress/webpack-preprocessor");
 const DataBase = require('../../utils/databaseUtils/database');
 
@@ -9,6 +9,7 @@ module.exports = (on, config) => {
     const options = {
         webpackOptions: require("../webpack.config.js")
     };
+    allureWriter(on, config);
     on("file:preprocessor", (file) => {
         return webpack(options)(file)
     });

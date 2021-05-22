@@ -68,6 +68,7 @@ export class Element {
      */
     click(index?: number) {
         this._waitForExist();
+        cy.wait(100);
         this._click({ index }).then(() => {
             Cypress.log({
                 displayName: this.getName(),
