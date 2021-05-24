@@ -1,3 +1,4 @@
+import { Subject } from '../../constants/subject';
 import { Button, Label, Select } from '../../elements';
 import BasePage from '../basePage';
 
@@ -11,7 +12,7 @@ class SubjectPage extends BasePage {
         super(/web\/viewer\/main/);
 
         this.subjectSelect = new Select('.mat-button-base', 'Subject page: subject select',
-            { text: 'Выберите предмет' });
+            { text: Subject.SELECT_SUBJECT });
         this.subjectModuleButton = (moduleName: string) => new Button('.mat-list-base .mat-list-text',
             `Subject page: module "${moduleName}"`,
             { text: moduleName });

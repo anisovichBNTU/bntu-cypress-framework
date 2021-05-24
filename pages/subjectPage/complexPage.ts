@@ -9,12 +9,8 @@ class ComplexPage extends BasePage {
     private newComplexNameSaveButton: Button;
     private complexNameButton: (name: string) => Button;
     private complexActionsSelect: (name: string) => Select;
-    // private bookOpenChildButton: (topicTitle: string) => Button;
-    // private bookTopicHideIconLabel: (topicTitle: string) => Label;
-
-    // private bookContentInput: TextArea;
-    // private bookContentLabel: TextArea;
-    // private bookContentSaveButton: Button;
+    private complexSectionMapButton: (name: string) => Button;
+    private complexSectionButton: (name: string) => Button;
 
     constructor() {
         super(/web\/viewer\/subject.*complex/);
@@ -46,24 +42,19 @@ class ComplexPage extends BasePage {
                 intoIFrame: true
             });
 
-        // this.bookOpenChildButton = (topicTitle: string) => new Button('mat-nested-tree-node .mat-tree-node',
-        //     `EEM Complex: Book parent topic (${topicTitle})`,
-        //     { text: topicTitle, intoIFrame: true, parent: true, childSelector: 'button.mat-button-base' });
-        // this.bookTopicHideIconLabel = (topicTitle: string) => new Label('mat-tree-node .mat-tree-node',
-        //     `EEM Complex: Book topic (${topicTitle})`,
-        //     {
-        //         text: topicTitle,
-        //         intoIFrame: true,
-        //         parent: true,
-        //         childSelector: 'mat-icon[role="img"]'
-        //     });
+        this.complexSectionMapButton = (name: string) => new Button('.d3-chart g.node',
+            `EEM Complex: Map section (${name}) button`,
+            {
+                text: name,
+                intoIFrame: true
+            });
 
-        // this.bookContentInput = new TextArea('#editor .ck-content', 'EEM Complex: Book content text area',
-        //     { intoIFrame: true });
-        // this.bookContentLabel = new Label('#editor', 'EEM Complex: Book content label (not editable)',
-        //     { intoIFrame: true });
-        // this.bookContentSaveButton = new Button('.flex-editor-container .btn-holder button',
-        //     'EEM Complex: Book content Save button', { intoIFrame: true, text: 'Сохранить' });
+        this.complexSectionButton = (name: string) => new Button('mat-tree .ng-star-inserted li',
+            `EEM Complex: Section (${name}) button`,
+            {
+                text: name,
+                intoIFrame: true
+            });
     }
 
     clickAddNewComplex() {
@@ -97,6 +88,13 @@ class ComplexPage extends BasePage {
         this.complexNameButton(this.getShortName(name)).scrollIntoView();
     };
 
+    assertThatComplexMapSectionIsDisplayed(name: string, isDisplayed = true) {
+        this.complexSectionMapButton(name).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
+    };
+
+    assertThatComplexSectionIsDisplayed(name: string, isDisplayed = true) {
+        this.complexSectionButton(name).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
+    };
 
     private getShortName(topicName: string) {
         return topicName.substr(0, 100);

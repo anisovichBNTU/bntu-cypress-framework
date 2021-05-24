@@ -27,6 +27,5 @@ module.exports = (on, config) => {
         }
     });
 
-    // AllureWriter(on, config);
     return config;
 };

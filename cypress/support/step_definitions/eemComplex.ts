@@ -1,4 +1,5 @@
 import { When, Then } from 'cypress-cucumber-preprocessor/steps';
+import { ComplexSection } from '../../../constants/complex';
 import dialogForm from '../../../forms/dialogForm';
 import complexPage from '../../../pages/subjectPage/complexPage';
 
@@ -25,37 +26,10 @@ When(/^Edit complex using name "(.*)" on EEM Complex page$/, function (complexNa
     complexPage.clickSaveNeComplex();
 });
 
-// When(/^Open child topics on book "(.*)" on EEM Complex page$/, function (chidcomplexNameType: string) {
-//     let name = book.bookTopicName[chidcomplexNameType];
-//     name = name.replace(/\s+/g, ' ').trim();
-//     interactiveBookPage.openChildBookTopics(name);
-// });
-
-// When(/^Open parent book topic "(.*)" on EEM Complex page$/, function (complexNameType: string) {
-//     let name = book.bookTopicName[complexNameType];
-//     name = name.replace(/\s+/g, ' ').trim();
-//     interactiveBookPage.openInteractiveBookParent(name);
-// });
-
-// When(/^Open book topic "(.*)" on EEM Complex page$/, function (complexNameType: string) {
-//     let name = book.bookTopicName[complexNameType];
-//     name = name.replace(/\s+/g, ' ').trim();
-//     interactiveBookPage.openInteractiveBook(name);
-// });
-
-// When(/^Open book topic "(.*)" to fill content on EEM Complex page$/, function (complexNameType: string) {
-//     let name = book.bookTopicName[complexNameType];
-//     name = name.replace(/\s+/g, ' ').trim();
-//     interactiveBookPage.openInteractiveBookToFill(name);
-// });
-
-// When(/^Fill content to book on EEM Complex page$/, function () {
-//     interactiveBookPage.fillBookContent('qwertyuiop');
-// });
-
-// When(/^Save book content on EEM Complex page$/, function () {
-//     interactiveBookPage.saveBookContent();
-// });
+When(/^Open complex "(.*)" on EEM Complex page$/, function (complexNameType: string) {
+    let name = complex.complexName[complexNameType];
+    complexPage.openComplex(name);
+});
 
 Then(/^I should see created complex "(.*)" on EEM Complex page$/, (complexNameType: string) => {
     let name = complex.complexName[complexNameType];
@@ -69,49 +43,16 @@ Then(/^I should see deleted complex "(.*)" on EEM Complex page$/, (complexNameTy
     complexPage.assertThatComplexIsDisplayed(name, false);
 });
 
-// Then(/^I should see hide book topic "(.*)" on EEM Complex page$/, (complexNameType: string) => {
-//     let name = book.bookTopicName[complexNameType];
-//     name = name.replace(/\s+/g, ' ').trim();
-//     interactiveBookPage.assertThatTopicIsDisplayed(name, false);
-// });
+Then(/^I should see displayed all EEM Complex section on the map on EEM Complex page$/, () => {
+    complexPage.assertThatComplexMapSectionIsDisplayed(ComplexSection.TITLE);
+    complexPage.assertThatComplexMapSectionIsDisplayed(ComplexSection.COURSE_PROGRAM);
+    complexPage.assertThatComplexMapSectionIsDisplayed(ComplexSection.THEORETICAL);
+    complexPage.assertThatComplexMapSectionIsDisplayed(ComplexSection.PRACTICAL);
+});
 
-// Then(/^I should not see book topic "(.*)" Hide icon on EEM Complex page$/, (complexNameType: string) => {
-//     let name = book.bookTopicName[complexNameType];
-//     name = name.replace(/\s+/g, ' ').trim();
-//     interactiveBookPage.assertThatTopicHideIconIsDisplayed(name, false);
-// });
-
-// Then(/^I should see book topic "(.*)" in book content on EEM Complex page$/, (complexNameType: string) => {
-//     let topics = complexNameType.split(', ');
-//     topics = topics.map((topicType) => {
-//         return book.bookTopicName[topicType]
-//         // .replace(/\s+/g, ' ').trim();
-//     });
-//     interactiveBookPage.assertThatBookContentHasText(topics);
-// });
-
-// Then(/^I should see correct book content on EEM Complex page$/, () => {
-//     interactiveBookPage.assertThatBookContentHasText(['qwertyuiop']);
-// });
-
-// Then(/^Student should see book topic "(.*)" in book content on EEM Complex page$/, (complexNameType: string) => {
-//     let topics = complexNameType.split(', ');
-//     topics = topics.map((topicType) => {
-//         return book.bookTopicName[topicType]
-//         // .replace(/\s+/g, ' ').trim();
-//     });
-//     interactiveBookPage.assertThatNotEditableBookContentHasText(topics);
-// });
-
-// Then(/^Student should not see book topic "(.*)" in book content on EEM Complex page$/, (complexNameType: string) => {
-//     let topics = complexNameType.split(', ');
-//     topics = topics.map((topicType) => {
-//         return book.bookTopicName[topicType]
-//         // .replace(/\s+/g, ' ').trim();
-//     });
-//     interactiveBookPage.assertThatNotEditableBookContentHasText(topics, false);
-// });
-
-// Then(/^Student should see correct book content on EEM Complex page$/, () => {
-//     interactiveBookPage.assertThatNotEditableBookContentHasText(['qwertyuiop']);
-// });
+Then(/^I should see displayed all EEM Complex section on the complex form on EEM Complex page$/, () => {
+    complexPage.assertThatComplexSectionIsDisplayed(ComplexSection.TITLE);
+    complexPage.assertThatComplexSectionIsDisplayed(ComplexSection.COURSE_PROGRAM);
+    complexPage.assertThatComplexSectionIsDisplayed(ComplexSection.THEORETICAL);
+    complexPage.assertThatComplexSectionIsDisplayed(ComplexSection.PRACTICAL);
+});

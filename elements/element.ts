@@ -77,6 +77,24 @@ export class Element {
         });
     }
 
+    protected _click(options?: { element?: Cypress.Chainable<JQuery<HTMLElement>>, index?: number }) {
+        return this._waitForLogWrapper(() => {
+            if (options && options.element) {
+                return options.element
+                    .click({ force: true, log: false });
+            } else {
+                if (options && options.index) {
+                    return this.get$().eq(options.index - 1)
+                        .click({ force: true, log: false });
+                }
+                else {
+                    return this.get$()
+                        .click({ force: true, log: false });
+                }
+            }
+        });
+    }
+
     /**
      * Double click the element
      */
@@ -100,24 +118,6 @@ export class Element {
                 displayName: this.getName(),
                 message: `Double click by "${this.name}"`
             });
-        });
-    }
-
-    protected _click(options?: { element?: Cypress.Chainable<JQuery<HTMLElement>>, index?: number }) {
-        return this._waitForLogWrapper(() => {
-            if (options && options.element) {
-                return options.element
-                    .click({ force: true, log: false });
-            } else {
-                if (options && options.index) {
-                    return this.get$().eq(options.index - 1)
-                        .click({ force: true, log: false });
-                }
-                else {
-                    return this.get$()
-                        .click({ force: true, log: false });
-                }
-            }
         });
     }
 
@@ -372,8 +372,10 @@ export class Element {
             timeout: options && options.timeout,
             reverse: options && options.reverse,
         }
-        this._waitForExist(option);
-        if (!(options && options.reverse)) {
+        if (options && options.reverse) {
+            return this._waitForExist(option);
+        } else {
+            this._waitForExist(option);
             return this._waitForDisplayed(option);
         }
     }

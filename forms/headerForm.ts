@@ -1,3 +1,4 @@
+import { HeaderTab } from '../constants/header';
 import { Button } from '../elements';
 import BaseForm from './baseForm';
 
@@ -9,9 +10,9 @@ class HeaderForm extends BaseForm {
     constructor() {
         super();
 
-        this.subjectsButton = new Button('.mat-button-base', 'Header: Subjects button', { text: 'Предметы' });
+        this.subjectsButton = new Button('.mat-button-base', 'Header: Subjects button', { text: HeaderTab.SUBJECT });
         this.graduationProjectButton = new Button('.mat-button-base', 'Header: Subjects button',
-            { text: 'Дипломное проектирование' });
+            { text: HeaderTab.GRADUATION_PROJECT });
     }
 
     clickSubjectButton() {
