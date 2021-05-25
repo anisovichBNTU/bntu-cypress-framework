@@ -13,6 +13,7 @@ version: 2.1
 jobs:
   # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
   build:
+    working_directory: ~/tmp
     docker:
       - image: cypress/base:14.16.0
     steps:
@@ -20,19 +21,40 @@ jobs:
       - run:
           name: Install packages 
           command: npm install
+      - restore_cache:
+          keys:
+            - 'v2-deps-{{ .Branch }}-{{ checksum "package-lock.json" }}'
+            - 'v2-deps-{{ .Branch }}-'
+            - v2-deps-
+      - save_cache:
+          key: 'v2-deps-{{ .Branch }}-{{ checksum "package-lock.json" }}'
+          paths:
+            - ~/.npm
+            - ~/.cache
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - .cache
+            - tmp
   test-course:  
+    working_directory: ~/tmp
     docker:
       - image: cypress/base:14.16.0
     steps:
+      - attach_workspace:
+          at: ~/
       - run:
           name: Run tests Course project
           command: npm run test:course
       - store_artifacts:
           path: allure-results
   test-graduation:  
+    working_directory: ~/tmp
     docker:
       - image: cypress/base:14.16.0
     steps:
+      - attach_workspace:
+          at: ~/
       - run:
           name: Run tests Graduation project
           command: npm run test:graduation
