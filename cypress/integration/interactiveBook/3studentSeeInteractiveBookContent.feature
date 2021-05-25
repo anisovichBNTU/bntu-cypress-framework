@@ -8,10 +8,10 @@ Feature: Interactive Book
         And Click "Интерактивный учебник" subject module on Subject page
         When Open book topic "<BookTopicName>" on Interactive book page
         Then Student should see book topic "<BookTopicName>" in book content on Interactive book page
-        Then Student should see correct book content on Interactive book page
+        Then Student should see correct book content "<BookContent>" on Interactive book page
 
         Examples:
-            | BookTopicName | StudentUser          |
-            | NormalValue   | testStudentAutotest  |
-            | ShortValue    | testStudentAutotest1 |
-            | LongValue     | testStudentAutotest2 |
+            | BookTopicName | StudentUser          | BookContent |
+            | NormalValue   | testStudentAutotest  | NormalValue |
+            | ShortValue    | testStudentAutotest1 | ShortValue  |
+            | LongValue     | testStudentAutotest2 | LongValue   |

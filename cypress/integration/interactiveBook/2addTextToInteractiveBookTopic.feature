@@ -7,13 +7,13 @@ Feature: Interactive Book
         And Select "Test Subject Autotest" subject on Subject page
         And Click "Интерактивный учебник" subject module on Subject page
         And Open book topic "<BookTopicName>" to fill content on Interactive book page
-        And Fill content to book on Interactive book page
+        And Fill content "<BookContent>" to book on Interactive book page
         And Save book content on Interactive book page
         Then I should see book topic "<BookTopicName>" in book content on Interactive book page
-        Then I should see correct book content on Interactive book page
+        Then I should see correct book content "<BookContent>" on Interactive book page
 
         Examples:
-            | BookTopicName |
-            | NormalValue   |
-            | ShortValue    |
-            | LongValue     |
+            | BookTopicName | BookContent |
+            | NormalValue   | NormalValue |
+            | ShortValue    | ShortValue  |
+            | LongValue     | LongValue   |

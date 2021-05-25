@@ -17,6 +17,7 @@
 import '@shelex/cypress-allure-plugin';
 import 'cypress-iframe'
 import 'cypress-wait-until';
+import 'cypress-file-upload';
 import './commands'
 
 // Alternatively you can use CommonJS syntax:

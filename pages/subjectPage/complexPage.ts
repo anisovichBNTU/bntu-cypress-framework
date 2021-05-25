@@ -1,4 +1,4 @@
-import { Button, TextArea, Label, Select } from '../../elements';
+import { Button, TextArea, Label, Select, Input } from '../../elements';
 import BasePage from '../basePage';
 
 class ComplexPage extends BasePage {
@@ -11,6 +11,15 @@ class ComplexPage extends BasePage {
     private complexActionsSelect: (name: string) => Select;
     private complexSectionMapButton: (name: string) => Button;
     private complexSectionButton: (name: string) => Button;
+
+    private sectionAddHeaderLabel: Label;
+    private addSectionButton: Button;
+    private sectionToAddSelect: Select;
+    private newSectionFolderName: Input;
+    private newSectionFileName: Input;
+    private uploadFileInput: Input;
+    private folderButton: Button;
+    private fileButton: Button;
 
     constructor() {
         super(/web\/viewer\/subject.*complex/);
@@ -55,6 +64,46 @@ class ComplexPage extends BasePage {
                 text: name,
                 intoIFrame: true
             });
+
+        this.addSectionButton = new Button('.materials-body .mat-button-base',
+            'EEM Complex: Add Section button',
+            {
+                text: 'Добавить элемент',
+                intoIFrame: true
+            });
+        this.sectionAddHeaderLabel = new Label('.mat-dialog-title', 'EEM Complex: Added section header label',
+            {
+                intoIFrame: true
+            });
+        this.sectionToAddSelect = new Select('.mat-menu-trigger.mat-button-base',
+            `EEM Complex: Section to add new element select`,
+            {
+                dropdownListSelector: '.mat-menu-content', dropdownListItemSelector: '[role="menuitem"]',
+                intoIFrame: true
+            });
+        this.folderButton = new Button('mat-radio-button .mat-radio-label-content',
+            'EEM Complex: Section type "Folder" button',
+            {
+                text: 'Папка',
+                intoIFrame: true
+            });
+        this.fileButton = new Button('.mat-radio-button .mat-radio-label-content', 'EEM Complex: Section type "File" button',
+            {
+                text: 'Файл',
+                intoIFrame: true
+            });
+        this.newSectionFolderName = new Input('input[name="foderName"]', `EEM Complex: New section folder name input`,
+            {
+                intoIFrame: true
+            });
+        this.newSectionFileName = new Input('input[name="fileName"]', `EEM Complex: New section file name input`,
+            {
+                intoIFrame: true
+            });
+        this.uploadFileInput = new Input('input[type="file"]', `EEM Complex: Upload file input`,
+            {
+                intoIFrame: true
+            });
     }
 
     clickAddNewComplex() {
@@ -63,7 +112,7 @@ class ComplexPage extends BasePage {
 
     createNewComplex(name: string) {
         this.fillNewComplexName(name);
-        this.clickSaveNeComplex();
+        this.clickSaveNewComplex();
     }
 
     selectComplexAction(name: string, option: string) {
@@ -74,12 +123,33 @@ class ComplexPage extends BasePage {
         this.newComplexNameInput.setValue(name, true);
     }
 
-    clickSaveNeComplex() {
+    clickSaveNewComplex() {
         this.newComplexNameSaveButton.click();
     }
 
     openComplex(name: string) {
         this.complexNameButton(this.getShortName(name)).click();
+    }
+
+    clickAddSection() {
+        this.addSectionButton.click();
+    }
+
+    addNewFolderSection(sectionToAdd: string, folderName: string) {
+        this.sectionToAddSelect.selectByVisibleText(sectionToAdd);
+        this.sectionAddHeaderLabel.doubleClick();
+        this.folderButton.click();
+        this.newSectionFolderName.setValue(folderName);
+        this.newComplexNameSaveButton.click();
+    }
+
+    addNewFileSection(sectionToAdd: string, fileName: string, filePath: string) {
+        this.sectionToAddSelect.selectByVisibleText(sectionToAdd);
+        this.sectionAddHeaderLabel.doubleClick();
+        this.fileButton.click();
+        this.newSectionFileName.setValue(fileName);
+        this.uploadFileInput.uploadFile(filePath);
+        this.newComplexNameSaveButton.click();
     }
 
     assertThatComplexIsDisplayed(name: string, isDisplayed = true) {
@@ -89,15 +159,15 @@ class ComplexPage extends BasePage {
     };
 
     assertThatComplexMapSectionIsDisplayed(name: string, isDisplayed = true) {
-        this.complexSectionMapButton(name).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
+        this.complexSectionMapButton(name).waitForDisplayed({ delay: 500, reverse: !isDisplayed });
     };
 
     assertThatComplexSectionIsDisplayed(name: string, isDisplayed = true) {
-        this.complexSectionButton(name).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
+        this.complexSectionButton(name).waitForDisplayed({ delay: 500, reverse: !isDisplayed });
     };
 
     private getShortName(topicName: string) {
-        return topicName.substr(0, 100);
+        return topicName.substr(0, 8);
     }
 }
 

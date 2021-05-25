@@ -11,10 +11,10 @@ Feature: Interactive Book
         Then I should see deleted book topic "<ChildTopicName>" on Interactive book page
         When Open book topic "<BookTopicName>" on Interactive book page
         Then I should see book topic "<BookTopicName>" in book content on Interactive book page
-        Then I should see correct book content on Interactive book page
+        Then I should see correct book content "<BookContent>" on Interactive book page
 
         Examples:
-            | BookTopicName | ChildTopicName   |
-            | NormalValue   | ChildNormalValue |
-            | ShortValue    | ChildShortValue  |
-            | LongValue     | ChildLongValue   |
+            | BookTopicName | ChildTopicName   | BookContent |
+            | NormalValue   | ChildNormalValue | NormalValue |
+            | ShortValue    | ChildShortValue  | ShortValue  |
+            | LongValue     | ChildLongValue   | LongValue   |

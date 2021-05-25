@@ -61,8 +61,9 @@ When(/^Open book topic "(.*)" to fill content on Interactive book page$/, functi
     interactiveBookPage.openInteractiveBookToFill(name);
 });
 
-When(/^Fill content to book on Interactive book page$/, function () {
-    interactiveBookPage.fillBookContent('qwertyuiop');
+When(/^Fill content "(.*)" to book on Interactive book page$/, function (bookContentType: string) {
+    let content = book.bookContent[bookContentType];
+    interactiveBookPage.fillBookContent(content);
 });
 
 When(/^Save book content on Interactive book page$/, function () {
@@ -108,8 +109,9 @@ Then(/^I should see book topic "(.*)" in book content on Interactive book page$/
     interactiveBookPage.assertThatBookContentHasText(topics);
 });
 
-Then(/^I should see correct book content on Interactive book page$/, () => {
-    interactiveBookPage.assertThatBookContentHasText(['qwertyuiop']);
+Then(/^I should see correct book content "(.*)" on Interactive book page$/, (bookContentType: string) => {
+    let content = book.bookContent[bookContentType];
+    interactiveBookPage.assertThatBookContentHasText([content]);
 });
 
 Then(/^Student should see book topic "(.*)" in book content on Interactive book page$/, (topicNameType: string) => {
@@ -130,6 +132,7 @@ Then(/^Student should not see book topic "(.*)" in book content on Interactive b
     interactiveBookPage.assertThatNotEditableBookContentHasText(topics, false);
 });
 
-Then(/^Student should see correct book content on Interactive book page$/, () => {
-    interactiveBookPage.assertThatNotEditableBookContentHasText(['qwertyuiop']);
+Then(/^Student should see correct book content "(.*)" on Interactive book page$/, (bookContentType: string) => {
+    let content = book.bookContent[bookContentType];
+    interactiveBookPage.assertThatNotEditableBookContentHasText([content]);
 });

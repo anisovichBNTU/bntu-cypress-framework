@@ -10,10 +10,10 @@ Feature: Interactive Book
         When Open book topic "<BookTopicName>" on Interactive book page
         Then Student should see book topic "<BookTopicName>" in book content on Interactive book page
         Then Student should not see book topic "<ChildTopicName>" in book content on Interactive book page
-        Then Student should see correct book content on Interactive book page
+        Then Student should see correct book content "<BookContent>" on Interactive book page
 
         Examples:
-            | BookTopicName | ChildTopicName   | StudentUser          |
-            | NormalValue   | ChildNormalValue | testStudentAutotest  |
-            | ShortValue    | ChildShortValue  | testStudentAutotest1 |
-            | LongValue     | ChildLongValue   | testStudentAutotest2 |
+            | BookTopicName | ChildTopicName   | StudentUser          | BookContent |
+            | NormalValue   | ChildNormalValue | testStudentAutotest  | NormalValue |
+            | ShortValue    | ChildShortValue  | testStudentAutotest1 | ShortValue  |
+            | LongValue     | ChildLongValue   | testStudentAutotest2 | LongValue   |

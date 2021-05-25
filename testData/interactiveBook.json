@@ -9,5 +9,10 @@
         "NormalValueEdited": "Autotest book edited topic",
         "ShortValueEdited": "                   S                   ",
         "LongValueEdited": "QWERTYUIOasdfghjkl QWERTYUIOasdfghjkl234566789asdfghjkl QWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWE WERTYUIOasdfghjklQWERTYUIOasdfghj"
+    },
+    "bookContent": {
+        "NormalValue": "Text in interactive book 123",
+        "ShortValue": "T",
+        "LongValue": "Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? "
     }
 }

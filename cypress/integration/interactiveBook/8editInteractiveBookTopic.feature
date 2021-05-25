@@ -11,10 +11,10 @@ Feature: Interactive Book
         Then I should see created book topic "<BookTopicNameEdited>" on Interactive book page
         When Open book topic "<BookTopicNameEdited>" on Interactive book page
         Then I should see book topic "<BookTopicNameEdited>" in book content on Interactive book page
-        Then I should see correct book content on Interactive book page
+        Then I should see correct book content "<BookContent>" on Interactive book page
 
         Examples:
-            | BookTopicName | BookTopicNameEdited |
-            | NormalValue   | NormalValueEdited   |
-            | ShortValue    | ShortValueEdited    |
-            | LongValue     | LongValueEdited     |
+            | BookTopicName | BookTopicNameEdited | BookContent |
+            | NormalValue   | NormalValueEdited   | NormalValue |
+            | ShortValue    | ShortValueEdited    | ShortValue  |
+            | LongValue     | LongValueEdited     | LongValue   |

@@ -68,7 +68,7 @@ export class Element {
      */
     click(index?: number) {
         this._waitForExist();
-        cy.wait(100);
+        cy.wait(100, { log: false });
         this._click({ index }).then(() => {
             Cypress.log({
                 displayName: this.getName(),
@@ -212,6 +212,30 @@ export class Element {
     }
 
     /**
+     * Clear the element (input)
+     */
+    uploadFile(fileName: string) {
+        this._waitForExist();
+        this._waitForEnabled();
+        this._uploadFile(fileName).then(() => {
+            Cypress.log({
+                displayName: this.getName(),
+                message: `Upload file "${fileName}"`
+            });
+        });
+    }
+
+    protected _uploadFile(fileName: string, options?: { element: Cypress.Chainable<JQuery<HTMLElement>> }) {
+        return this._waitForLogWrapper(() => {
+            if (options && options.element) {
+                return options.element.attachFile(fileName);
+            } else {
+                return this.get$().attachFile(fileName);
+            }
+        });
+    }
+
+    /**
      * Scroll into view of the current element. It's useful to force to play animation on some elements.
      */
     scrollIntoView() {
@@ -222,7 +246,7 @@ export class Element {
                     message: `Scroll to "${this.name}"`
                 });
             });
-        cy.wait(300);
+        cy.wait(300, { log: false });
     }
 
     /**

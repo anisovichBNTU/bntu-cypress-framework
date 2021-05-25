@@ -8,9 +8,10 @@
     "scripts": {
         "test": "cypress run --spec \"**/*.feature\"",
         "test:all": "cypress run --spec \"**/*.features\"",
-        "pretest": "npm run clean:reports",
-        "combine-reports": "mochawesome-merge ./cypress/reports/mocha/*.json > cypress/reports/report.json",
-        "generate-report": "marge cypress/reports/report.json -f report -o cypress/reports/mochareports"
+        "test:integration_book": "npx cypress run --spec ./cypress/integration/interactiveBook/*.feature --env allure=true",
+        "test:eemc": "npx cypress run --spec ./cypress/integration/EEMC/*.feature --env allure=true",
+        "test:graduation": "npx cypress run --spec ./cypress/integration/graduationProject/*.feature --env allure=true",
+        "test:course": "npx cypress run --spec ./cypress/integration/courseProject/*.feature --env allure=true"
     },
     "devDependencies": {
         "@cypress/webpack-preprocessor": "^5.7.0",
@@ -18,6 +19,7 @@
         "@types/cucumber": "^7.0.0",
         "cypress": "^6.8.0",
         "cypress-cucumber-preprocessor": "4.0.3",
+        "cypress-file-upload": "^5.0.7",
         "cypress-iframe": "^1.0.1",
         "cypress-wait-until": "^1.7.1",
         "mocha": "^8.4.0",

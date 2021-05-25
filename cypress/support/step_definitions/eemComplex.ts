@@ -23,13 +23,30 @@ When(/^Select "(.*)" option on "(.*)" complex on EEM Complex page$/, function (o
 When(/^Edit complex using name "(.*)" on EEM Complex page$/, function (complexNameType: string) {
     let name = complex.complexName[complexNameType];
     complexPage.fillNewComplexName(name);
-    complexPage.clickSaveNeComplex();
+    complexPage.clickSaveNewComplex();
 });
 
 When(/^Open complex "(.*)" on EEM Complex page$/, function (complexNameType: string) {
     let name = complex.complexName[complexNameType];
     complexPage.openComplex(name);
 });
+
+When(/^Click Add new element on EEM Complex page$/, function () {
+    complexPage.clickAddSection();
+});
+
+When(/^Add folder "(.*)" to section "(.*)" on EEM Complex page$/,
+    function (folderNameType: string, section: keyof typeof ComplexSection) {
+        let name = complex.folderName[folderNameType];
+        complexPage.addNewFolderSection(ComplexSection[section], name);
+    });
+
+When(/^Add file "(.*)" named "(.*)" to section "(.*)" on EEM Complex page$/,
+    function (filePathType: string, fileNameType: string, section: keyof typeof ComplexSection) {
+        let name = complex.fileName[fileNameType];
+        let file = complex.filePath[filePathType];
+        complexPage.addNewFileSection(ComplexSection[section], name, file);
+    });
 
 Then(/^I should see created complex "(.*)" on EEM Complex page$/, (complexNameType: string) => {
     let name = complex.complexName[complexNameType];
@@ -55,4 +72,9 @@ Then(/^I should see displayed all EEM Complex section on the complex form on EEM
     complexPage.assertThatComplexSectionIsDisplayed(ComplexSection.COURSE_PROGRAM);
     complexPage.assertThatComplexSectionIsDisplayed(ComplexSection.THEORETICAL);
     complexPage.assertThatComplexSectionIsDisplayed(ComplexSection.PRACTICAL);
+});
+
+Then(/^I should see displayed added section "(.*)" on the complex form on EEM Complex page$/, (folderNameType: string) => {
+    let name = complex.folderName[folderNameType];
+    complexPage.assertThatComplexSectionIsDisplayed(name);
 });
