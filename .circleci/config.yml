@@ -101,7 +101,7 @@ jobs:
             git remote add origin https://anisovichBNTU:anisovichBNTUcypress@github.com/anisovichBNTU/bntu-cypress-framework.git
             cd out
             git checkout gh-pages || git checkout --orphan gh-pages
-            git rm -rf .
+            git rm -rf . !(".git")
             cd ..
 
             cp -a allure-report/. out/.
