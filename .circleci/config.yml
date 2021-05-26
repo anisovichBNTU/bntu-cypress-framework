@@ -44,7 +44,7 @@ jobs:
       - store_artifacts:
           path: cypress/videos
       - persist_to_workspace:
-          root: ~/tmp
+          root: results
           paths:
             - allure-results
             - cypress/videos
@@ -64,7 +64,7 @@ jobs:
       - store_artifacts:
           path: cypress/videos
       - persist_to_workspace:
-          root: ~/tmp
+          root: results
           paths:
             - allure-results
             - cypress/videos
@@ -73,6 +73,8 @@ jobs:
     docker:
       - image: 'frankescobar/allure-docker-service'
     steps:
+      - attach_workspace:
+          at: /tmp/results
       - run:
           name: Generate report 
           command: allure generate allure-results --clean -o allure-report
@@ -87,12 +89,10 @@ jobs:
     docker:
       - image: cypress/base:14.16.0
     steps:
+      - attach_workspace:
+          at: ~/
       - run:
           name: Deploy report 
-          
-      # git clone $CIRCLE_REPOSITORY_URL out
-
-      # cd out
           command: |
             git config --global user.email anisovich28@gmail.com
             git config --global user.name anisovichBNTU
