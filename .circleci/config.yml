@@ -43,7 +43,7 @@ jobs:
       - store_artifacts:
           path: cypress/videos
       - persist_to_workspace:
-          root: ~/
+          root: ~/tmp
           paths:
             - allure-results
             - cypress/videos
@@ -63,7 +63,7 @@ jobs:
       - store_artifacts:
           path: cypress/videos
       - persist_to_workspace:
-          root: ~/
+          root: ~/tmp
           paths:
             - allure-results
             - cypress/videos
@@ -75,14 +75,12 @@ jobs:
       - run:
           name: Generate report 
           command: allure generate allure-results --clean -o allure-report
-      - attach_workspace:
-          at: /tmp/allure-report
+      - store_artifacts:
+          path: allure-report
       - persist_to_workspace:
-          root: ~/
+          root: ~/tmp
           paths:
             - allure-report
-            - allure-results
-            - cypress/videos
 workflows:
   build_and_test:
     jobs:
