@@ -122,10 +122,8 @@ workflows:
       - test-graduation:
           requires:
             - build
-      - generate_report
-          # requires:
-          #   - test-course
-          #   - test-graduation
+      - generate_report:
+          type: approval
       - deploy:
           requires:
             - generate_report
