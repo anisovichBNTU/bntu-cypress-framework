@@ -125,3 +125,6 @@ workflows:
           requires:
             - test-course
             - test-graduation
+      - deploy:
+          requires:
+            - generate_report
