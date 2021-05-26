@@ -75,7 +75,14 @@ jobs:
       - run:
           name: Generate report 
           command: allure generate allure-results --clean -o allure-report
-
+      - attach_workspace:
+          at: /tmp/allure-report
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - allure-report
+            - allure-results
+            - cypress/videos
 workflows:
   build_and_test:
     jobs:
