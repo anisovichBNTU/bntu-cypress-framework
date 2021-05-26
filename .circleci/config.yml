@@ -37,7 +37,8 @@ jobs:
           at: ~/
       - run:
           name: Run tests Course project
-          command: npm run test:course
+          # command: npm run test:course
+          command: npx cypress run --spec ./cypress/integration/courseProject/1*.feature --env allure=true
       - store_artifacts:
           path: allure-results
       - store_artifacts:
@@ -57,7 +58,8 @@ jobs:
           at: ~/
       - run:
           name: Run tests Graduation project
-          command: npm run test:graduation
+          # command: npm run test:graduation
+          command: npx cypress run --spec ./cypress/integration/graduationProject/1*.feature --env allure=true
       - store_artifacts:
           path: allure-results
       - store_artifacts:
