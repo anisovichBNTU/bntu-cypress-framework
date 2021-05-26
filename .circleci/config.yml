@@ -1,17 +1,6 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine. 
-# See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 
-# orbs:
-#   # The Node.js orb contains a set of prepackaged CircleCI configuration you can utilize
-#   # Orbs reduce the amount of configuration required for common tasks. 
-#   # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/node
-#   # node: circleci/node@4.1
-#   cypress: cypress-io/cypress@1
-
-
 jobs:
-  # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
   build:
     working_directory: ~/tmp
     docker:
@@ -21,6 +10,9 @@ jobs:
       - run:
           name: Install packages 
           command: npm install
+      - run:
+          name: Install Allure 
+          command: npm install -g allure-commandline --save-dev
       - restore_cache:
           keys:
             - 'v2-deps-{{ .Branch }}-{{ checksum "package-lock.json" }}'
@@ -48,6 +40,8 @@ jobs:
           command: npm run test:course
       - store_artifacts:
           path: allure-results
+      - store_artifacts:
+          path: cypress/videos
   test-graduation:  
     working_directory: ~/tmp
     docker:
@@ -60,6 +54,17 @@ jobs:
           command: npm run test:graduation
       - store_artifacts:
           path: allure-results
+      - store_artifacts:
+          path: cypress/videos
+  generate_report:
+    working_directory: ~/tmp
+    docker:
+      - image: 'cypress/base:14.16.0'
+    steps:
+      - run:
+          name: Generate report 
+          command: allure generate allure-results --clean -o allure-report
+
 workflows:
   build_and_test:
     jobs:
@@ -70,3 +75,7 @@ workflows:
       - test-graduation:
           requires:
             - build
+      - generate_report:
+          requires:
+            - test-course
+            - test-graduation
