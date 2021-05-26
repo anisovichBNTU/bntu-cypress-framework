@@ -116,14 +116,16 @@ workflows:
     jobs:
       - build
       - test-course:
-         
           requires:
             - build
       - test-graduation:
           requires:
             - build
-      - generate_report:
+      - approval-report:
           type: approval
+      - generate_report:
+          requires:
+            - approval-report
       - deploy:
           requires:
             - generate_report
