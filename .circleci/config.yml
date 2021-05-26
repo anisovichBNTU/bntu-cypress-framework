@@ -97,7 +97,7 @@ jobs:
             git config --global user.email anisovich28@gmail.com
             git config --global user.name anisovichBNTU
 
-            git clone $CIRCLE_REPOSITORY_URL out
+            git clone https://github.com/anisovichBNTU/bntu-cypress-framework.git out
             cd out
             git checkout gh-pages || git checkout --orphan gh-pages
             git rm -rf .
@@ -107,7 +107,7 @@ jobs:
             cd out
 
             git add -A
-            git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}" --allow-empty
+            git commit -m "Automated deployment to GitHub Pages" --allow-empty
 
             git push origin gh-pages
 
