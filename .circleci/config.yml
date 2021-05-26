@@ -42,6 +42,12 @@ jobs:
           path: allure-results
       - store_artifacts:
           path: cypress/videos
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - allure-results
+            - cypress/videos
+
   test-graduation:  
     working_directory: ~/tmp
     docker:
@@ -56,6 +62,11 @@ jobs:
           path: allure-results
       - store_artifacts:
           path: cypress/videos
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - allure-results
+            - cypress/videos
   generate_report:
     working_directory: ~/tmp
     docker:
