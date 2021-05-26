@@ -98,6 +98,7 @@ jobs:
             git config --global user.name anisovichBNTU
 
             git clone https://github.com/anisovichBNTU/bntu-cypress-framework.git out
+            git remote add origin https://anisovichBNTU:anisovichBNTUcypress@github.com/anisovichBNTU/bntu-cypress-framework.git
             cd out
             git checkout gh-pages || git checkout --orphan gh-pages
             git rm -rf .
