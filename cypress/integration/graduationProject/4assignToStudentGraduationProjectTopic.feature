@@ -13,3 +13,4 @@ Feature: Graduation Project
             | NormalValue | Autotest Test Student    | 10702217 |
             | ShortValue  | Autotest1 Test1 Student1 | 10702217 |
             | LongValue   | Autotest2 Test2 Student2 | 10702217 |
+#test
