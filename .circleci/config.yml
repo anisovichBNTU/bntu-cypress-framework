@@ -44,14 +44,8 @@ jobs:
           path: allure-results
       - store_artifacts:
           path: cypress/videos
-      - save_cache:
-          paths:
-            - ~/tmp/allure-results
-            - ~/tmp/cypress/videos
-          key: 
-            'v2-report1-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
       - persist_to_workspace:
-          root: ~/
+          root: ~/tmp
           paths:
             - ./allure-results/
   test-graduation:  
@@ -69,18 +63,12 @@ jobs:
           path: allure-results
       - store_artifacts:
           path: cypress/videos
-      - save_cache:
-          paths:
-            - ~/tmp/allure-results
-            - ~/tmp/cypress/videos
-          key: 
-            'v2-report2-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
       - persist_to_workspace:
-          root: ~/
+          root: ~/tmp
           paths:
             - ./allure-results/
   generate_report:
-    working_directory: ~/tmp
+    working_directory: ~/
     docker:
       - image: 'frankescobar/allure-docker-service'
     steps:
@@ -89,10 +77,7 @@ jobs:
       #       - 'v2-report1-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
       #       - 'v2-report2-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
       - attach_workspace:
-          at: ~/
-      - run:
-          name: Test  
-          command: git config --global user.email anisovich28@gmail.com
+          at: ~/tmp
       - run:
           name: Generate report 
           command: allure generate -c ./allure-results --clean -o allure-report
