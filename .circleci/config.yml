@@ -1,7 +1,8 @@
 version: 2.1
 
 jobs:
-  build:
+  build: 
+        
     working_directory: ~/tmp
     docker:
       - image: cypress/base:14.16.0
@@ -108,7 +109,7 @@ jobs:
             cp -a allure-report/. out/.
             cd out
 
-            git add -A
+            git add ./allure-report
             git commit -m "Automated deployment to GitHub Pages" --allow-empty
 
             git push origin gh-pages
