@@ -77,6 +77,9 @@ jobs:
       - attach_workspace:
           at: ~/
       - run:
+          name: Test 
+          command: tree
+      - run:
           name: Generate report 
           command: allure generate allure-results --clean -o allure-report
       - store_artifacts:
