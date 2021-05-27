@@ -82,11 +82,11 @@ jobs:
       - store_artifacts:
           path: allure-report
       - persist_to_workspace:
-          root: ~/tmp
+          root: ~/
           paths:
             - allure-report
   deploy:
-    working_directory: ~/tmp
+    working_directory: ~/
     docker:
       - image: cypress/base:14.16.0
     steps:
