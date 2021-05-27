@@ -40,6 +40,27 @@ jobs:
           name: Run tests Course project
           # command: npm run test:course
           command: npx cypress run --spec ./cypress/integration/courseProject/1*.feature --env allure=true
+      - run: 
+          name: Push results 
+          command: |
+            git config --global user.email anisovich28@gmail.com
+            git config --global user.name anisovichBNTU
+
+            git clone https://github.com/anisovichBNTU/bntu-cypress-framework.git out
+            
+            cd out
+            git remote add results https://anisovichBNTU:anisovichBNTUcypress@github.com/anisovichBNTU/bntu-cypress-framework.git
+            git checkout allure-results1 || git checkout --orphan allure-results1
+            git rm -rf .
+            cd ..
+
+            cp -a allure-results out/.
+            cd out
+
+            git add ./allure-results
+            git commit -m "Push results1" --allow-empty
+
+            git push results allure-results1
       - store_artifacts:
           path: allure-results
       - store_artifacts:
@@ -59,6 +80,27 @@ jobs:
           name: Run tests Graduation project
           # command: npm run test:graduation
           command: npx cypress run --spec ./cypress/integration/graduationProject/1*.feature --env allure=true
+      - run: 
+          name: Push results 
+          command: |
+            git config --global user.email anisovich28@gmail.com
+            git config --global user.name anisovichBNTU
+
+            git clone https://github.com/anisovichBNTU/bntu-cypress-framework.git out
+            
+            cd out
+            git remote add results https://anisovichBNTU:anisovichBNTUcypress@github.com/anisovichBNTU/bntu-cypress-framework.git
+            git checkout allure-results2 || git checkout --orphan allure-results2
+            git rm -rf .
+            cd ..
+
+            cp -a allure-results out/.
+            cd out
+
+            git add ./allure-results
+            git commit -m "Push results2" --allow-empty
+
+            git push results allure-results2
       - store_artifacts:
           path: allure-results
       - store_artifacts:
@@ -67,20 +109,40 @@ jobs:
           root: ~/tmp
           paths:
             - ./allure-results/
+  combine_reports:
+    working_directory: ~/
+    docker:
+      - image: cypress/base:14.16.0
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: Deploy report
+          command: |
+            git config --global user.email anisovich28@gmail.com
+            git config --global user.name anisovichBNTU
+
+            git clone https://github.com/anisovichBNTU/bntu-cypress-framework.git out
+            
+            cd out
+            git checkout allure-results1 || git checkout --orphan allure-results1
+            cp -a allure-results ../
+            git checkout allure-results2 || git checkout --orphan allure-results2
+            cp -a allure-results ../
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - allure-results      
   generate_report:
     working_directory: ~/
     docker:
       - image: 'frankescobar/allure-docker-service'
     steps:
-      # - restore_cache: 
-      #     keys: 
-      #       - 'v2-report1-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
-      #       - 'v2-report2-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
       - attach_workspace:
-          at: ~/tmp
+          at: ~/
       - run:
           name: Generate report 
-          command: allure generate -c ./allure-results --clean -o allure-report
+          command: allure generate -c allure-results --clean -o allure-report
       - store_artifacts:
           path: allure-report
       - persist_to_workspace:
@@ -130,9 +192,12 @@ workflows:
             - build
       - approval-report:
           type: approval
-      - generate_report:
+      - combine_reports:
           requires:
             - approval-report
+      - generate_report:
+          requires:
+            - combine_reports
       - deploy:
           requires:
             - generate_report
