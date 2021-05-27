@@ -42,6 +42,7 @@ jobs:
           # command: npx cypress run --spec ./cypress/integration/courseProject/1*.feature --env allure=true
       - run: 
           name: Push results 
+          when: always
           command: |
             git config --global user.email anisovich28@gmail.com
             git config --global user.name anisovichBNTU
@@ -82,6 +83,7 @@ jobs:
           # command: npx cypress run --spec ./cypress/integration/courseProject/1*.feature --env allure=true
       - run: 
           name: Push results 
+          when: always
           command: |
             git config --global user.email anisovich28@gmail.com
             git config --global user.name anisovichBNTU
@@ -122,6 +124,7 @@ jobs:
           # command: npx cypress run --spec ./cypress/integration/graduationProject/1*.feature --env allure=true
       - run: 
           name: Push results 
+          when: always
           command: |
             git config --global user.email anisovich28@gmail.com
             git config --global user.name anisovichBNTU
@@ -162,6 +165,7 @@ jobs:
           # command: npx cypress run --spec ./cypress/integration/graduationProject/1*.feature --env allure=true
       - run: 
           name: Push results 
+          when: always
           command: |
             git config --global user.email anisovich28@gmail.com
             git config --global user.name anisovichBNTU
