@@ -45,10 +45,10 @@ jobs:
       - store_artifacts:
           path: cypress/videos
       - persist_to_workspace:
-          root: ~/
+          root: test-report
           paths:
-            - tmp/allure-results
-            - tmp/cypress/videos
+            - allure-results
+            - cypress/videos
   test-graduation:  
     working_directory: ~/tmp
     docker:
@@ -65,23 +65,20 @@ jobs:
       - store_artifacts:
           path: cypress/videos
       - persist_to_workspace:
-          root: ~/
+          root: test-report
           paths:
-            - tmp/allure-results
-            - tmp/cypress/videos
+            - allure-results
+            - cypress/videos
   generate_report:
-    working_directory: ~/
+    working_directory: ~/tmp
     docker:
       - image: 'frankescobar/allure-docker-service'
     steps:
       - attach_workspace:
-          at: ~/
-      - run:
-          name: Test 
-          command: tree
+          at: /tmp/test-report
       - run:
           name: Generate report 
-          command: allure generate allure-results --clean -o allure-report
+          command: allure generate /tmp/test-report/allure-results --clean -o allure-report
       - store_artifacts:
           path: allure-report
       - persist_to_workspace:
