@@ -1,0 +1,12 @@
+{
+    "projectName": {
+        "NormalValue": "autotest name",
+        "ShortValue": "SPN",
+        "LongValue": "Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name  Very Long Name"
+    },
+    "projectNameEdited": {
+        "NormalValue": "autotest name edited",
+        "ShortValue": "123",
+        "LongValue": "QWERTYUIOasdfghjkl                  QWERTYUIOasdfghjklQWERTYUIOasdfghjkl                  QWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWE"
+    }
+}

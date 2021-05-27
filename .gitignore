@@ -1,0 +1,13 @@
+node_modules
+temp
+reports
+report
+downloads
+cypress/screenshots
+cypress/videos
+cypress/results
+cypress.env.json
+allure*
+**/*.mp4
+*.log
+.VS

@@ -1,0 +1,8 @@
+{
+    "testFiles": "**/*.{feature,features}",
+    "defaultCommandTimeout": 20000,
+    "chromeWebSecurity": false,
+    "viewportHeight": 1024,
+    "viewportWidth": 2048,
+    "projectId": "kxxbhy"
+}
