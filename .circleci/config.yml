@@ -75,10 +75,10 @@ jobs:
       - image: 'frankescobar/allure-docker-service'
     steps:
       - attach_workspace:
-          at: ~/
+          at: /tmp/allure-results
       - run:
           name: Generate report 
-          command: allure generate ./allure-results --clean -o allure-report
+          command: allure generate /tmp/allure-results --clean -o allure-report
       - store_artifacts:
           path: allure-report
       - persist_to_workspace:
