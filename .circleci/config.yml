@@ -70,7 +70,7 @@ jobs:
             - allure-results
             - cypress/videos
   generate_report:
-    working_directory: ~/
+    working_directory: ~/tmp
     docker:
       - image: 'frankescobar/allure-docker-service'
     steps:
@@ -82,11 +82,11 @@ jobs:
       - store_artifacts:
           path: allure-report
       - persist_to_workspace:
-          root: ~/
+          root: ~/tmp
           paths:
             - allure-report
   deploy:
-    working_directory: ~/
+    working_directory: ~/tmp
     docker:
       - image: cypress/base:14.16.0
     steps:
