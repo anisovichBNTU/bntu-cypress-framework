@@ -213,6 +213,10 @@ jobs:
             cp -a allure-results ../
             git checkout allure-results2 || git checkout --orphan allure-results2
             cp -a allure-results ../
+            git checkout allure-results3 || git checkout --orphan allure-results3
+            cp -a allure-results ../
+            git checkout allure-results4 || git checkout --orphan allure-results4
+            cp -a allure-results ../
       - persist_to_workspace:
           root: ~/
           paths:
