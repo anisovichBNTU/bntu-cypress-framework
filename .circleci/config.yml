@@ -49,7 +49,7 @@ jobs:
             - ~/tmp/allure-results
             - ~/tmp/cypress/videos
           key: 
-            'v2-report1-{{ .Branch }}-{{ checksum "allure-results" }}'
+            'v2-report1-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
       - persist_to_workspace:
           root: ~/tmp
           paths:
@@ -75,7 +75,7 @@ jobs:
             - ~/tmp/allure-results
             - ~/tmp/cypress/videos
           key: 
-            'v2-report2-{{ .Branch }}-{{ checksum "allure-results" }}'
+            'v2-report2-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
       - persist_to_workspace:
           root: ~/tmp
           paths:
@@ -88,8 +88,8 @@ jobs:
     steps:
       - restore_cache: 
           keys: 
-            - 'v2-report1-{{ .Branch }}-{{ checksum "allure-results" }}'
-            - 'v2-report2-{{ .Branch }}-{{ checksum "allure-results" }}'
+            - 'v2-report1-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
+            - 'v2-report2-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
       - attach_workspace:
           at: /allure-results
       - run:
