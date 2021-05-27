@@ -100,13 +100,13 @@ jobs:
             git config --global user.name anisovichBNTU
 
             git clone https://github.com/anisovichBNTU/bntu-cypress-framework.git out
-            git remote add origin https://anisovichBNTU:anisovichBNTUcypress@github.com/anisovichBNTU/bntu-cypress-framework.git
             cd out
+            git remote add origin https://anisovichBNTU:anisovichBNTUcypress@github.com/anisovichBNTU/bntu-cypress-framework.git
             git checkout gh-pages || git checkout --orphan gh-pages
-            
+            git rm -rf .
             cd ..
 
-            cp -a allure-report/. out/.
+            cp -a allure-report out/.
             cd out
 
             git add ./allure-report
