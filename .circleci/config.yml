@@ -146,7 +146,7 @@ jobs:
       - store_artifacts:
           path: allure-report
       - persist_to_workspace:
-          root: ~/tmp
+          root: ~/
           paths:
             - allure-report
   deploy:
