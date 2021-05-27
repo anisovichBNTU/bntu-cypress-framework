@@ -44,6 +44,12 @@ jobs:
           path: allure-results
       - store_artifacts:
           path: cypress/videos
+      - save_cache:
+          paths:
+            - ~/tmp/allure-results
+            - ~/tmp/cypress/videos
+          key: 
+            "report"
       - persist_to_workspace:
           root: ~/tmp
           paths:
@@ -64,6 +70,12 @@ jobs:
           path: allure-results
       - store_artifacts:
           path: cypress/videos
+      - save_cache:
+          paths:
+            - ~/tmp/allure-results
+            - ~/tmp/cypress/videos
+          key: 
+            "report"
       - persist_to_workspace:
           root: ~/tmp
           paths:
@@ -74,8 +86,11 @@ jobs:
     docker:
       - image: 'frankescobar/allure-docker-service'
     steps:
+      - restore_cache: 
+          key: 
+            "report"
       - attach_workspace:
-          at: ~/
+          at: /allure-results
       - run:
           name: Generate report 
           command: allure generate /tmp/allure-results --clean -o allure-report
