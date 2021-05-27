@@ -17,4 +17,4 @@ Feature: EEM Complex
             | NormalValue  | NormalValue  | DOC      | THEORETICAL |
             | ShortValue   | ShortValue   | PDF      | PRACTICAL   |
             | LongValue    | LongValue    | JPG      | THEORETICAL |
-            | RussianValue | RussianValue |          | PRACTICAL   |
+            | RussianValue | RussianValue | PPT      | PRACTICAL   |

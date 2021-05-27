@@ -12,6 +12,6 @@ Feature: Course Project
 
         Examples:
             | ProjectName | Student                  | StudentUser          |
-            | NormalValue | Autotest Test Student    | testStudentAutotest  |
-            | ShortValue  | Autotest1 Test1 Student1 | testStudentAutotest1 |
-            | LongValue   | Autotest2 Test2 Student2 | testStudentAutotest2 |
+            | NormalValue | Autotest1 Test1 Student1 | testStudentAutotest1 |
+            | ShortValue  | Autotest2 Test2 Student2 | testStudentAutotest2 |
+            | LongValue   | Autotest3 Test3 Student3 | testStudentAutotest3 |

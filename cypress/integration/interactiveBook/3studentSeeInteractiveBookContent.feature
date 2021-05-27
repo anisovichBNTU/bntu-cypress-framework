@@ -12,6 +12,6 @@ Feature: Interactive Book
 
         Examples:
             | BookTopicName | StudentUser          | BookContent |
-            | NormalValue   | testStudentAutotest  | NormalValue |
-            | ShortValue    | testStudentAutotest1 | ShortValue  |
-            | LongValue     | testStudentAutotest2 | LongValue   |
+            | NormalValue   | testStudentAutotest1 | NormalValue |
+            | ShortValue    | testStudentAutotest2 | ShortValue  |
+            | LongValue     | testStudentAutotest3 | LongValue   |

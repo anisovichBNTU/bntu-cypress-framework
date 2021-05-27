@@ -38,8 +38,8 @@ jobs:
           at: ~/
       - run:
           name: Run tests Course project
-          # command: npm run test:course
-          command: npx cypress run --spec ./cypress/integration/courseProject/1*.feature --env allure=true
+          command: npm run test:course
+          # command: npx cypress run --spec ./cypress/integration/courseProject/1*.feature --env allure=true
       - run: 
           name: Push results 
           command: |
@@ -69,6 +69,46 @@ jobs:
           root: ~/tmp
           paths:
             - ./allure-results/
+  test-integration:  
+    working_directory: ~/tmp
+    docker:
+      - image: cypress/base:14.16.0
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: Run tests Integration book
+          command: npm run test:integration_book
+          # command: npx cypress run --spec ./cypress/integration/courseProject/1*.feature --env allure=true
+      - run: 
+          name: Push results 
+          command: |
+            git config --global user.email anisovich28@gmail.com
+            git config --global user.name anisovichBNTU
+
+            git clone https://github.com/anisovichBNTU/bntu-cypress-framework.git out
+            
+            cd out
+            git remote add results https://anisovichBNTU:anisovichBNTUcypress@github.com/anisovichBNTU/bntu-cypress-framework.git
+            git checkout allure-results3 || git checkout --orphan allure-results3
+            git rm -rf .
+            cd ..
+
+            cp -a allure-results out/.
+            cd out
+
+            git add ./allure-results
+            git commit -m "Push results3" --allow-empty
+
+            git push results allure-results3
+      - store_artifacts:
+          path: allure-results
+      - store_artifacts:
+          path: cypress/videos
+      - persist_to_workspace:
+          root: ~/tmp
+          paths:
+            - ./allure-results/
   test-graduation:  
     working_directory: ~/tmp
     docker:
@@ -78,8 +118,8 @@ jobs:
           at: ~/
       - run:
           name: Run tests Graduation project
-          # command: npm run test:graduation
-          command: npx cypress run --spec ./cypress/integration/graduationProject/1*.feature --env allure=true
+          command: npm run test:graduation
+          # command: npx cypress run --spec ./cypress/integration/graduationProject/1*.feature --env allure=true
       - run: 
           name: Push results 
           command: |
@@ -109,6 +149,46 @@ jobs:
           root: ~/tmp
           paths:
             - ./allure-results/
+  test-eemc:  
+    working_directory: ~/tmp
+    docker:
+      - image: cypress/base:14.16.0
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: Run tests EEMC
+          command: npm run test:eemc
+          # command: npx cypress run --spec ./cypress/integration/graduationProject/1*.feature --env allure=true
+      - run: 
+          name: Push results 
+          command: |
+            git config --global user.email anisovich28@gmail.com
+            git config --global user.name anisovichBNTU
+
+            git clone https://github.com/anisovichBNTU/bntu-cypress-framework.git out
+            
+            cd out
+            git remote add results https://anisovichBNTU:anisovichBNTUcypress@github.com/anisovichBNTU/bntu-cypress-framework.git
+            git checkout allure-results4 || git checkout --orphan allure-results4
+            git rm -rf .
+            cd ..
+
+            cp -a allure-results out/.
+            cd out
+
+            git add ./allure-results
+            git commit -m "Push results4" --allow-empty
+
+            git push results allure-results4
+      - store_artifacts:
+          path: allure-results
+      - store_artifacts:
+          path: cypress/videos
+      - persist_to_workspace:
+          root: ~/tmp
+          paths:
+            - ./allure-results/
   combine_reports:
     working_directory: ~/
     docker:
@@ -117,7 +197,7 @@ jobs:
       - attach_workspace:
           at: ~/
       - run:
-          name: Deploy report
+          name: Combine report
           command: |
             git config --global user.email anisovich28@gmail.com
             git config --global user.name anisovichBNTU
@@ -158,8 +238,6 @@ jobs:
           at: ~/
       - run:
           name: Deploy report 
-          # git rm -rf . !(".git")
-          # git remote add origin https://anisovichBNTU:anisovichBNTUcypress@github.com/anisovichBNTU/bntu-cypress-framework.git
           command: |
             git config --global user.email anisovich28@gmail.com
             git config --global user.name anisovichBNTU
@@ -188,6 +266,12 @@ workflows:
           requires:
             - build
       - test-graduation:
+          requires:
+            - build
+      - test-integration:
+          requires:
+            - build
+      - test-eemc:
           requires:
             - build
       - approval-report:
