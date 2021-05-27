@@ -1,0 +1,87 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Interactive Book",
+    "children" : [ {
+      "name" : "Create new interactive book topic (example #1)",
+      "uid" : "b42121ea51152942",
+      "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1621681410942,
+        "stop" : 1621681458426,
+        "duration" : 47484
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Create new interactive book topic (example #2)",
+      "uid" : "3b241241fd48edca",
+      "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1621681458522,
+        "stop" : 1621681491273,
+        "duration" : 32751
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Create new interactive book topic (example #3)",
+      "uid" : "e0a82e26e0ddcc3e",
+      "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1621681491400,
+        "stop" : 1621681531858,
+        "duration" : 40458
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Add text to interactive book topic (example #1)",
+      "uid" : "443afdc2b464874f",
+      "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
+      "status" : "failed",
+      "time" : {
+        "start" : 1621681587696,
+        "stop" : 1621681624007,
+        "duration" : 36311
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Add text to interactive book topic (example #2)",
+      "uid" : "7ab0e9f413188c1f",
+      "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1621681624125,
+        "stop" : 1621681658989,
+        "duration" : 34864
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Add text to interactive book topic (example #3)",
+      "uid" : "c44980441b8a0b75",
+      "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1621681659113,
+        "stop" : 1621681693795,
+        "duration" : 34682
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f97f7458738e4e8a05b89f21d9effcc3"
+  } ]
+}

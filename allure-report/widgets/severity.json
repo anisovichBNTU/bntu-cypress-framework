@@ -1,0 +1,61 @@
+[ {
+  "uid" : "7ab0e9f413188c1f",
+  "name" : "Add text to interactive book topic (example #2)",
+  "time" : {
+    "start" : 1621681624125,
+    "stop" : 1621681658989,
+    "duration" : 34864
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "443afdc2b464874f",
+  "name" : "Add text to interactive book topic (example #1)",
+  "time" : {
+    "start" : 1621681587696,
+    "stop" : 1621681624007,
+    "duration" : 36311
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b42121ea51152942",
+  "name" : "Create new interactive book topic (example #1)",
+  "time" : {
+    "start" : 1621681410942,
+    "stop" : 1621681458426,
+    "duration" : 47484
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b241241fd48edca",
+  "name" : "Create new interactive book topic (example #2)",
+  "time" : {
+    "start" : 1621681458522,
+    "stop" : 1621681491273,
+    "duration" : 32751
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c44980441b8a0b75",
+  "name" : "Add text to interactive book topic (example #3)",
+  "time" : {
+    "start" : 1621681659113,
+    "stop" : 1621681693795,
+    "duration" : 34682
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e0a82e26e0ddcc3e",
+  "name" : "Create new interactive book topic (example #3)",
+  "time" : {
+    "start" : 1621681491400,
+    "stop" : 1621681531858,
+    "duration" : 40458
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
