@@ -47,8 +47,8 @@ jobs:
       - persist_to_workspace:
           root: ~/
           paths:
-            - allure-results
-            - cypress/videos
+            - tmp/allure-results
+            - tmp/cypress/videos
   test-graduation:  
     working_directory: ~/tmp
     docker:
@@ -67,8 +67,8 @@ jobs:
       - persist_to_workspace:
           root: ~/
           paths:
-            - allure-results
-            - cypress/videos
+            - tmp/allure-results
+            - tmp/cypress/videos
   generate_report:
     working_directory: ~/
     docker:
