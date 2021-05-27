@@ -86,12 +86,15 @@ jobs:
     docker:
       - image: 'frankescobar/allure-docker-service'
     steps:
-      - restore_cache: 
-          keys: 
-            - 'v2-report1-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
-            - 'v2-report2-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
+      # - restore_cache: 
+      #     keys: 
+      #       - 'v2-report1-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
+      #       - 'v2-report2-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
       - attach_workspace:
           at: /allure-results
+      - run:
+          name: Test  
+          command: tree -a
       - run:
           name: Generate report 
           command: allure generate /tmp/allure-results --clean -o allure-report
