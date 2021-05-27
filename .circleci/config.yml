@@ -91,7 +91,7 @@ jobs:
       #       - 'v2-report1-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
       #       - 'v2-report2-{{ arch }}-{{ .Branch }}-{{ checksum "allure-results" }}'
       - attach_workspace:
-          at: /allure-results
+          at: ~/
       - run:
           name: Test  
           command: tree -a
