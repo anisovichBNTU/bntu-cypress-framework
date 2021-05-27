@@ -1,0 +1,491 @@
+{
+  "uid" : "99844b422c18c63d",
+  "name" : "Assign graduation project topic to student (example #2)",
+  "fullName" : "Assign graduation project topic to student (example #2)",
+  "historyId" : "7da575251ae25f8d9be951cfaa1d4300",
+  "time" : {
+    "start" : 1622152341305,
+    "stop" : 1622152381856,
+    "duration" : 40551
+  },
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 20000ms: Expected to find element: `.mat-button-base[mattooltip=\"Назначить\"]`, but never found it. Queried from element: <tr.mdc-data-table__row.ng-star-inserted>",
+  "statusTrace" : "AssertionError: Timed out retrying after 20000ms: Expected to find element: `.mat-button-base[mattooltip=\"Назначить\"]`, but never found it. Queried from element: <tr.mdc-data-table__row.ng-star-inserted>\n    at eval (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:1441:44)\n    at Button../elements/element.ts.Element._waitForLogWrapper (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:1447:20)\n    at Button../elements/element.ts.Element._waitForExist (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:1436:21)\n    at Button../elements/element.ts.Element.click (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:1069:14)\n    at ProjectTopicForm../forms/projectTopicForm.ts.ProjectTopicForm.assignStudentToTopic (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:1923:62)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:455:64)\n    at Context.resolveAndRunStepDefinition (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:12285:9)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:11583:35)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Timed out retrying after 20000ms: Expected to find element: `.mat-button-base[mattooltip=\"Назначить\"]`, but never found it. Queried from element: <tr.mdc-data-table__row.ng-star-inserted>",
+    "statusTrace" : "AssertionError: Timed out retrying after 20000ms: Expected to find element: `.mat-button-base[mattooltip=\"Назначить\"]`, but never found it. Queried from element: <tr.mdc-data-table__row.ng-star-inserted>\n    at eval (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:1441:44)\n    at Button../elements/element.ts.Element._waitForLogWrapper (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:1447:20)\n    at Button../elements/element.ts.Element._waitForExist (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:1436:21)\n    at Button../elements/element.ts.Element.click (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:1069:14)\n    at ProjectTopicForm../forms/projectTopicForm.ts.ProjectTopicForm.assignStudentToTopic (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:1923:62)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:455:64)\n    at Context.resolveAndRunStepDefinition (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:12285:9)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/graduationProject/4assignToStudentGraduationProjectTopic.feature:11583:35)",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1622152341307,
+        "stop" : 1622152341338,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I am logged in with password to the platform as test user",
+      "time" : {
+        "start" : 1622152341346,
+        "stop" : 1622152357008,
+        "duration" : 15662
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit (\"https://educats.by/\")",
+        "time" : {
+          "start" : 1622152341352,
+          "stop" : 1622152343638,
+          "duration" : 2286
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1622152343638,
+          "stop" : 1622152343638,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622152343638,
+          "stop" : 1622152344061,
+          "duration" : 423
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/login?returnUrl=%2Fweb%2Fdashboard** to match /login/ assert",
+        "time" : {
+          "start" : 1622152344061,
+          "stop" : 1622152344061,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/login?returnUrl=%2Fweb%2Fdashboard new url",
+        "time" : {
+          "start" : 1622152344061,
+          "stop" : 1622152344061,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"testLecturer\" to \"Username\" then",
+        "time" : {
+          "start" : 1622152344987,
+          "stop" : 1622152344987,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"testLecturer\" to \"Password\" then",
+        "time" : {
+          "start" : 1622152345922,
+          "stop" : 1622152345922,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click by \"Log In button\" then",
+        "time" : {
+          "start" : 1622152346495,
+          "stop" : 1622152346495,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622152346495,
+          "stop" : 1622152353789,
+          "duration" : 7294
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/web/dashboard** to match /web\\/dashboard/ assert",
+        "time" : {
+          "start" : 1622152353788,
+          "stop" : 1622152353788,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1622152353789,
+          "stop" : 1622152353789,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/web/dashboard new url",
+        "time" : {
+          "start" : 1622152353789,
+          "stop" : 1622152353789,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/GetAvatar",
+        "time" : {
+          "start" : 1622152353789,
+          "stop" : 1622152353789,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Services/CoreService.svc/GetAllGroupsLite/",
+        "time" : {
+          "start" : 1622152353789,
+          "stop" : 1622152353789,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/calendar/ Frame Load",
+        "time" : {
+          "start" : 1622152356772,
+          "stop" : 1622152356772,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Element \"Main page: Schedule label\" is displaying\" then",
+        "time" : {
+          "start" : 1622152357006,
+          "stop" : 1622152357006,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 16,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "When Select 'Graduation Project' module on header on Main page",
+      "time" : {
+        "start" : 1622152357008,
+        "stop" : 1622152357609,
+        "duration" : 601
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Header: Subjects button\" then",
+        "time" : {
+          "start" : 1622152357601,
+          "stop" : 1622152357601,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622152357601,
+          "stop" : 1622152357606,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/web/diplom** to match /web\\/diplom/ assert",
+        "time" : {
+          "start" : 1622152357606,
+          "stop" : 1622152357606,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Select \"Темы проектов\" tab on Graduation project page",
+      "time" : {
+        "start" : 1622152357609,
+        "stop" : 1622152361446,
+        "duration" : 3837
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "https://educats.by/diplom/ Frame Load",
+        "time" : {
+          "start" : 1622152360787,
+          "stop" : 1622152360787,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click by \"Graduation project: tab (Темы проектов)\" then",
+        "time" : {
+          "start" : 1622152361444,
+          "stop" : 1622152361444,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Assign student \"Autotest2 Test2 Student2\" from \"10702217\" group to topic \"ShortValue\" on Graduation project page",
+      "time" : {
+        "start" : 1622152361446,
+        "stop" : 1622152381855,
+        "duration" : 20409
+      },
+      "status" : "failed",
+      "steps" : [ {
+        "name" : "Select option in \"Student form: Group select\" by value \"10702217\" then",
+        "time" : {
+          "start" : 1622152381855,
+          "stop" : 1622152381855,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "name" : "graduationProject/4assignToStudentGraduationProjectTopic.feature.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    }, {
+      "uid" : "aa0cfb25594d0e18",
+      "name" : "graduationProject/4assignToStudentGraduationProjectTopic.feature:2021-05-27T21:53:01.677Z",
+      "source" : "aa0cfb25594d0e18.png",
+      "type" : "image/png",
+      "size" : 141701
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 27,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Graduation Project"
+  }, {
+    "name" : "feature",
+    "value" : "Graduation Project"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "99844b422c18c63d.json",
+  "parameterValues" : [ ]
+}
