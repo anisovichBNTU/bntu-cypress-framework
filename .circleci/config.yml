@@ -78,11 +78,11 @@ jobs:
           at: ~/
       - run:
           name: Generate report 
-          command: allure generate allure-results --clean -o allure-report
+          command: allure generate ./allure-results --clean -o allure-report
       - store_artifacts:
           path: allure-report
       - persist_to_workspace:
-          root: ~/tmp
+          root: ~/
           paths:
             - allure-report
   deploy:
