@@ -101,6 +101,7 @@ jobs:
             git config --global user.name anisovichBNTU
 
             git clone https://github.com/anisovichBNTU/bntu-cypress-framework.git out
+            git remote add deploy https://anisovichBNTU:anisovichBNTUcypress@github.com/anisovichBNTU/bntu-cypress-framework.git
             cd out
             
             git checkout gh-pages || git checkout --orphan gh-pages
@@ -113,7 +114,7 @@ jobs:
             git add ./allure-report
             git commit -m "Automated deployment to GitHub Pages" --allow-empty
 
-            git push origin gh-pages
+            git push deploy gh-pages
 
 workflows:
   build_and_test:
