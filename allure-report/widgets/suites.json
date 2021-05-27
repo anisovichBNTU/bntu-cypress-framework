@@ -1,15 +1,4 @@
 {
-  "total" : 1,
-  "items" : [ {
-    "uid" : "ad81dad1a97a991e213ec779f80e6e84",
-    "name" : "Interactive Book",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 5,
-      "unknown" : 0,
-      "total" : 6
-    }
-  } ]
+  "total" : 0,
+  "items" : [ ]
 }

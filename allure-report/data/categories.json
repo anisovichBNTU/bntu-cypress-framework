@@ -1,26 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "expected 'qwertyuiop' to include 'Autotest book topic'",
-      "children" : [ {
-        "name" : "Add text to interactive book topic (example #1)",
-        "uid" : "443afdc2b464874f",
-        "parentUid" : "02b233719f79fe0e659f9c860ea95cb3",
-        "status" : "failed",
-        "time" : {
-          "start" : 1621681587696,
-          "stop" : 1621681624007,
-          "duration" : 36311
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "02b233719f79fe0e659f9c860ea95cb3"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ]
+  "children" : [ ]
 }

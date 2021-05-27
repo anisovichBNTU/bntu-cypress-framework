@@ -1,7 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat May 22 14:04:18 MSK 2021","Sat May 22 14:04:51 MSK 2021","32751","","Interactive Book","","","","Create new interactive book topic (example #2)",""
-"failed","Sat May 22 14:06:27 MSK 2021","Sat May 22 14:07:04 MSK 2021","36311","","Interactive Book","","","","Add text to interactive book topic (example #1)",""
-"passed","Sat May 22 14:04:51 MSK 2021","Sat May 22 14:05:31 MSK 2021","40458","","Interactive Book","","","","Create new interactive book topic (example #3)",""
-"passed","Sat May 22 14:07:39 MSK 2021","Sat May 22 14:08:13 MSK 2021","34682","","Interactive Book","","","","Add text to interactive book topic (example #3)",""
-"passed","Sat May 22 14:07:04 MSK 2021","Sat May 22 14:07:38 MSK 2021","34864","","Interactive Book","","","","Add text to interactive book topic (example #2)",""
-"passed","Sat May 22 14:03:30 MSK 2021","Sat May 22 14:04:18 MSK 2021","47484","","Interactive Book","","","","Create new interactive book topic (example #1)",""
