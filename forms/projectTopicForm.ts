@@ -1,3 +1,4 @@
+import { Timeout } from "../constants/timeout";
 import { Button, Label, TextArea } from "../elements";
 import BaseForm from "./baseForm";
 import studentListForm from "./studentListForm";
@@ -111,14 +112,18 @@ class ProjectTopicForm extends BaseForm {
     }
 
     assertThatTopicIsDisplayed(topicName: string, isDisplayed = true) {
-        this.topicNameLabel(this.getShortName(topicName)).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
+        this.topicNameLabel(this.getShortName(topicName)).waitForDisplayed({
+            delay: Timeout.BASE_ADD_DELAY, reverse: !isDisplayed
+        });
     }
 
     assertThatTopicHasStudent(topicName: string, studentName: string | RegExp, reverse = false) {
         if (!reverse) {
-            this.topicRowLabel(this.getShortName(topicName)).waitUntilInnerTextMatches(studentName, { delay: 2000 });
+            this.topicRowLabel(this.getShortName(topicName)).waitUntilInnerTextMatches(studentName,
+                { delay: Timeout.BASE_ADD_DELAY });
         } else {
-            this.topicRowLabel(this.getShortName(topicName)).waitUntilInnerTextNotMatches(studentName, { delay: 2000 });
+            this.topicRowLabel(this.getShortName(topicName)).waitUntilInnerTextNotMatches(studentName,
+                { delay: Timeout.BASE_ADD_DELAY });
         }
     }
 

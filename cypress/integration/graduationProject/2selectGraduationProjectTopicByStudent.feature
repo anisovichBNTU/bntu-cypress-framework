@@ -10,6 +10,6 @@ Feature: Graduation Project
 
         Examples:
             | ProjectName | Student                  | StudentUser          |
-            | NormalValue | Autotest1 Test1 Student1 | testStudentAutotest  |
-            | ShortValue  | Autotest2 Test2 Student2 | testStudentAutotest1 |
+            | NormalValue | Autotest1 Test1 Student1 | testStudentAutotest1 |
+            | ShortValue  | Autotest2 Test2 Student2 | testStudentAutotest2 |
             | LongValue   | Autotest3 Test3 Student3 | testStudentAutotest3 |

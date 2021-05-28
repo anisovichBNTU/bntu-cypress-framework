@@ -78,3 +78,8 @@ Then(/^I should see displayed added section "(.*)" on the complex form on EEM Co
     let name = complex.folderName[folderNameType];
     complexPage.assertThatComplexSectionIsDisplayed(name);
 });
+
+Then(/^I should see displayed added file "(.*)" on the complex form on EEM Complex page$/, (fileNameType: string) => {
+    let name = complex.fileName[fileNameType];
+    complexPage.assertThatComplexSectionIsDisplayed(name);
+});

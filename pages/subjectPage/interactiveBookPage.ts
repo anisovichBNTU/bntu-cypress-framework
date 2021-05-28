@@ -1,3 +1,4 @@
+import { Timeout } from '../../constants/timeout';
 import { Button, TextArea, ContextMenu, Label } from '../../elements';
 import BasePage from '../basePage';
 
@@ -61,8 +62,8 @@ class InteractiveBookPage extends BasePage {
             { intoIFrame: true });
         this.bookContentLabel = new Label('#editor', 'Interactive book: Book content label (not editable)',
             { intoIFrame: true });
-        this.bookContentSaveButton = new Button('.flex-editor-container .btn-holder button',
-            'Interactive book: Book content Save button', { intoIFrame: true, text: 'Сохранить' });
+        this.bookContentSaveButton = new Button('.flex-editor-container [ng-reflect-message="Сохранить"]',
+            'Interactive book: Book content Save button', { intoIFrame: true });
     }
 
     clickAddNewBook() {
@@ -116,17 +117,20 @@ class InteractiveBookPage extends BasePage {
     }
 
     assertThatTopicIsDisplayed(topicTitle: string, isDisplayed = true) {
-        this.bookTopic(this.getShortName(topicTitle)).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
+        this.bookTopic(this.getShortName(topicTitle)).waitForDisplayed({
+            delay: Timeout.BASE_ADD_DELAY,
+            reverse: !isDisplayed
+        });
     }
 
     assertThatTopicHideIconIsDisplayed(topicTitle: string, isDisplayed = true) {
         this.bookTopicHideIconLabel(this.getShortName(topicTitle))
-            .waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
+            .waitForDisplayed({ delay: Timeout.BASE_ADD_DELAY, reverse: !isDisplayed });
     }
 
     assertThatBookContentHasText(text: string[]) {
         for (const textItem of text) {
-            this.bookContentInput.waitUntilInnerTextMatches(textItem);
+            this.bookContentInput.waitUntilInnerTextMatches(this.getShortName(textItem));
         }
     }
 
@@ -143,7 +147,7 @@ class InteractiveBookPage extends BasePage {
     }
 
     private getShortName(topicName: string) {
-        return topicName.substr(0, 100);
+        return topicName.substr(0, 80);
     }
 }
 

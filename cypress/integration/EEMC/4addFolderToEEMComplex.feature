@@ -13,8 +13,8 @@ Feature: EEM Complex
         Then I should see displayed added section "<FolderName>" on the complex form on EEM Complex page
 
         Examples:
-            | ComplexName  | FolderName   | Section     |
-            | NormalValue  | NormalValue  | PRACTICAL   |
-            | ShortValue   | ShortValue   | THEORETICAL |
-            | LongValue    | LongValue    | PRACTICAL   |
-            | RussianValue | RussianValue | THEORETICAL |
+            | ComplexName  | FolderName   | Section   |
+            | NormalValue  | NormalValue  | PRACTICAL |
+            | ShortValue   | ShortValue   | PRACTICAL |
+            | LongValue    | LongValue    | PRACTICAL |
+            | RussianValue | RussianValue | PRACTICAL |

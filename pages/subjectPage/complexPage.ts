@@ -1,3 +1,4 @@
+import { Timeout } from '../../constants/timeout';
 import { Button, TextArea, Label, Select, Input } from '../../elements';
 import BasePage from '../basePage';
 
@@ -75,7 +76,7 @@ class ComplexPage extends BasePage {
             {
                 intoIFrame: true
             });
-        this.sectionToAddSelect = new Select('.mat-menu-trigger.mat-button-base',
+        this.sectionToAddSelect = new Select('.basic-container .mat-menu-trigger.mat-button-base',
             `EEM Complex: Section to add new element select`,
             {
                 dropdownListSelector: '.mat-menu-content', dropdownListItemSelector: '[role="menuitem"]',
@@ -153,17 +154,24 @@ class ComplexPage extends BasePage {
     }
 
     assertThatComplexIsDisplayed(name: string, isDisplayed = true) {
-        this.complexNameButton(this.getShortName(name)).waitForDisplayed({ delay: 2000, reverse: !isDisplayed });
-        this.complexNameButton(this.getShortName(name)).waitUntilInnerTextMatches(name);
-        this.complexNameButton(this.getShortName(name)).scrollIntoView();
+        this.complexNameButton(this.getShortName(name)).waitForDisplayed({
+            delay: Timeout.BASE_ADD_DELAY,
+            reverse: !isDisplayed
+        });
     };
 
     assertThatComplexMapSectionIsDisplayed(name: string, isDisplayed = true) {
-        this.complexSectionMapButton(name).waitForDisplayed({ delay: 500, reverse: !isDisplayed });
+        this.complexSectionMapButton(name).waitForDisplayed({
+            delay: Timeout.COMPLEX_MAP_DELAY,
+            reverse: !isDisplayed
+        });
     };
 
     assertThatComplexSectionIsDisplayed(name: string, isDisplayed = true) {
-        this.complexSectionButton(name).waitForDisplayed({ delay: 500, reverse: !isDisplayed });
+        this.complexSectionButton(name).waitForDisplayed({
+            delay: Timeout.COMPLEX_MAP_DELAY,
+            reverse: !isDisplayed
+        });
     };
 
     private getShortName(topicName: string) {
