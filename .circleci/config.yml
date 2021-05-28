@@ -38,7 +38,6 @@ jobs:
       - run:
           name: Run tests Course project
           command: npm run test:course
-          # command: npx cypress run --spec ./cypress/integration/courseProject/1*.feature --env allure=true
       - run: 
           name: Push results 
           when: always
@@ -80,7 +79,6 @@ jobs:
       - run:
           name: Run tests Interactive book
           command: npm run test:interactive
-          # command: npx cypress run --spec ./cypress/integration/courseProject/1*.feature --env allure=true
       - run: 
           name: Push results 
           when: always
