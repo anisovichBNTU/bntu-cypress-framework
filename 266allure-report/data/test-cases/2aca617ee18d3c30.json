@@ -1,0 +1,599 @@
+{
+  "uid" : "2aca617ee18d3c30",
+  "name" : "Create new graduation project topic (example #1)",
+  "fullName" : "Create new graduation project topic (example #1)",
+  "historyId" : "b57f385563896cf2bdd280a8c58891ed",
+  "time" : {
+    "start" : 1622226474959,
+    "stop" : 1622226501819,
+    "duration" : 26860
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1622226474968,
+        "stop" : 1622226474969,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I am logged in with password to the platform as test user",
+      "time" : {
+        "start" : 1622226474984,
+        "stop" : 1622226489467,
+        "duration" : 14483
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit (\"https://educats.by/\")",
+        "time" : {
+          "start" : 1622226474993,
+          "stop" : 1622226480079,
+          "duration" : 5086
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1622226480078,
+          "stop" : 1622226480078,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622226480079,
+          "stop" : 1622226480507,
+          "duration" : 428
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/login?returnUrl=%2Fweb%2Fdashboard** to match /login/ assert",
+        "time" : {
+          "start" : 1622226480507,
+          "stop" : 1622226480507,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/login?returnUrl=%2Fweb%2Fdashboard new url",
+        "time" : {
+          "start" : 1622226480507,
+          "stop" : 1622226480507,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"testLecturer\" to \"Username\" then",
+        "time" : {
+          "start" : 1622226481552,
+          "stop" : 1622226481552,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"testLecturer\" to \"Password\" then",
+        "time" : {
+          "start" : 1622226482559,
+          "stop" : 1622226482559,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click by \"Log In button\" then",
+        "time" : {
+          "start" : 1622226483149,
+          "stop" : 1622226483149,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622226483150,
+          "stop" : 1622226484842,
+          "duration" : 1692
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/web/dashboard** to match /web\\/dashboard/ assert",
+        "time" : {
+          "start" : 1622226484841,
+          "stop" : 1622226484841,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1622226484841,
+          "stop" : 1622226484841,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/web/dashboard new url",
+        "time" : {
+          "start" : 1622226484842,
+          "stop" : 1622226484842,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/GetAvatar",
+        "time" : {
+          "start" : 1622226484842,
+          "stop" : 1622226484842,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Services/CoreService.svc/GetAllGroupsLite/",
+        "time" : {
+          "start" : 1622226484842,
+          "stop" : 1622226484842,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/calendar/ Frame Load",
+        "time" : {
+          "start" : 1622226489144,
+          "stop" : 1622226489144,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Element \"Main page: Schedule label\" is displaying\" then",
+        "time" : {
+          "start" : 1622226489461,
+          "stop" : 1622226489461,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 16,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "When Select 'Graduation Project' module on header on Main page",
+      "time" : {
+        "start" : 1622226489466,
+        "stop" : 1622226490087,
+        "duration" : 621
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Header: Subjects button\" then",
+        "time" : {
+          "start" : 1622226490070,
+          "stop" : 1622226490070,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622226490070,
+          "stop" : 1622226490081,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/web/diplom** to match /web\\/diplom/ assert",
+        "time" : {
+          "start" : 1622226490080,
+          "stop" : 1622226490081,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Select \"Темы проектов\" tab on Graduation project page",
+      "time" : {
+        "start" : 1622226490087,
+        "stop" : 1622226493747,
+        "duration" : 3660
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "https://educats.by/diplom/ Frame Load",
+        "time" : {
+          "start" : 1622226493157,
+          "stop" : 1622226493157,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click by \"Graduation project: tab (Темы проектов)\" then",
+        "time" : {
+          "start" : 1622226493741,
+          "stop" : 1622226493741,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Add new graduation project topic on Graduation project page",
+      "time" : {
+        "start" : 1622226493747,
+        "stop" : 1622226495370,
+        "duration" : 1623
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Project topic: Add topic button\" then",
+        "time" : {
+          "start" : 1622226495365,
+          "stop" : 1622226495365,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Fill new graduation project \"NormalValue\" topic info on Graduation project page",
+      "time" : {
+        "start" : 1622226495370,
+        "stop" : 1622226497244,
+        "duration" : 1874
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "clear",
+        "time" : {
+          "start" : 1622226495798,
+          "stop" : 1622226496015,
+          "duration" : 217
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"autotest name\" to \"Project topic: Topic name text area\" then",
+        "time" : {
+          "start" : 1622226496651,
+          "stop" : 1622226496651,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click by \"Project topic: Save topic button\" then",
+        "time" : {
+          "start" : 1622226497241,
+          "stop" : 1622226497241,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then I should see created graduation project topic \"NormalValue\" on Graduation project page",
+      "time" : {
+        "start" : 1622226497244,
+        "stop" : 1622226501819,
+        "duration" : 4575
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "wait (\"2500\")",
+        "time" : {
+          "start" : 1622226498249,
+          "stop" : 1622226500753,
+          "duration" : 2504
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Element \"Project topic: topic (autotest name) name label\" is displaying\" then",
+        "time" : {
+          "start" : 1622226501208,
+          "stop" : 1622226501208,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "screenshot (\"[object Object]\")",
+        "time" : {
+          "start" : 1622226501208,
+          "stop" : 1622226501817,
+          "duration" : 609
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "f14b852f3ee3ffe7",
+      "name" : "graduationProject/1createNewGraduationProjectTopic.feature:2021-05-28T18:28:21.223Z",
+      "source" : "f14b852f3ee3ffe7.png",
+      "type" : "image/png",
+      "size" : 65783
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 35,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Graduation Project"
+  }, {
+    "name" : "feature",
+    "value" : "Graduation Project"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2aca617ee18d3c30.json",
+  "parameterValues" : [ ]
+}

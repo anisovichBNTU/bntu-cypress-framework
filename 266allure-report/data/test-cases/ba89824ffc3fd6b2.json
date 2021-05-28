@@ -1,0 +1,794 @@
+{
+  "uid" : "ba89824ffc3fd6b2",
+  "name" : "Create new course project topic (example #2)",
+  "fullName" : "Create new course project topic (example #2)",
+  "historyId" : "f1d39f5c16b377e8e00ac30f0c0c7ebb",
+  "time" : {
+    "start" : 1622226524033,
+    "stop" : 1622226556947,
+    "duration" : 32914
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1622226524034,
+        "stop" : 1622226524070,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I am logged in with password to the platform as test user",
+      "time" : {
+        "start" : 1622226524077,
+        "stop" : 1622226537023,
+        "duration" : 12946
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit (\"https://educats.by/\")",
+        "time" : {
+          "start" : 1622226524083,
+          "stop" : 1622226527071,
+          "duration" : 2988
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1622226527070,
+          "stop" : 1622226527070,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622226527071,
+          "stop" : 1622226527551,
+          "duration" : 480
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/login?returnUrl=%2Fweb%2Fdashboard** to match /login/ assert",
+        "time" : {
+          "start" : 1622226527551,
+          "stop" : 1622226527551,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/login?returnUrl=%2Fweb%2Fdashboard new url",
+        "time" : {
+          "start" : 1622226527551,
+          "stop" : 1622226527551,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"testLecturer\" to \"Username\" then",
+        "time" : {
+          "start" : 1622226528576,
+          "stop" : 1622226528576,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"testLecturer\" to \"Password\" then",
+        "time" : {
+          "start" : 1622226529647,
+          "stop" : 1622226529647,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click by \"Log In button\" then",
+        "time" : {
+          "start" : 1622226530216,
+          "stop" : 1622226530216,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622226530216,
+          "stop" : 1622226533368,
+          "duration" : 3152
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/web/dashboard** to match /web\\/dashboard/ assert",
+        "time" : {
+          "start" : 1622226533367,
+          "stop" : 1622226533367,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1622226533368,
+          "stop" : 1622226533368,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/web/dashboard new url",
+        "time" : {
+          "start" : 1622226533368,
+          "stop" : 1622226533368,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/GetAvatar",
+        "time" : {
+          "start" : 1622226533368,
+          "stop" : 1622226533368,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Services/CoreService.svc/GetAllGroupsLite/",
+        "time" : {
+          "start" : 1622226533368,
+          "stop" : 1622226533368,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/calendar/ Frame Load",
+        "time" : {
+          "start" : 1622226536623,
+          "stop" : 1622226536623,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Element \"Main page: Schedule label\" is displaying\" then",
+        "time" : {
+          "start" : 1622226537020,
+          "stop" : 1622226537020,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 16,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "When Select 'Subject' module on header on Main page",
+      "time" : {
+        "start" : 1622226537023,
+        "stop" : 1622226538072,
+        "duration" : 1049
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Header: Subjects button\" then",
+        "time" : {
+          "start" : 1622226537601,
+          "stop" : 1622226537601,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622226537601,
+          "stop" : 1622226538070,
+          "duration" : 469
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/web/viewer/main** to match /web\\/viewer\\/main/ assert",
+        "time" : {
+          "start" : 1622226538069,
+          "stop" : 1622226538069,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1622226538069,
+          "stop" : 1622226538069,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/web/viewer/main new url",
+        "time" : {
+          "start" : 1622226538069,
+          "stop" : 1622226538069,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Services/Subjects/SubjectsService.svc/GetUserSubjects/10666",
+        "time" : {
+          "start" : 1622226538069,
+          "stop" : 1622226538069,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Select \"Test Subject Autotest\" subject on Subject page",
+      "time" : {
+        "start" : 1622226538072,
+        "stop" : 1622226544715,
+        "duration" : 6643
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Selected item \"Test Subject Autotest\"\" then",
+        "time" : {
+          "start" : 1622226539199,
+          "stop" : 1622226539199,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "frameLoaded",
+        "time" : {
+          "start" : 1622226539614,
+          "stop" : 1622226544669,
+          "duration" : 5055
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "https://educats.by/subject/news Frame Load",
+          "time" : {
+            "start" : 1622226544669,
+            "stop" : 1622226544669,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Frame is loaded then",
+        "time" : {
+          "start" : 1622226544711,
+          "stop" : 1622226544711,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Select option in \"Subject page: subject select\" by value \"Test Subject Autotest\" then",
+        "time" : {
+          "start" : 1622226544711,
+          "stop" : 1622226544711,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Click \"Курсовые проекты/работы\" subject module on Subject page",
+      "time" : {
+        "start" : 1622226544715,
+        "stop" : 1622226548449,
+        "duration" : 3734
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Subject page: module \"Курсовые проекты/работы\"\" then",
+        "time" : {
+          "start" : 1622226545331,
+          "stop" : 1622226545331,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "frameLoaded",
+        "time" : {
+          "start" : 1622226545741,
+          "stop" : 1622226548441,
+          "duration" : 2700
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "https://educats.by/course/ Frame Load",
+          "time" : {
+            "start" : 1622226548441,
+            "stop" : 1622226548441,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Frame is loaded then",
+        "time" : {
+          "start" : 1622226548444,
+          "stop" : 1622226548444,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Select \"Темы проектов\" tab on Course project page",
+      "time" : {
+        "start" : 1622226548449,
+        "stop" : 1622226549073,
+        "duration" : 624
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Course project: tab (Темы проектов)\" then",
+        "time" : {
+          "start" : 1622226549069,
+          "stop" : 1622226549069,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Add new course project topic on Course project page",
+      "time" : {
+        "start" : 1622226549073,
+        "stop" : 1622226550681,
+        "duration" : 1608
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Project topic: Add topic button\" then",
+        "time" : {
+          "start" : 1622226550678,
+          "stop" : 1622226550678,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Fill new course project \"ShortValue\" topic info on Course project page",
+      "time" : {
+        "start" : 1622226550681,
+        "stop" : 1622226552214,
+        "duration" : 1533
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "clear",
+        "time" : {
+          "start" : 1622226551101,
+          "stop" : 1622226551214,
+          "duration" : 113
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"SPN\" to \"Project topic: Topic name text area\" then",
+        "time" : {
+          "start" : 1622226551634,
+          "stop" : 1622226551634,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click by \"Project topic: Save topic button\" then",
+        "time" : {
+          "start" : 1622226552212,
+          "stop" : 1622226552212,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then I should see created course project topic \"ShortValue\" on Course project page",
+      "time" : {
+        "start" : 1622226552214,
+        "stop" : 1622226556947,
+        "duration" : 4733
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "wait (\"2500\")",
+        "time" : {
+          "start" : 1622226553217,
+          "stop" : 1622226555721,
+          "duration" : 2504
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Element \"Project topic: topic (SPN) name label\" is displaying\" then",
+        "time" : {
+          "start" : 1622226556195,
+          "stop" : 1622226556195,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "screenshot (\"[object Object]\")",
+        "time" : {
+          "start" : 1622226556196,
+          "stop" : 1622226556946,
+          "duration" : 750
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "352c4a5f511600f6",
+      "name" : "courseProject/1createNewCourseProjectTopic.feature:2021-05-28T18:29:16.233Z",
+      "source" : "352c4a5f511600f6.png",
+      "type" : "image/png",
+      "size" : 78010
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 48,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Course Project"
+  }, {
+    "name" : "feature",
+    "value" : "Course Project"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ba89824ffc3fd6b2.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,626 @@
+{
+  "uid" : "e0f1e4a956a7cff9",
+  "name" : "Open created EEM Complex (example #3)",
+  "fullName" : "Open created EEM Complex (example #3)",
+  "historyId" : "098b24ea4a5acb870d6030c92a1ed82e",
+  "time" : {
+    "start" : 1622226910714,
+    "stop" : 1622226951067,
+    "duration" : 40353
+  },
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 20000ms: Expected to find content: 'EEM COMP' within the element: [ <a>, 16 more... ] but never did.",
+  "statusTrace" : "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'EEM COMP' within the element: [ <a>, 16 more... ] but never did.\n    at eval (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:1466:44)\n    at Button../elements/element.ts.Element._waitForLogWrapper (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:1472:20)\n    at Button../elements/element.ts.Element._waitForExist (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:1461:21)\n    at Button../elements/element.ts.Element.click (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:1094:14)\n    at ComplexPage../pages/subjectPage/complexPage.ts.ComplexPage.openComplex (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:44419:57)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:365:27)\n    at Context.resolveAndRunStepDefinition (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:12322:9)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:11620:35)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Timed out retrying after 20000ms: Expected to find content: 'EEM COMP' within the element: [ <a>, 16 more... ] but never did.",
+    "statusTrace" : "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'EEM COMP' within the element: [ <a>, 16 more... ] but never did.\n    at eval (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:1466:44)\n    at Button../elements/element.ts.Element._waitForLogWrapper (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:1472:20)\n    at Button../elements/element.ts.Element._waitForExist (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:1461:21)\n    at Button../elements/element.ts.Element.click (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:1094:14)\n    at ComplexPage../pages/subjectPage/complexPage.ts.ComplexPage.openComplex (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:44419:57)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:365:27)\n    at Context.resolveAndRunStepDefinition (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:12322:9)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/EEMC/3openEEMComplex.feature:11620:35)",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1622226910715,
+        "stop" : 1622226910740,
+        "duration" : 25
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I am logged in with password to the platform as test user",
+      "time" : {
+        "start" : 1622226910744,
+        "stop" : 1622226921453,
+        "duration" : 10709
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit (\"https://educats.by/\")",
+        "time" : {
+          "start" : 1622226910749,
+          "stop" : 1622226913251,
+          "duration" : 2502
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1622226913251,
+          "stop" : 1622226913251,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622226913251,
+          "stop" : 1622226913612,
+          "duration" : 361
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/login?returnUrl=%2Fweb%2Fdashboard** to match /login/ assert",
+        "time" : {
+          "start" : 1622226913612,
+          "stop" : 1622226913612,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/login?returnUrl=%2Fweb%2Fdashboard new url",
+        "time" : {
+          "start" : 1622226913612,
+          "stop" : 1622226913612,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"testLecturer\" to \"Username\" then",
+        "time" : {
+          "start" : 1622226914587,
+          "stop" : 1622226914587,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"testLecturer\" to \"Password\" then",
+        "time" : {
+          "start" : 1622226915557,
+          "stop" : 1622226915557,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click by \"Log In button\" then",
+        "time" : {
+          "start" : 1622226916128,
+          "stop" : 1622226916128,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622226916128,
+          "stop" : 1622226918297,
+          "duration" : 2169
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/web/dashboard** to match /web\\/dashboard/ assert",
+        "time" : {
+          "start" : 1622226918297,
+          "stop" : 1622226918297,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1622226918297,
+          "stop" : 1622226918297,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/web/dashboard new url",
+        "time" : {
+          "start" : 1622226918297,
+          "stop" : 1622226918297,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/GetAvatar",
+        "time" : {
+          "start" : 1622226918297,
+          "stop" : 1622226918297,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Services/CoreService.svc/GetAllGroupsLite/",
+        "time" : {
+          "start" : 1622226918297,
+          "stop" : 1622226918297,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/calendar/ Frame Load",
+        "time" : {
+          "start" : 1622226921218,
+          "stop" : 1622226921218,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Element \"Main page: Schedule label\" is displaying\" then",
+        "time" : {
+          "start" : 1622226921451,
+          "stop" : 1622226921451,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 16,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "When Select 'Subject' module on header on Main page",
+      "time" : {
+        "start" : 1622226921453,
+        "stop" : 1622226922392,
+        "duration" : 939
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Header: Subjects button\" then",
+        "time" : {
+          "start" : 1622226922028,
+          "stop" : 1622226922028,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622226922028,
+          "stop" : 1622226922390,
+          "duration" : 362
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/web/viewer/main** to match /web\\/viewer\\/main/ assert",
+        "time" : {
+          "start" : 1622226922389,
+          "stop" : 1622226922389,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1622226922390,
+          "stop" : 1622226922390,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/web/viewer/main new url",
+        "time" : {
+          "start" : 1622226922390,
+          "stop" : 1622226922390,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Services/Subjects/SubjectsService.svc/GetUserSubjects/10666",
+        "time" : {
+          "start" : 1622226922390,
+          "stop" : 1622226922390,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Select \"Test Subject Autotest\" subject on Subject page",
+      "time" : {
+        "start" : 1622226922392,
+        "stop" : 1622226928325,
+        "duration" : 5933
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Selected item \"Test Subject Autotest\"\" then",
+        "time" : {
+          "start" : 1622226923480,
+          "stop" : 1622226923480,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "frameLoaded",
+        "time" : {
+          "start" : 1622226923908,
+          "stop" : 1622226928318,
+          "duration" : 4410
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "https://educats.by/subject/news Frame Load",
+          "time" : {
+            "start" : 1622226928318,
+            "stop" : 1622226928318,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Frame is loaded then",
+        "time" : {
+          "start" : 1622226928322,
+          "stop" : 1622226928322,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Select option in \"Subject page: subject select\" by value \"Test Subject Autotest\" then",
+        "time" : {
+          "start" : 1622226928322,
+          "stop" : 1622226928322,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Click \"ЭУМК\" subject module on Subject page",
+      "time" : {
+        "start" : 1622226928325,
+        "stop" : 1622226929511,
+        "duration" : 1186
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Subject page: module \"ЭУМК\"\" then",
+        "time" : {
+          "start" : 1622226928926,
+          "stop" : 1622226928926,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "frameLoaded",
+        "time" : {
+          "start" : 1622226929489,
+          "stop" : 1622226929506,
+          "duration" : 17
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Frame is loaded then",
+        "time" : {
+          "start" : 1622226929509,
+          "stop" : 1622226929509,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Open complex \"LongValue\" on EEM Complex page",
+      "time" : {
+        "start" : 1622226929511,
+        "stop" : 1622226951066,
+        "duration" : 21555
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "name" : "EEMC/3openEEMComplex.feature.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    }, {
+      "uid" : "c75b323b92e68f4a",
+      "name" : "EEMC/3openEEMComplex.feature:2021-05-28T18:35:50.714Z",
+      "source" : "c75b323b92e68f4a.png",
+      "type" : "image/png",
+      "size" : 145635
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 36,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "EEM Complex"
+  }, {
+    "name" : "feature",
+    "value" : "EEM Complex"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e0f1e4a956a7cff9.json",
+  "parameterValues" : [ ]
+}

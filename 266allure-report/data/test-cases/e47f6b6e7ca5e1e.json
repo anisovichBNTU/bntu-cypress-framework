@@ -1,0 +1,851 @@
+{
+  "uid" : "e47f6b6e7ca5e1e",
+  "name" : "Edit interactive book topic (example #2)",
+  "fullName" : "Edit interactive book topic (example #2)",
+  "historyId" : "94e68d45705a313bea163f9e985e88cd",
+  "time" : {
+    "start" : 1622227571159,
+    "stop" : 1622227608342,
+    "duration" : 37183
+  },
+  "status" : "failed",
+  "statusMessage" : "expected '                   S                   T' to include '                   S                   '",
+  "statusTrace" : "AssertionError: expected '                   S                   T' to include '                   S                   '\n    at TextArea../elements/element.ts.Element.waitUntilInnerTextMatches (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/8editInteractiveBookTopic.feature:1330:28)\n    at InteractiveBookPage../pages/subjectPage/interactiveBookPage.ts.InteractiveBookPage.assertThatBookContentHasText (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/8editInteractiveBookTopic.feature:44655:35)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/8editInteractiveBookTopic.feature:655:35)\n    at Context.resolveAndRunStepDefinition (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/8editInteractiveBookTopic.feature:12322:9)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/8editInteractiveBookTopic.feature:11620:35)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected '                   S                   T' to include '                   S                   '",
+    "statusTrace" : "AssertionError: expected '                   S                   T' to include '                   S                   '\n    at TextArea../elements/element.ts.Element.waitUntilInnerTextMatches (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/8editInteractiveBookTopic.feature:1330:28)\n    at InteractiveBookPage../pages/subjectPage/interactiveBookPage.ts.InteractiveBookPage.assertThatBookContentHasText (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/8editInteractiveBookTopic.feature:44655:35)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/8editInteractiveBookTopic.feature:655:35)\n    at Context.resolveAndRunStepDefinition (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/8editInteractiveBookTopic.feature:12322:9)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/8editInteractiveBookTopic.feature:11620:35)",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1622227571160,
+        "stop" : 1622227571193,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I am logged in with password to the platform as test user",
+      "time" : {
+        "start" : 1622227571241,
+        "stop" : 1622227583297,
+        "duration" : 12056
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit (\"https://educats.by/\")",
+        "time" : {
+          "start" : 1622227571246,
+          "stop" : 1622227574139,
+          "duration" : 2893
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1622227574139,
+          "stop" : 1622227574139,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622227574139,
+          "stop" : 1622227574536,
+          "duration" : 397
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/login?returnUrl=%2Fweb%2Fdashboard** to match /login/ assert",
+        "time" : {
+          "start" : 1622227574536,
+          "stop" : 1622227574536,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/login?returnUrl=%2Fweb%2Fdashboard new url",
+        "time" : {
+          "start" : 1622227574536,
+          "stop" : 1622227574536,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"testLecturer\" to \"Username\" then",
+        "time" : {
+          "start" : 1622227575564,
+          "stop" : 1622227575564,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"testLecturer\" to \"Password\" then",
+        "time" : {
+          "start" : 1622227576552,
+          "stop" : 1622227576552,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click by \"Log In button\" then",
+        "time" : {
+          "start" : 1622227577155,
+          "stop" : 1622227577155,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622227577155,
+          "stop" : 1622227579214,
+          "duration" : 2059
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/web/dashboard** to match /web\\/dashboard/ assert",
+        "time" : {
+          "start" : 1622227579213,
+          "stop" : 1622227579213,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1622227579213,
+          "stop" : 1622227579213,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/web/dashboard new url",
+        "time" : {
+          "start" : 1622227579213,
+          "stop" : 1622227579213,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/GetAvatar",
+        "time" : {
+          "start" : 1622227579214,
+          "stop" : 1622227579214,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Services/CoreService.svc/GetAllGroupsLite/",
+        "time" : {
+          "start" : 1622227579214,
+          "stop" : 1622227579214,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/calendar/ Frame Load",
+        "time" : {
+          "start" : 1622227583039,
+          "stop" : 1622227583039,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Element \"Main page: Schedule label\" is displaying\" then",
+        "time" : {
+          "start" : 1622227583293,
+          "stop" : 1622227583293,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 16,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "When Select 'Subject' module on header on Main page",
+      "time" : {
+        "start" : 1622227583297,
+        "stop" : 1622227584382,
+        "duration" : 1085
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Header: Subjects button\" then",
+        "time" : {
+          "start" : 1622227583893,
+          "stop" : 1622227583893,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1622227583893,
+          "stop" : 1622227584377,
+          "duration" : 484
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/web/viewer/main** to match /web\\/viewer\\/main/ assert",
+        "time" : {
+          "start" : 1622227584376,
+          "stop" : 1622227584376,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1622227584376,
+          "stop" : 1622227584376,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/web/viewer/main new url",
+        "time" : {
+          "start" : 1622227584376,
+          "stop" : 1622227584376,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Services/Subjects/SubjectsService.svc/GetUserSubjects/10666",
+        "time" : {
+          "start" : 1622227584377,
+          "stop" : 1622227584377,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Select \"Test Subject Autotest\" subject on Subject page",
+      "time" : {
+        "start" : 1622227584382,
+        "stop" : 1622227590309,
+        "duration" : 5927
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Selected item \"Test Subject Autotest\"\" then",
+        "time" : {
+          "start" : 1622227585566,
+          "stop" : 1622227585566,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "frameLoaded",
+        "time" : {
+          "start" : 1622227586040,
+          "stop" : 1622227590277,
+          "duration" : 4237
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "https://educats.by/subject/news Frame Load",
+          "time" : {
+            "start" : 1622227590276,
+            "stop" : 1622227590276,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Frame is loaded then",
+        "time" : {
+          "start" : 1622227590305,
+          "stop" : 1622227590305,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Select option in \"Subject page: subject select\" by value \"Test Subject Autotest\" then",
+        "time" : {
+          "start" : 1622227590305,
+          "stop" : 1622227590305,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Click \"Интерактивный учебник\" subject module on Subject page",
+      "time" : {
+        "start" : 1622227590309,
+        "stop" : 1622227595340,
+        "duration" : 5031
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Subject page: module \"Интерактивный учебник\"\" then",
+        "time" : {
+          "start" : 1622227590932,
+          "stop" : 1622227590932,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "frameLoaded",
+        "time" : {
+          "start" : 1622227591341,
+          "stop" : 1622227595287,
+          "duration" : 3946
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "https://educats.by/libBook/ Frame Load",
+          "time" : {
+            "start" : 1622227595287,
+            "stop" : 1622227595287,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Frame is loaded then",
+        "time" : {
+          "start" : 1622227595336,
+          "stop" : 1622227595336,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Select \"Переименовать\" option on \"ShortValue\" book context menu on Interactive book page",
+      "time" : {
+        "start" : 1622227595340,
+        "stop" : 1622227597942,
+        "duration" : 2602
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "rightclick (\"[object Object]\")",
+        "time" : {
+          "start" : 1622227596773,
+          "stop" : 1622227596875,
+          "duration" : 102
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click by \"Selected item \"Переименовать\"\" then",
+        "time" : {
+          "start" : 1622227597936,
+          "stop" : 1622227597936,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Select context menu option in \"Interactive book: Book topic (Q)\" by value \"Переименовать\" then",
+        "time" : {
+          "start" : 1622227597936,
+          "stop" : 1622227597936,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Edit book topic using name \"ShortValueEdited\" on Interactive book page",
+      "time" : {
+        "start" : 1622227597942,
+        "stop" : 1622227600741,
+        "duration" : 2799
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "clear",
+        "time" : {
+          "start" : 1622227598369,
+          "stop" : 1622227598557,
+          "duration" : 188
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"                   S                   \" to \"Interactive book: New book title text area\" then",
+        "time" : {
+          "start" : 1622227600149,
+          "stop" : 1622227600149,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click by \"Interactive book: Save new book button\" then",
+        "time" : {
+          "start" : 1622227600737,
+          "stop" : 1622227600737,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then I should see created book topic \"ShortValueEdited\" on Interactive book page",
+      "time" : {
+        "start" : 1622227600741,
+        "stop" : 1622227604731,
+        "duration" : 3990
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "wait (\"2500\")",
+        "time" : {
+          "start" : 1622227601746,
+          "stop" : 1622227604249,
+          "duration" : 2503
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Element \"Interactive book: Book topic (S)\" is displaying\" then",
+        "time" : {
+          "start" : 1622227604726,
+          "stop" : 1622227604726,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "When Open book topic \"ShortValueEdited\" on Interactive book page",
+      "time" : {
+        "start" : 1622227604731,
+        "stop" : 1622227606317,
+        "duration" : 1586
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Interactive book: Book topic (S)\" then",
+        "time" : {
+          "start" : 1622227606314,
+          "stop" : 1622227606314,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then I should see book topic \"ShortValueEdited\" in book content on Interactive book page",
+      "time" : {
+        "start" : 1622227606317,
+        "stop" : 1622227608340,
+        "duration" : 2023
+      },
+      "status" : "failed",
+      "steps" : [ {
+        "name" : "Get text of \"Interactive book: Book content text area\": \"                   S                   T\" then",
+        "time" : {
+          "start" : 1622227608055,
+          "stop" : 1622227608055,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "name" : "interactiveBook/8editInteractiveBookTopic.feature.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    }, {
+      "uid" : "f291f4c6ec6d981e",
+      "name" : "interactiveBook/8editInteractiveBookTopic.feature:2021-05-28T18:46:48.071Z",
+      "source" : "f291f4c6ec6d981e.png",
+      "type" : "image/png",
+      "size" : 135165
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 51,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Interactive Book"
+  }, {
+    "name" : "feature",
+    "value" : "Interactive Book"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e47f6b6e7ca5e1e.json",
+  "parameterValues" : [ ]
+}
