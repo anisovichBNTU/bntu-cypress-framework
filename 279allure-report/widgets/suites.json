@@ -1,0 +1,48 @@
+{
+  "total" : 4,
+  "items" : [ {
+    "uid" : "68ea935af17c5a3b24eedf77ec7e4fa7",
+    "name" : "EEM Complex",
+    "statistic" : {
+      "failed" : 18,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 10,
+      "unknown" : 0,
+      "total" : 28
+    }
+  }, {
+    "uid" : "0a0cc3a0570184cd6e24a31f8c735aa0",
+    "name" : "Course Project",
+    "statistic" : {
+      "failed" : 16,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 21
+    }
+  }, {
+    "uid" : "19025368b81703a93ccc13129e759324",
+    "name" : "Graduation Project",
+    "statistic" : {
+      "failed" : 12,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 21
+    }
+  }, {
+    "uid" : "ad81dad1a97a991e213ec779f80e6e84",
+    "name" : "Interactive Book",
+    "statistic" : {
+      "failed" : 7,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 20,
+      "unknown" : 0,
+      "total" : 27
+    }
+  } ]
+}
