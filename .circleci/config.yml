@@ -1,8 +1,7 @@
 version: 2.1
 
 jobs:
-  build: 
-        
+  build:    
     working_directory: ~/tmp
     docker:
       - image: cypress/base:14.16.0
@@ -56,10 +55,11 @@ jobs:
             cd ..
 
             cp -a allure-results out/.
+            cp -a cypress/videos out/.
             cd out
 
             git add ./allure-results
-            git commit -m "Push results1" --allow-empty
+            git commit -m "Push results 1" --allow-empty
 
             git push results allure-results1
       - store_artifacts:
@@ -97,10 +97,11 @@ jobs:
             cd ..
 
             cp -a allure-results out/.
+            cp -a cypress/videos out/.
             cd out
 
             git add ./allure-results
-            git commit -m "Push results3" --allow-empty
+            git commit -m "Push results 3" --allow-empty
 
             git push results allure-results3
       - store_artifacts:
@@ -138,10 +139,11 @@ jobs:
             cd ..
 
             cp -a allure-results out/.
+            cp -a cypress/videos out/.
             cd out
 
             git add ./allure-results
-            git commit -m "Push results2" --allow-empty
+            git commit -m "Push results 2" --allow-empty
 
             git push results allure-results2
       - store_artifacts:
@@ -179,10 +181,11 @@ jobs:
             cd ..
 
             cp -a allure-results out/.
+            cp -a cypress/videos out/.
             cd out
 
             git add ./allure-results
-            git commit -m "Push results4" --allow-empty
+            git commit -m "Push results 4" --allow-empty
 
             git push results allure-results4
       - store_artifacts:
@@ -211,12 +214,15 @@ jobs:
             cd out
             git checkout allure-results1 || git checkout --orphan allure-results1
             cp -a allure-results ../
+            cp -a cypress ../
             git checkout allure-results2 || git checkout --orphan allure-results2
             cp -a allure-results ../
+            cp -a cypress ../
             git checkout allure-results3 || git checkout --orphan allure-results3
             cp -a allure-results ../
             git checkout allure-results4 || git checkout --orphan allure-results4
             cp -a allure-results ../
+            cp -a cypress ../
       - persist_to_workspace:
           root: ~/
           paths:
