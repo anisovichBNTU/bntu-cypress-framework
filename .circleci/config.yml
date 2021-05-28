@@ -210,15 +210,12 @@ jobs:
             cd out
             git checkout allure-results1 || git checkout --orphan allure-results1
             cp -a allure-results ../
-            cp -a cypress ../
             git checkout allure-results2 || git checkout --orphan allure-results2
             cp -a allure-results ../
-            cp -a cypress ../
             git checkout allure-results3 || git checkout --orphan allure-results3
             cp -a allure-results ../
             git checkout allure-results4 || git checkout --orphan allure-results4
             cp -a allure-results ../
-            cp -a cypress ../
       - persist_to_workspace:
           root: ~/
           paths:
