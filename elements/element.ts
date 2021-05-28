@@ -179,10 +179,10 @@ export class Element {
         return this._waitForLogWrapper(() => {
             if (options && options.element) {
                 return options.element
-                    .click({ log: false }).type(value, { log: false });
+                    .click({ log: false }).type(value, { log: false, delay: 15 });
             } else {
                 return this.get$()
-                    .click({ log: false }).type(value, { log: false });
+                    .click({ log: false }).type(value, { log: false, delay: 15 });
             }
         });
     }

@@ -109,10 +109,12 @@ class InteractiveBookPage extends BasePage {
     }
 
     fillBookContent(text: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.bookContentInput.setValue(text);
     }
 
     saveBookContent() {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.bookContentSaveButton.click();
     }
 

@@ -70,7 +70,7 @@ jobs:
           root: ~/tmp
           paths:
             - ./allure-results/
-  test-integration:  
+  test-interactive:  
     working_directory: ~/tmp
     docker:
       - image: cypress/base:14.16.0
@@ -78,8 +78,8 @@ jobs:
       - attach_workspace:
           at: ~/
       - run:
-          name: Run tests Integration book
-          command: npm run test:integration_book
+          name: Run tests Interactive book
+          command: npm run test:interactive
           # command: npx cypress run --spec ./cypress/integration/courseProject/1*.feature --env allure=true
       - run: 
           name: Push results 
@@ -121,7 +121,6 @@ jobs:
       - run:
           name: Run tests Graduation project
           command: npm run test:graduation
-          # command: npx cypress run --spec ./cypress/integration/graduationProject/1*.feature --env allure=true
       - run: 
           name: Push results 
           when: always
@@ -162,7 +161,6 @@ jobs:
       - run:
           name: Run tests EEMC
           command: npm run test:eemc
-          # command: npx cypress run --spec ./cypress/integration/graduationProject/1*.feature --env allure=true
       - run: 
           name: Push results 
           when: always
@@ -276,7 +274,7 @@ workflows:
       - test-graduation:
           requires:
             - build
-      - test-integration:
+      - test-interactive:
           requires:
             - build
       - test-eemc:
