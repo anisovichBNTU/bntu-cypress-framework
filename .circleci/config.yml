@@ -244,7 +244,6 @@ jobs:
       - attach_workspace:
           at: ~/
       - run:
-        #git rm -rf .
           name: Deploy report 
           command: |
             git config --global user.email anisovich28@gmail.com
@@ -266,7 +265,9 @@ jobs:
             git commit -m "Automated deployment to GitHub Pages" --allow-empty
 
             git push deploy gh-pages
-
+      - run:
+          name: Deploy information
+          command: echo "Report was successfully deployed on https://anisovichbntu.github.io/bntu-cypress-framework/${CIRCLE_BUILD_NUM}allure-report/index.html"
 workflows:
   build_and_test:
     jobs:
