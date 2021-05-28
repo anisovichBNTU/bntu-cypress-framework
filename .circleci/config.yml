@@ -4,7 +4,7 @@ jobs:
   build:    
     working_directory: ~/tmp
     docker:
-      - image: cypress/base:14.16.0
+      - image: markhobson/node-chrome:latest
     steps:
       - checkout
       - run:
@@ -31,7 +31,7 @@ jobs:
   test-course:  
     working_directory: ~/tmp
     docker:
-      - image: cypress/base:14.16.0
+      - image: markhobson/node-chrome:latest
     steps:
       - attach_workspace:
           at: ~/
@@ -72,7 +72,7 @@ jobs:
   test-interactive:  
     working_directory: ~/tmp
     docker:
-      - image: cypress/base:14.16.0
+      - image: markhobson/node-chrome:latest
     steps:
       - attach_workspace:
           at: ~/
@@ -113,7 +113,7 @@ jobs:
   test-graduation:  
     working_directory: ~/tmp
     docker:
-      - image: cypress/base:14.16.0
+      - image: markhobson/node-chrome:latest
     steps:
       - attach_workspace:
           at: ~/
@@ -154,7 +154,7 @@ jobs:
   test-eemc:  
     working_directory: ~/tmp
     docker:
-      - image: cypress/base:14.16.0
+      - image: markhobson/node-chrome:latest
     steps:
       - attach_workspace:
           at: ~/
