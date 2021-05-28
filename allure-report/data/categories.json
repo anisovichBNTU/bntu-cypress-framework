@@ -7,13 +7,13 @@
       "name" : "Timed out retrying after 20000ms: Expected to find content: 'autotest name' within the element: <tr.mdc-data-table__row.ng-star-inserted> but never did.",
       "children" : [ {
         "name" : "Create new course project topic (example #1)",
-        "uid" : "f5275d71f08c5e8b",
+        "uid" : "84fda79b762fced7",
         "parentUid" : "6bdbcfa5f45d0fe1f5c29e0d313c378d",
         "status" : "failed",
         "time" : {
-          "start" : 1622151975805,
-          "stop" : 1622152033365,
-          "duration" : 57560
+          "start" : 1622226471198,
+          "stop" : 1622226523979,
+          "duration" : 52781
         },
         "flaky" : false,
         "newFailed" : false,
@@ -24,13 +24,13 @@
       "name" : "Timed out retrying after 20000ms: Expected to find element: `.mat-ripple a`, but never found it. Queried from element: <body>",
       "children" : [ {
         "name" : "Create new EEM Complex (example #3)",
-        "uid" : "8aa180271578a7aa",
+        "uid" : "3b1ae9709576c587",
         "parentUid" : "2a3e4a91c57e47604657530152a20fc9",
         "status" : "failed",
         "time" : {
-          "start" : 1622152034085,
-          "stop" : 1622152080460,
-          "duration" : 46375
+          "start" : 1622226523374,
+          "stop" : 1622226572753,
+          "duration" : 49379
         },
         "flaky" : false,
         "newFailed" : false,
@@ -38,365 +38,146 @@
       } ],
       "uid" : "2a3e4a91c57e47604657530152a20fc9"
     }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find element: `.mat-button-base`, but never found it. Queried from element: <body>",
-      "children" : [ {
-        "name" : "Create new course project topic (example #3)",
-        "uid" : "3b49f588ecfefef5",
-        "parentUid" : "22de4b269f06e659c96694742a862f61",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152065268,
-          "stop" : 1622152105950,
-          "duration" : 40682
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "22de4b269f06e659c96694742a862f61"
-    }, {
-      "name" : "expected '3autotest nameTestovaya dsfadf done' to include 'Autotest1 Test1 Student1'",
-      "children" : [ {
-        "name" : "Student select graduation project topic (example #1)",
-        "uid" : "71059313f03f8985",
-        "parentUid" : "fbcd2a65ff5314fb775eb6c45a2cd1fb",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152074523,
-          "stop" : 1622152093980,
-          "duration" : 19457
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "fbcd2a65ff5314fb775eb6c45a2cd1fb"
-    }, {
-      "name" : "expected '2SPNTestovaya dsfadf Autotest1 Test1 Student110702217' to include 'Autotest2 Test2 Student2'",
-      "children" : [ {
-        "name" : "Student select graduation project topic (example #2)",
-        "uid" : "a0d0fcdc682caa97",
-        "parentUid" : "8400dd8aaa68be3e4f367b06db8a9557",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152094015,
-          "stop" : 1622152111884,
-          "duration" : 17869
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "8400dd8aaa68be3e4f367b06db8a9557"
-    }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find content: 'Сохранить' within the element: [ <button.mat-focus-indicator.mat-icon-button.mat-button-base>, 2 more... ] but never did.",
-      "children" : [ {
-        "name" : "Add text to interactive book topic (example #1)",
-        "uid" : "1c5b3d24b474aed4",
-        "parentUid" : "f1f5dd284ad36acbee3791099832461e",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152132054,
-          "stop" : 1622152178245,
-          "duration" : 46191
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Add text to interactive book topic (example #2)",
-        "uid" : "514af9d0d2942319",
-        "parentUid" : "f1f5dd284ad36acbee3791099832461e",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152178303,
-          "stop" : 1622152225529,
-          "duration" : 47226
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "f1f5dd284ad36acbee3791099832461e"
-    }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find element: `.mat-button-base[mattooltip=\"Подтвердить выбранную тему\"]`, but never found it. Queried from element: <tr.mdc-data-table__row.ng-star-inserted>",
-      "children" : [ {
-        "name" : "Confirm student on graduation project topic (example #1)",
-        "uid" : "b892dccb9331f2a7",
-        "parentUid" : "4525203bd9bf24e95f6d9adeba09f2de",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152154329,
-          "stop" : 1622152191741,
-          "duration" : 37412
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Confirm student on graduation project topic (example #2)",
-        "uid" : "ec286fc22edf071b",
-        "parentUid" : "4525203bd9bf24e95f6d9adeba09f2de",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152191774,
-          "stop" : 1622152229263,
-          "duration" : 37489
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Confirm student on graduation project topic (example #3)",
-        "uid" : "66defa882ddf0507",
-        "parentUid" : "4525203bd9bf24e95f6d9adeba09f2de",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152229278,
-          "stop" : 1622152265475,
-          "duration" : 36197
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Confirm student on course project topic (example #2)",
-        "uid" : "3c3f7ab33f257f72",
-        "parentUid" : "4525203bd9bf24e95f6d9adeba09f2de",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152345208,
-          "stop" : 1622152396365,
-          "duration" : 51157
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "4525203bd9bf24e95f6d9adeba09f2de"
-    }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find content: 'autotest name' within the element: [ <tr.mdc-data-table__row.ng-star-inserted>, 1 more... ] but never did.",
-      "children" : [ {
-        "name" : "Student select course project topic (example #1)",
-        "uid" : "684ec38d8657aeb0",
-        "parentUid" : "9e6b5a268dd5ee81e53ab12a821d2027",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152155387,
-          "stop" : 1622152197483,
-          "duration" : 42096
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Assign course project topic to student (example #1)",
-        "uid" : "97874a2da76ea138",
-        "parentUid" : "9e6b5a268dd5ee81e53ab12a821d2027",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152490209,
-          "stop" : 1622152540442,
-          "duration" : 50233
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Edit course project topic (example #1)",
-        "uid" : "2fa04bcc3cc8427e",
-        "parentUid" : "9e6b5a268dd5ee81e53ab12a821d2027",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152652727,
-          "stop" : 1622152700423,
-          "duration" : 47696
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "9e6b5a268dd5ee81e53ab12a821d2027"
-    }, {
       "name" : "Timed out retrying after 20000ms: Expected to find element: `.subject-frame iframe`, but never found it.",
       "children" : [ {
-        "name" : "Student select course project topic (example #2)",
-        "uid" : "92792e2e26cc26cd",
+        "name" : "Student select course project topic (example #1)",
+        "uid" : "ab10ddeb4a648031",
         "parentUid" : "d547d201770a6f1297e0aed50312bf93",
         "status" : "failed",
         "time" : {
-          "start" : 1622152197519,
-          "stop" : 1622152229874,
-          "duration" : 32355
+          "start" : 1622226635865,
+          "stop" : 1622226669651,
+          "duration" : 33786
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Add text to interactive book topic (example #3)",
-        "uid" : "3538ce41991f28e1",
+        "name" : "Student select course project topic (example #2)",
+        "uid" : "4e39826f8a94be1a",
         "parentUid" : "d547d201770a6f1297e0aed50312bf93",
         "status" : "failed",
         "time" : {
-          "start" : 1622152225552,
-          "stop" : 1622152263484,
-          "duration" : 37932
+          "start" : 1622226669692,
+          "stop" : 1622226702928,
+          "duration" : 33236
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Student select course project topic (example #3)",
-        "uid" : "c08e26b5d9dfd70d",
+        "uid" : "1ffd62a113331ee4",
         "parentUid" : "d547d201770a6f1297e0aed50312bf93",
         "status" : "failed",
         "time" : {
-          "start" : 1622152229898,
-          "stop" : 1622152264801,
-          "duration" : 34903
+          "start" : 1622226702950,
+          "stop" : 1622226736193,
+          "duration" : 33243
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Confirm student on course project topic (example #1)",
-        "uid" : "59c7119a53abdafe",
+        "name" : "Student see interactive book content (example #1)",
+        "uid" : "9bb5a38222ae7bfa",
         "parentUid" : "d547d201770a6f1297e0aed50312bf93",
         "status" : "failed",
         "time" : {
-          "start" : 1622152306973,
-          "stop" : 1622152345174,
-          "duration" : 38201
+          "start" : 1622226788199,
+          "stop" : 1622226822010,
+          "duration" : 33811
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Open created EEM Complex (example #1)",
+        "uid" : "453f59c84882b503",
+        "parentUid" : "d547d201770a6f1297e0aed50312bf93",
+        "status" : "failed",
+        "time" : {
+          "start" : 1622226842398,
+          "stop" : 1622226877211,
+          "duration" : 34813
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Student see interactive book content (example #3)",
-        "uid" : "c2239a84190ea3cc",
+        "uid" : "12a0f2b1907bb6b8",
         "parentUid" : "d547d201770a6f1297e0aed50312bf93",
         "status" : "failed",
         "time" : {
-          "start" : 1622152358619,
-          "stop" : 1622152391250,
-          "duration" : 32631
+          "start" : 1622226848903,
+          "stop" : 1622226879214,
+          "duration" : 30311
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Assign course project topic to student (example #3)",
-        "uid" : "eaf10cd10b328c29",
+        "name" : "Hide interactive book child topic (example #2)",
+        "uid" : "6e27413723f8504a",
         "parentUid" : "d547d201770a6f1297e0aed50312bf93",
         "status" : "failed",
         "time" : {
-          "start" : 1622152570901,
-          "stop" : 1622152607133,
-          "duration" : 36232
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Add file to EEM Complex section (example #3)",
-        "uid" : "92d6189e85f3eae8",
-        "parentUid" : "d547d201770a6f1297e0aed50312bf93",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152719853,
-          "stop" : 1622152756399,
-          "duration" : 36546
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Student cannot see hide interactive book (example #1)",
-        "uid" : "be169fb1bde0b658",
-        "parentUid" : "d547d201770a6f1297e0aed50312bf93",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152723623,
-          "stop" : 1622152757017,
-          "duration" : 33394
+          "start" : 1622227132370,
+          "stop" : 1622227167268,
+          "duration" : 34898
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Student cannot see hide interactive book (example #2)",
-        "uid" : "bbee1d6945718491",
+        "uid" : "df495c46dd77a2e",
         "parentUid" : "d547d201770a6f1297e0aed50312bf93",
         "status" : "failed",
         "time" : {
-          "start" : 1622152757053,
-          "stop" : 1622152788932,
-          "duration" : 31879
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Student cannot see hide interactive book (example #3)",
-        "uid" : "d5cd25613ae2ac48",
-        "parentUid" : "d547d201770a6f1297e0aed50312bf93",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152788950,
-          "stop" : 1622152820320,
-          "duration" : 31370
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Student see edited course project topic (example #1)",
-        "uid" : "b4670341e1c4a18b",
-        "parentUid" : "d547d201770a6f1297e0aed50312bf93",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152837019,
-          "stop" : 1622152869581,
-          "duration" : 32562
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Delete interactive book child topic (example #1)",
-        "uid" : "dc11c7c30f584716",
-        "parentUid" : "d547d201770a6f1297e0aed50312bf93",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152860048,
-          "stop" : 1622152899452,
-          "duration" : 39404
+          "start" : 1622227279867,
+          "stop" : 1622227313144,
+          "duration" : 33277
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Student see edited course project topic (example #2)",
-        "uid" : "a76b9250c0a91864",
+        "uid" : "2b0ab13d6849977",
         "parentUid" : "d547d201770a6f1297e0aed50312bf93",
         "status" : "failed",
         "time" : {
-          "start" : 1622152869610,
-          "stop" : 1622152901559,
-          "duration" : 31949
+          "start" : 1622227301276,
+          "stop" : 1622227334716,
+          "duration" : 33440
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Student cannot see hide interactive book (example #3)",
+        "uid" : "74b5c3282465399",
+        "parentUid" : "d547d201770a6f1297e0aed50312bf93",
+        "status" : "failed",
+        "time" : {
+          "start" : 1622227313202,
+          "stop" : 1622227344013,
+          "duration" : 30811
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Student see edited course project topic (example #3)",
-        "uid" : "d2af7b825013f56",
+        "uid" : "e4a9fe1059dec663",
         "parentUid" : "d547d201770a6f1297e0aed50312bf93",
         "status" : "failed",
         "time" : {
-          "start" : 1622152901582,
-          "stop" : 1622152933398,
-          "duration" : 31816
+          "start" : 1622227334734,
+          "stop" : 1622227367967,
+          "duration" : 33233
         },
         "flaky" : false,
         "newFailed" : false,
@@ -404,547 +185,326 @@
       } ],
       "uid" : "d547d201770a6f1297e0aed50312bf93"
     }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find content: 'EEM COMP' within the element: [ <a>, 5 more... ] but never did.",
+      "name" : "Timed out retrying after 20000ms: Expected to find element: `.mat-button-base[mattooltip=\"Выбрать тему\"]`, but never found it. Queried from element: <tr.mdc-data-table__row.ng-star-inserted>",
       "children" : [ {
-        "name" : "User can see the Map EEM Complex (example #3)",
-        "uid" : "229cc9d15aa7d1d0",
-        "parentUid" : "a77b925d9bff7a7a35fe08a8a9918b51",
+        "name" : "Student select graduation project topic (example #3)",
+        "uid" : "a4f6eff1504997c0",
+        "parentUid" : "c3fb8b9d281cb1383b60db4d07a3f98c",
         "status" : "failed",
         "time" : {
-          "start" : 1622152210663,
-          "stop" : 1622152247759,
-          "duration" : 37096
+          "start" : 1622226647104,
+          "stop" : 1622226680444,
+          "duration" : 33340
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c3fb8b9d281cb1383b60db4d07a3f98c"
+    }, {
+      "name" : "Timed out retrying after 20000ms: Expected to find content: 'EEM COMP' within the element: [ <a>, 16 more... ] but never did.",
+      "children" : [ {
+        "name" : "User can see the Map EEM Complex (example #3)",
+        "uid" : "6809e9789a039cb6",
+        "parentUid" : "f539fd244f68012f8f7f9e6412dd87d7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1622226715974,
+          "stop" : 1622226757801,
+          "duration" : 41827
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Open created EEM Complex (example #3)",
-        "uid" : "bbcd2dcc7d2402fc",
-        "parentUid" : "a77b925d9bff7a7a35fe08a8a9918b51",
+        "uid" : "d63d365edc4fc090",
+        "parentUid" : "f539fd244f68012f8f7f9e6412dd87d7",
         "status" : "failed",
         "time" : {
-          "start" : 1622152376117,
-          "stop" : 1622152417318,
-          "duration" : 41201
+          "start" : 1622226910714,
+          "stop" : 1622226951067,
+          "duration" : 40353
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Add folder to EEM Complex section (example #3)",
-        "uid" : "cf6374b8e4152bf4",
-        "parentUid" : "a77b925d9bff7a7a35fe08a8a9918b51",
+        "uid" : "6f78e1af0cc6b952",
+        "parentUid" : "f539fd244f68012f8f7f9e6412dd87d7",
         "status" : "failed",
         "time" : {
-          "start" : 1622152552733,
-          "stop" : 1622152593258,
-          "duration" : 40525
+          "start" : 1622227116341,
+          "stop" : 1622227156175,
+          "duration" : 39834
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Add file to EEM Complex section (example #3)",
+        "uid" : "17102537eab9bb26",
+        "parentUid" : "f539fd244f68012f8f7f9e6412dd87d7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1622227356492,
+          "stop" : 1622227396937,
+          "duration" : 40445
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Edit EEM Complex (example #3)",
-        "uid" : "5bdc39d83df34c4f",
-        "parentUid" : "a77b925d9bff7a7a35fe08a8a9918b51",
+        "uid" : "f3febf1947c6a9f",
+        "parentUid" : "f539fd244f68012f8f7f9e6412dd87d7",
         "status" : "failed",
         "time" : {
-          "start" : 1622152877823,
-          "stop" : 1622152920658,
-          "duration" : 42835
+          "start" : 1622227576754,
+          "stop" : 1622227613796,
+          "duration" : 37042
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Delete EEM Complex (example #3)",
-        "uid" : "c21d9f024b180d4a",
-        "parentUid" : "a77b925d9bff7a7a35fe08a8a9918b51",
+        "uid" : "b82bd4135e37f864",
+        "parentUid" : "f539fd244f68012f8f7f9e6412dd87d7",
         "status" : "failed",
         "time" : {
-          "start" : 1622153084149,
-          "stop" : 1622153122743,
-          "duration" : 38594
+          "start" : 1622227765488,
+          "stop" : 1622227800817,
+          "duration" : 35329
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "a77b925d9bff7a7a35fe08a8a9918b51"
+      "uid" : "f539fd244f68012f8f7f9e6412dd87d7"
     }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find content: 'Autotest1 Test1 Student1' within the element: [ <tr.mat-row.ng-star-inserted>, 27 more... ] but never did.",
+      "name" : "Timed out retrying after 20000ms: Expected to find element: `.mat-button-base[mattooltip=\"Подтвердить выбранную тему\"]`, but never found it. Queried from element: <tr.mdc-data-table__row.ng-star-inserted>",
       "children" : [ {
-        "name" : "Assign graduation project topic to student (example #1)",
-        "uid" : "3d395a5520fc1a96",
-        "parentUid" : "2dd87992251fe697c3b074a5b2bfd4d3",
+        "name" : "Confirm student on course project topic (example #1)",
+        "uid" : "634e439b564c6b1e",
+        "parentUid" : "4525203bd9bf24e95f6d9adeba09f2de",
         "status" : "failed",
         "time" : {
-          "start" : 1622152301635,
-          "stop" : 1622152341265,
-          "duration" : 39630
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "2dd87992251fe697c3b074a5b2bfd4d3"
-    }, {
-      "name" : "expected 'Autotest book topic' to include 'Text in interactive book 123'",
-      "children" : [ {
-        "name" : "Student see interactive book content (example #1)",
-        "uid" : "e0dd3c34938b943e",
-        "parentUid" : "15c50d6513238d30cc4ffbc512965668",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152313219,
-          "stop" : 1622152337001,
-          "duration" : 23782
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "15c50d6513238d30cc4ffbc512965668"
-    }, {
-      "name" : "expected 'Q' to include 'T'",
-      "children" : [ {
-        "name" : "Student see interactive book content (example #2)",
-        "uid" : "e213a89c4ff6bb0a",
-        "parentUid" : "598ab66069921f2c37de102649e2bbdc",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152337045,
-          "stop" : 1622152358597,
-          "duration" : 21552
+          "start" : 1622226777549,
+          "stop" : 1622226823282,
+          "duration" : 45733
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Delete interactive book child topic (example #2)",
-        "uid" : "dad8f5a94af8254e",
-        "parentUid" : "598ab66069921f2c37de102649e2bbdc",
+        "name" : "Confirm student on graduation project topic (example #3)",
+        "uid" : "5354beba5abbd022",
+        "parentUid" : "4525203bd9bf24e95f6d9adeba09f2de",
         "status" : "failed",
         "time" : {
-          "start" : 1622152899512,
-          "stop" : 1622152931136,
-          "duration" : 31624
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "598ab66069921f2c37de102649e2bbdc"
-    }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find element: `.mat-button-base[mattooltip=\"Назначить\"]`, but never found it. Queried from element: <tr.mdc-data-table__row.ng-star-inserted>",
-      "children" : [ {
-        "name" : "Assign graduation project topic to student (example #2)",
-        "uid" : "e14ddeac425d90e7",
-        "parentUid" : "ffcbb83b954a2e7ca29a3995aab02ad0",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152341305,
-          "stop" : 1622152381856,
-          "duration" : 40551
+          "start" : 1622226783984,
+          "stop" : 1622226823009,
+          "duration" : 39025
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Assign graduation project topic to student (example #3)",
-        "uid" : "ba61bacd22dd0bc2",
-        "parentUid" : "ffcbb83b954a2e7ca29a3995aab02ad0",
+        "name" : "Confirm student on course project topic (example #2)",
+        "uid" : "7dc66227e45b8ef",
+        "parentUid" : "4525203bd9bf24e95f6d9adeba09f2de",
         "status" : "failed",
         "time" : {
-          "start" : 1622152381878,
-          "stop" : 1622152419765,
-          "duration" : 37887
+          "start" : 1622226823335,
+          "stop" : 1622226868076,
+          "duration" : 44741
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
-      } ],
-      "uid" : "ffcbb83b954a2e7ca29a3995aab02ad0"
-    }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find content: 'Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long ' within the element: [ <tr.mdc-data-table__row.ng-star-inserted>, 1 more... ] but never did.",
-      "children" : [ {
+      }, {
         "name" : "Confirm student on course project topic (example #3)",
-        "uid" : "6b32c1b0ac6b82d8",
-        "parentUid" : "9b8a95d56b99f59a315875567127f3ad",
+        "uid" : "1e3b2c133c5a8af9",
+        "parentUid" : "4525203bd9bf24e95f6d9adeba09f2de",
         "status" : "failed",
         "time" : {
-          "start" : 1622152396392,
-          "stop" : 1622152441556,
-          "duration" : 45164
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Edit course project topic (example #3)",
-        "uid" : "3374599590b7de0f",
-        "parentUid" : "9b8a95d56b99f59a315875567127f3ad",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152748191,
-          "stop" : 1622152787345,
-          "duration" : 39154
+          "start" : 1622226868114,
+          "stop" : 1622226908977,
+          "duration" : 40863
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "9b8a95d56b99f59a315875567127f3ad"
+      "uid" : "4525203bd9bf24e95f6d9adeba09f2de"
     }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find content: '123' within the element: [ <tr.mdc-data-table__row.ng-star-inserted>, 6 more... ] but never did.",
+      "name" : "Timed out retrying after 20000ms: Expected to find content: 'autotest name' within the element: [ <tr.mdc-data-table__row.ng-star-inserted>, 2 more... ] but never did.",
       "children" : [ {
-        "name" : "Edit graduation project topic (example #2)",
-        "uid" : "352672f4d1d8f46",
-        "parentUid" : "67bc5cd341dd4dd9f6dc30ce8f0f2815",
+        "name" : "Assign course project topic to student (example #1)",
+        "uid" : "92558e325922fbe8",
+        "parentUid" : "a11701d815c81c3e64584b4fbb389eb5",
         "status" : "failed",
         "time" : {
-          "start" : 1622152480676,
-          "stop" : 1622152522401,
-          "duration" : 41725
+          "start" : 1622226957352,
+          "stop" : 1622227004077,
+          "duration" : 46725
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "67bc5cd341dd4dd9f6dc30ce8f0f2815"
+      "uid" : "a11701d815c81c3e64584b4fbb389eb5"
     }, {
-      "name" : "expected '3autotest name editedTestovaya dsfadf ' to include 'Autotest1 Test1 Student1'",
+      "name" : "Timed out retrying after 20000ms: Expected to find element: `.mat-button-base[mattooltip=\"Редактировать\"]`, but never found it. Queried from element: <tr.mdc-data-table__row.ng-star-inserted>",
       "children" : [ {
-        "name" : "Student see edited graduation Project topic (example #1)",
-        "uid" : "4f7dbeb22179c3b5",
-        "parentUid" : "e7deddecb58e52c0b161d1b83586f6de",
+        "name" : "Edit course project topic (example #1)",
+        "uid" : "69771275ec19d8dc",
+        "parentUid" : "d8bd23f2fe5b4755c1d80b9d2ea19825",
         "status" : "failed",
         "time" : {
-          "start" : 1622152577172,
-          "stop" : 1622152595154,
-          "duration" : 17982
+          "start" : 1622227102910,
+          "stop" : 1622227148335,
+          "duration" : 45425
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "e7deddecb58e52c0b161d1b83586f6de"
+      "uid" : "d8bd23f2fe5b4755c1d80b9d2ea19825"
     }, {
-      "name" : "expected '2123Autotest1 Test1 Student110702217editremove_circle_outlinecloud_downloaddeletedone' to include 'Autotest2 Test2 Student2'",
-      "children" : [ {
-        "name" : "Student see edited graduation Project topic (example #2)",
-        "uid" : "5e521bd8133be275",
-        "parentUid" : "e2afc760e4d95e3c8d03b1a949d939d9",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152595190,
-          "stop" : 1622152610349,
-          "duration" : 15159
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "e2afc760e4d95e3c8d03b1a949d939d9"
-    }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find element: `.mat-button-base[mattooltip=\"Отменить назначение\"]`, but never found it. Queried from element: <tr.mdc-data-table__row.ng-star-inserted>",
-      "children" : [ {
-        "name" : "Delete graduation project topic (example #1)",
-        "uid" : "74691dc8988ba886",
-        "parentUid" : "4736192cd1fd1fd3474d4036d6e6ee13",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152649468,
-          "stop" : 1622152691743,
-          "duration" : 42275
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "4736192cd1fd1fd3474d4036d6e6ee13"
-    }, {
-      "name" : "`cy.click()` can only be called on a single element. Your subject contained 2 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click",
+      "name" : "Timed out retrying after 20000ms: Expected to find content: 'New file' within the element: [ <li.mat-tree-node>, 4 more... ] but never did.",
       "children" : [ {
         "name" : "Add file to EEM Complex section (example #1)",
-        "uid" : "63c444021d6e66ad",
-        "parentUid" : "dbf7f482ccb83708ea0b632a7a15156b",
+        "uid" : "c988be7b3b3c1e88",
+        "parentUid" : "e7eaed3af120a206abae020bebd59c7f",
         "status" : "failed",
         "time" : {
-          "start" : 1622152672247,
-          "stop" : 1622152696713,
-          "duration" : 24466
+          "start" : 1622227249107,
+          "stop" : 1622227313133,
+          "duration" : 64026
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e7eaed3af120a206abae020bebd59c7f"
+    }, {
+      "name" : "Timed out retrying after 20000ms: Expected to find content: 'autotest name edited' within the element: [ <tr.mdc-data-table__row.ng-star-inserted>, 2 more... ] but never did.",
+      "children" : [ {
+        "name" : "Student see edited course project topic (example #1)",
+        "uid" : "d70b710461f628ad",
+        "parentUid" : "401ce985401373b3ca66b9ebd1328cda",
+        "status" : "failed",
+        "time" : {
+          "start" : 1622227256458,
+          "stop" : 1622227301230,
+          "duration" : 44772
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Add file to EEM Complex section (example #2)",
-        "uid" : "681144139a821da1",
-        "parentUid" : "dbf7f482ccb83708ea0b632a7a15156b",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152696765,
-          "stop" : 1622152719823,
-          "duration" : 23058
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Add file to EEM Complex section (example #4)",
-        "uid" : "a5669aab907ed5b9",
-        "parentUid" : "dbf7f482ccb83708ea0b632a7a15156b",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152756416,
-          "stop" : 1622152780321,
-          "duration" : 23905
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "dbf7f482ccb83708ea0b632a7a15156b"
-    }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find content: 'SPN' within the element: <tr.mdc-data-table__row.ng-star-inserted> but never did.",
-      "children" : [ {
-        "name" : "Edit course project topic (example #2)",
-        "uid" : "7d1b3e80fb3445e8",
-        "parentUid" : "a6099c6d114104a536150a6f180ccc4a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152700484,
-          "stop" : 1622152748157,
-          "duration" : 47673
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "a6099c6d114104a536150a6f180ccc4a"
-    }, {
-      "name" : "expected '1QWERTYUIOasdfghjkl                  QWERTYUIOasdfghjklQWERTYUIOasdfghjkl                  QWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWEAutotest3 Test3 Student310702217editremove_circle_outlinecloud_downloaddeletedone' to not include 'Autotest3 Test3 Student3'",
-      "children" : [ {
-        "name" : "Delete graduation project topic (example #3)",
-        "uid" : "ca71f02cac036ff5",
-        "parentUid" : "384ebc42d597f0b141448f57e622fbbf",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152715273,
-          "stop" : 1622152734843,
-          "duration" : 19570
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "384ebc42d597f0b141448f57e622fbbf"
-    }, {
-      "name" : "expected 'ЭУМК Дли...' to include 'ЭУМК Длинное название тест'",
-      "children" : [ {
-        "name" : "Edit EEM Complex (example #4)",
-        "uid" : "5d554e1d04800123",
-        "parentUid" : "10ad30edcc75d08041641e6f5714cd37",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152920709,
-          "stop" : 1622152948645,
-          "duration" : 27936
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "10ad30edcc75d08041641e6f5714cd37"
-    }, {
-      "name" : "expected 'Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long NameV' to include 'Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? '",
-      "children" : [ {
-        "name" : "Delete interactive book child topic (example #3)",
-        "uid" : "86031e2205597758",
-        "parentUid" : "ea6b38e46ce144f89192dd7984ba2be5",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622152931174,
-          "stop" : 1622152963450,
-          "duration" : 32276
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "ea6b38e46ce144f89192dd7984ba2be5"
-    }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find content: 'autotest name edited' within the element: [ <tr.mdc-data-table__row.ng-star-inserted>, 1 more... ] but never did.",
-      "children" : [ {
         "name" : "Delete course project topic (example #1)",
-        "uid" : "d9a26c861f1f9d87",
-        "parentUid" : "8083a0c9c2fdae260b49be1568653f47",
+        "uid" : "1bc8833a9ac1705d",
+        "parentUid" : "401ce985401373b3ca66b9ebd1328cda",
         "status" : "failed",
         "time" : {
-          "start" : 1622152969906,
-          "stop" : 1622153016535,
-          "duration" : 46629
+          "start" : 1622227411849,
+          "stop" : 1622227456573,
+          "duration" : 44724
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "8083a0c9c2fdae260b49be1568653f47"
+      "uid" : "401ce985401373b3ca66b9ebd1328cda"
     }, {
-      "name" : "Timed out retrying after 20000ms: Expected not to find content: 'complex' within the element: [ <a>, 5 more... ] but continuously found it.",
+      "name" : "Timed out retrying after 20000ms: Expected to find content: 'Новый файл с теоретической информацией' within the element: [ <li.mat-tree-node>, 4 more... ] but never did.",
       "children" : [ {
-        "name" : "Delete EEM Complex (example #1)",
-        "uid" : "a517a0096221a62f",
-        "parentUid" : "5dea90e729cb142522a676322c25fa80",
+        "name" : "Add file to EEM Complex section (example #4)",
+        "uid" : "b97ae70633d5eafd",
+        "parentUid" : "2210476efaca67a9efa6ff5e00f2049c",
         "status" : "failed",
         "time" : {
-          "start" : 1622152995071,
-          "stop" : 1622153040948,
-          "duration" : 45877
+          "start" : 1622227396963,
+          "stop" : 1622227458582,
+          "duration" : 61619
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "5dea90e729cb142522a676322c25fa80"
+      "uid" : "2210476efaca67a9efa6ff5e00f2049c"
     }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find content: 'Autotest book topic' within the element: [ <li.mat-tree-node>, 3 more... ] but never did.",
-      "children" : [ {
-        "name" : "Edit interactive book topic (example #1)",
-        "uid" : "1a547e7c014dcba",
-        "parentUid" : "e67bea2bc011ef3dbc0b8cc6a154641f",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622153006339,
-          "stop" : 1622153050288,
-          "duration" : 43949
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "e67bea2bc011ef3dbc0b8cc6a154641f"
-    }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find content: '123' within the element: [ <tr.mdc-data-table__row.ng-star-inserted>, 1 more... ] but never did.",
-      "children" : [ {
-        "name" : "Delete course project topic (example #2)",
-        "uid" : "789eb5d072675b5e",
-        "parentUid" : "abf65d744cc1d1c836f11b328dab0562",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622153016588,
-          "stop" : 1622153068299,
-          "duration" : 51711
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "abf65d744cc1d1c836f11b328dab0562"
-    }, {
-      "name" : "Timed out retrying after 20000ms: Expected not to find content: 'S' within the element: [ <a>, 5 more... ] but continuously found it.",
-      "children" : [ {
-        "name" : "Delete EEM Complex (example #2)",
-        "uid" : "4149495da35ac0af",
-        "parentUid" : "cdbd6c67825ddd399225bf90f25655b2",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622153041000,
-          "stop" : 1622153084119,
-          "duration" : 43119
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "cdbd6c67825ddd399225bf90f25655b2"
-    }, {
-      "name" : "expected '                   S                   ' to include '                   S                   '",
+      "name" : "expected '                   S                   T' to include '                   S                   '",
       "children" : [ {
         "name" : "Edit interactive book topic (example #2)",
-        "uid" : "f0266a526ba6ab5b",
-        "parentUid" : "d4aac528b992fcecff2220c5ed58cf25",
+        "uid" : "dea8a0aa51e0a9a3",
+        "parentUid" : "10d79305ff8ff14f8c4c6cd8db152703",
         "status" : "failed",
         "time" : {
-          "start" : 1622153050330,
-          "stop" : 1622153080850,
-          "duration" : 30520
+          "start" : 1622227571159,
+          "stop" : 1622227608342,
+          "duration" : 37183
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "d4aac528b992fcecff2220c5ed58cf25"
+      "uid" : "10d79305ff8ff14f8c4c6cd8db152703"
     }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find content: 'QWERTYUIOasdfghjkl QWERTYUIOasdfghjklQWERTYUIOasdfghjkl QWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUI' within the element: [ <tr.mdc-data-table__row.ng-star-inserted>, 1 more... ] but never did.",
+      "name" : "Timed out retrying after 20000ms: Expected not to find content: 'complex' within the element: [ <a>, 16 more... ] but continuously found it.",
       "children" : [ {
-        "name" : "Delete course project topic (example #3)",
-        "uid" : "a682b0b191593cd4",
-        "parentUid" : "c2a7ec3f94bf7181160d9e5e29b1a5ed",
+        "name" : "Delete EEM Complex (example #1)",
+        "uid" : "bbd6c67fe2a06574",
+        "parentUid" : "3f48363a664741fb3aad9c187576b2e1",
         "status" : "failed",
         "time" : {
-          "start" : 1622153068330,
-          "stop" : 1622153115330,
-          "duration" : 47000
+          "start" : 1622227678158,
+          "stop" : 1622227722424,
+          "duration" : 44266
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c2a7ec3f94bf7181160d9e5e29b1a5ed"
+      "uid" : "3f48363a664741fb3aad9c187576b2e1"
     }, {
-      "name" : "expected 'QWERTYUIOasdfghjkl QWERTYUIOasdfghjkl234566789asdfghjkl QWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWERTYUIOasdfghjklQWE WERTYUIOasdfghjklQWERTYUIOasdfghj' to include 'Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? '",
+      "name" : "Timed out retrying after 20000ms: Expected not to find content: 'S' within the element: [ <a>, 16 more... ] but continuously found it.",
       "children" : [ {
-        "name" : "Edit interactive book topic (example #3)",
-        "uid" : "c26ba25986993144",
-        "parentUid" : "296a7e1386f31a2000dff705340880a4",
+        "name" : "Delete EEM Complex (example #2)",
+        "uid" : "8ca8e0a8a653ae28",
+        "parentUid" : "a86042549784f411dbda1619df9910f7",
         "status" : "failed",
         "time" : {
-          "start" : 1622153080888,
-          "stop" : 1622153117351,
-          "duration" : 36463
+          "start" : 1622227722474,
+          "stop" : 1622227765467,
+          "duration" : 42993
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "296a7e1386f31a2000dff705340880a4"
+      "uid" : "a86042549784f411dbda1619df9910f7"
     }, {
-      "name" : "Timed out retrying after 20000ms: Expected not to find content: 'ЭУМК Дли' within the element: [ <a>, 5 more... ] but continuously found it.",
+      "name" : "Timed out retrying after 20000ms: Expected not to find content: 'ЭУМК Дли' within the element: [ <a>, 16 more... ] but continuously found it.",
       "children" : [ {
         "name" : "Delete EEM Complex (example #4)",
-        "uid" : "c73797e1ec89cb86",
-        "parentUid" : "fce747afc7d40e73a03763f42f69ab3f",
+        "uid" : "b0fadb129a162b76",
+        "parentUid" : "f54eaf5e390d9f23f26e1a363b3eb44b",
         "status" : "failed",
         "time" : {
-          "start" : 1622153122763,
-          "stop" : 1622153168345,
-          "duration" : 45582
+          "start" : 1622227800836,
+          "stop" : 1622227844164,
+          "duration" : 43328
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "fce747afc7d40e73a03763f42f69ab3f"
-    }, {
-      "name" : "Timed out retrying after 20000ms: Expected to find content: 'Autotest book edited topic' within the element: [ <li.mat-tree-node>, 3 more... ] but never did.",
-      "children" : [ {
-        "name" : "Delete interactive book topic (example #1)",
-        "uid" : "657d94330f4e4376",
-        "parentUid" : "fbaccb96c83ce444b4228d0f5c889799",
-        "status" : "failed",
-        "time" : {
-          "start" : 1622153162716,
-          "stop" : 1622153207390,
-          "duration" : 44674
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "fbaccb96c83ce444b4228d0f5c889799"
+      "uid" : "f54eaf5e390d9f23f26e1a363b3eb44b"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]

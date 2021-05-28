@@ -2,644 +2,367 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "Graduation Project",
-    "children" : [ {
-      "name" : "Create new graduation project topic (example #1)",
-      "uid" : "33ffac096d0a22e1",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1622151972361,
-        "stop" : 1622151997693,
-        "duration" : 25332
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Create new graduation project topic (example #2)",
-      "uid" : "a79ddfcebb2ef82f",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1622151997711,
-        "stop" : 1622152020656,
-        "duration" : 22945
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Create new graduation project topic (example #3)",
-      "uid" : "dcc40a9cce92661b",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1622152020676,
-        "stop" : 1622152044196,
-        "duration" : 23520
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Student select graduation project topic (example #1)",
-      "uid" : "71059313f03f8985",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "failed",
-      "time" : {
-        "start" : 1622152074523,
-        "stop" : 1622152093980,
-        "duration" : 19457
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Student select graduation project topic (example #2)",
-      "uid" : "a0d0fcdc682caa97",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "failed",
-      "time" : {
-        "start" : 1622152094015,
-        "stop" : 1622152111884,
-        "duration" : 17869
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Student select graduation project topic (example #3)",
-      "uid" : "f3493ebbe3339d54",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1622152111904,
-        "stop" : 1622152129361,
-        "duration" : 17457
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Confirm student on graduation project topic (example #1)",
-      "uid" : "b892dccb9331f2a7",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "failed",
-      "time" : {
-        "start" : 1622152154329,
-        "stop" : 1622152191741,
-        "duration" : 37412
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Confirm student on graduation project topic (example #2)",
-      "uid" : "ec286fc22edf071b",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "failed",
-      "time" : {
-        "start" : 1622152191774,
-        "stop" : 1622152229263,
-        "duration" : 37489
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Confirm student on graduation project topic (example #3)",
-      "uid" : "66defa882ddf0507",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "failed",
-      "time" : {
-        "start" : 1622152229278,
-        "stop" : 1622152265475,
-        "duration" : 36197
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Assign graduation project topic to student (example #1)",
-      "uid" : "3d395a5520fc1a96",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "failed",
-      "time" : {
-        "start" : 1622152301635,
-        "stop" : 1622152341265,
-        "duration" : 39630
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Assign graduation project topic to student (example #2)",
-      "uid" : "e14ddeac425d90e7",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "failed",
-      "time" : {
-        "start" : 1622152341305,
-        "stop" : 1622152381856,
-        "duration" : 40551
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Assign graduation project topic to student (example #3)",
-      "uid" : "ba61bacd22dd0bc2",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "failed",
-      "time" : {
-        "start" : 1622152381878,
-        "stop" : 1622152419765,
-        "duration" : 37887
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Edit graduation project topic (example #1)",
-      "uid" : "ade56c244351de6b",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1622152459581,
-        "stop" : 1622152480654,
-        "duration" : 21073
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Edit graduation project topic (example #2)",
-      "uid" : "352672f4d1d8f46",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "failed",
-      "time" : {
-        "start" : 1622152480676,
-        "stop" : 1622152522401,
-        "duration" : 41725
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Edit graduation project topic (example #3)",
-      "uid" : "575eda845000009d",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1622152522449,
-        "stop" : 1622152544575,
-        "duration" : 22126
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Student see edited graduation Project topic (example #1)",
-      "uid" : "4f7dbeb22179c3b5",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "failed",
-      "time" : {
-        "start" : 1622152577172,
-        "stop" : 1622152595154,
-        "duration" : 17982
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Student see edited graduation Project topic (example #2)",
-      "uid" : "5e521bd8133be275",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "failed",
-      "time" : {
-        "start" : 1622152595190,
-        "stop" : 1622152610349,
-        "duration" : 15159
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Student see edited graduation Project topic (example #3)",
-      "uid" : "4e5b7e9e030a82d7",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1622152610365,
-        "stop" : 1622152625758,
-        "duration" : 15393
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Delete graduation project topic (example #1)",
-      "uid" : "74691dc8988ba886",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "failed",
-      "time" : {
-        "start" : 1622152649468,
-        "stop" : 1622152691743,
-        "duration" : 42275
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Delete graduation project topic (example #2)",
-      "uid" : "590ee7ad44aa4e0e",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1622152691775,
-        "stop" : 1622152715253,
-        "duration" : 23478
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Delete graduation project topic (example #3)",
-      "uid" : "ca71f02cac036ff5",
-      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
-      "status" : "failed",
-      "time" : {
-        "start" : 1622152715273,
-        "stop" : 1622152734843,
-        "duration" : 19570
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    } ],
-    "uid" : "47d8346de2aa949cbe913967656ed0a9"
-  }, {
     "name" : "EEM Complex",
     "children" : [ {
       "name" : "Create new EEM Complex (example #1)",
-      "uid" : "9ff75f984051f14e",
+      "uid" : "4148f756e3612b6c",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "passed",
       "time" : {
-        "start" : 1622151973074,
-        "stop" : 1622152008092,
-        "duration" : 35018
+        "start" : 1622226467697,
+        "stop" : 1622226496588,
+        "duration" : 28891
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Create new EEM Complex (example #2)",
-      "uid" : "2e074a30726dce3d",
+      "uid" : "3a4739c8e3a29fee",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "passed",
       "time" : {
-        "start" : 1622152008121,
-        "stop" : 1622152034062,
-        "duration" : 25941
+        "start" : 1622226496612,
+        "stop" : 1622226523338,
+        "duration" : 26726
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Create new EEM Complex (example #3)",
-      "uid" : "8aa180271578a7aa",
+      "uid" : "3b1ae9709576c587",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "failed",
       "time" : {
-        "start" : 1622152034085,
-        "stop" : 1622152080460,
-        "duration" : 46375
+        "start" : 1622226523374,
+        "stop" : 1622226572753,
+        "duration" : 49379
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Create new EEM Complex (example #4)",
-      "uid" : "812557f52d09a698",
+      "uid" : "c7bdb33e0d6d1d53",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "passed",
       "time" : {
-        "start" : 1622152080497,
-        "stop" : 1622152107453,
-        "duration" : 26956
+        "start" : 1622226572799,
+        "stop" : 1622226599126,
+        "duration" : 26327
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "User can see the Map EEM Complex (example #1)",
-      "uid" : "ccb1d189c953b6fd",
+      "uid" : "dc3263fb9f863cec",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "passed",
       "time" : {
-        "start" : 1622152153487,
-        "stop" : 1622152182677,
-        "duration" : 29190
+        "start" : 1622226646974,
+        "stop" : 1622226683378,
+        "duration" : 36404
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "User can see the Map EEM Complex (example #2)",
-      "uid" : "bdfbd2c9587fe80e",
+      "uid" : "a6682e89f06cb9cf",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "passed",
       "time" : {
-        "start" : 1622152182700,
-        "stop" : 1622152210637,
-        "duration" : 27937
+        "start" : 1622226683404,
+        "stop" : 1622226715942,
+        "duration" : 32538
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "User can see the Map EEM Complex (example #3)",
-      "uid" : "229cc9d15aa7d1d0",
+      "uid" : "6809e9789a039cb6",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "failed",
       "time" : {
-        "start" : 1622152210663,
-        "stop" : 1622152247759,
-        "duration" : 37096
+        "start" : 1622226715974,
+        "stop" : 1622226757801,
+        "duration" : 41827
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "User can see the Map EEM Complex (example #4)",
-      "uid" : "894123041b634770",
+      "uid" : "b7028702fad3fb5",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "passed",
       "time" : {
-        "start" : 1622152247793,
-        "stop" : 1622152272163,
-        "duration" : 24370
+        "start" : 1622226757850,
+        "stop" : 1622226791389,
+        "duration" : 33539
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Open created EEM Complex (example #1)",
-      "uid" : "2a24335fc280532",
+      "uid" : "453f59c84882b503",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1622152313853,
-        "stop" : 1622152344722,
-        "duration" : 30869
+        "start" : 1622226842398,
+        "stop" : 1622226877211,
+        "duration" : 34813
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Open created EEM Complex (example #2)",
-      "uid" : "c1b034166417b13d",
+      "uid" : "10f27715c070e948",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "passed",
       "time" : {
-        "start" : 1622152344752,
-        "stop" : 1622152376091,
-        "duration" : 31339
+        "start" : 1622226877243,
+        "stop" : 1622226910690,
+        "duration" : 33447
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Open created EEM Complex (example #3)",
-      "uid" : "bbcd2dcc7d2402fc",
+      "uid" : "d63d365edc4fc090",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "failed",
       "time" : {
-        "start" : 1622152376117,
-        "stop" : 1622152417318,
-        "duration" : 41201
+        "start" : 1622226910714,
+        "stop" : 1622226951067,
+        "duration" : 40353
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Open created EEM Complex (example #4)",
-      "uid" : "d6317da58fd2dc26",
+      "uid" : "56c8f75d84477301",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "passed",
       "time" : {
-        "start" : 1622152417356,
-        "stop" : 1622152442157,
-        "duration" : 24801
+        "start" : 1622226951091,
+        "stop" : 1622226981050,
+        "duration" : 29959
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add folder to EEM Complex section (example #1)",
-      "uid" : "952e67f2e4e5320b",
+      "uid" : "55c445231b078fec",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "passed",
       "time" : {
-        "start" : 1622152485973,
-        "stop" : 1622152521751,
-        "duration" : 35778
+        "start" : 1622227030107,
+        "stop" : 1622227073183,
+        "duration" : 43076
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add folder to EEM Complex section (example #2)",
-      "uid" : "5112661934e2ecfb",
+      "uid" : "d5219cb0cdd775d9",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "passed",
       "time" : {
-        "start" : 1622152521789,
-        "stop" : 1622152552706,
-        "duration" : 30917
+        "start" : 1622227073217,
+        "stop" : 1622227116311,
+        "duration" : 43094
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add folder to EEM Complex section (example #3)",
-      "uid" : "cf6374b8e4152bf4",
+      "uid" : "6f78e1af0cc6b952",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "failed",
       "time" : {
-        "start" : 1622152552733,
-        "stop" : 1622152593258,
-        "duration" : 40525
+        "start" : 1622227116341,
+        "stop" : 1622227156175,
+        "duration" : 39834
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add folder to EEM Complex section (example #4)",
-      "uid" : "e249957c40c6f2cd",
+      "uid" : "e57a87c62299e715",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "passed",
       "time" : {
-        "start" : 1622152593294,
-        "stop" : 1622152624578,
-        "duration" : 31284
+        "start" : 1622227156211,
+        "stop" : 1622227194038,
+        "duration" : 37827
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add file to EEM Complex section (example #1)",
-      "uid" : "63c444021d6e66ad",
+      "uid" : "c988be7b3b3c1e88",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "failed",
       "time" : {
-        "start" : 1622152672247,
-        "stop" : 1622152696713,
-        "duration" : 24466
+        "start" : 1622227249107,
+        "stop" : 1622227313133,
+        "duration" : 64026
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add file to EEM Complex section (example #2)",
-      "uid" : "681144139a821da1",
+      "uid" : "20bcc1a10027c678",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622152696765,
-        "stop" : 1622152719823,
-        "duration" : 23058
+        "start" : 1622227313210,
+        "stop" : 1622227356439,
+        "duration" : 43229
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add file to EEM Complex section (example #3)",
-      "uid" : "92d6189e85f3eae8",
+      "uid" : "17102537eab9bb26",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "failed",
       "time" : {
-        "start" : 1622152719853,
-        "stop" : 1622152756399,
-        "duration" : 36546
+        "start" : 1622227356492,
+        "stop" : 1622227396937,
+        "duration" : 40445
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add file to EEM Complex section (example #4)",
-      "uid" : "a5669aab907ed5b9",
+      "uid" : "b97ae70633d5eafd",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "failed",
       "time" : {
-        "start" : 1622152756416,
-        "stop" : 1622152780321,
-        "duration" : 23905
+        "start" : 1622227396963,
+        "stop" : 1622227458582,
+        "duration" : 61619
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Edit EEM Complex (example #1)",
-      "uid" : "90b1cb8f77146baf",
+      "uid" : "a17055af96ed4ff5",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "passed",
       "time" : {
-        "start" : 1622152819773,
-        "stop" : 1622152848234,
-        "duration" : 28461
+        "start" : 1622227525122,
+        "stop" : 1622227551327,
+        "duration" : 26205
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Edit EEM Complex (example #2)",
-      "uid" : "e95b1eba52046a10",
+      "uid" : "4845f8bce53b0da2",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "passed",
       "time" : {
-        "start" : 1622152848264,
-        "stop" : 1622152877788,
-        "duration" : 29524
+        "start" : 1622227551358,
+        "stop" : 1622227576732,
+        "duration" : 25374
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Edit EEM Complex (example #3)",
-      "uid" : "5bdc39d83df34c4f",
+      "uid" : "f3febf1947c6a9f",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "failed",
       "time" : {
-        "start" : 1622152877823,
-        "stop" : 1622152920658,
-        "duration" : 42835
+        "start" : 1622227576754,
+        "stop" : 1622227613796,
+        "duration" : 37042
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Edit EEM Complex (example #4)",
-      "uid" : "5d554e1d04800123",
+      "uid" : "4aaee0328fdf8d75",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622152920709,
-        "stop" : 1622152948645,
-        "duration" : 27936
+        "start" : 1622227613830,
+        "stop" : 1622227637939,
+        "duration" : 24109
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete EEM Complex (example #1)",
-      "uid" : "a517a0096221a62f",
+      "uid" : "bbd6c67fe2a06574",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "failed",
       "time" : {
-        "start" : 1622152995071,
-        "stop" : 1622153040948,
-        "duration" : 45877
+        "start" : 1622227678158,
+        "stop" : 1622227722424,
+        "duration" : 44266
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete EEM Complex (example #2)",
-      "uid" : "4149495da35ac0af",
+      "uid" : "8ca8e0a8a653ae28",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "failed",
       "time" : {
-        "start" : 1622153041000,
-        "stop" : 1622153084119,
-        "duration" : 43119
+        "start" : 1622227722474,
+        "stop" : 1622227765467,
+        "duration" : 42993
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete EEM Complex (example #3)",
-      "uid" : "c21d9f024b180d4a",
+      "uid" : "b82bd4135e37f864",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "failed",
       "time" : {
-        "start" : 1622153084149,
-        "stop" : 1622153122743,
-        "duration" : 38594
+        "start" : 1622227765488,
+        "stop" : 1622227800817,
+        "duration" : 35329
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete EEM Complex (example #4)",
-      "uid" : "c73797e1ec89cb86",
+      "uid" : "b0fadb129a162b76",
       "parentUid" : "37ea7d8bf7fff94c983e9e29c818bac8",
       "status" : "failed",
       "time" : {
-        "start" : 1622153122763,
-        "stop" : 1622153168345,
-        "duration" : 45582
+        "start" : 1622227800836,
+        "stop" : 1622227844164,
+        "duration" : 43328
       },
       "flaky" : false,
       "newFailed" : false,
@@ -650,273 +373,273 @@
     "name" : "Course Project",
     "children" : [ {
       "name" : "Create new course project topic (example #1)",
-      "uid" : "f5275d71f08c5e8b",
+      "uid" : "84fda79b762fced7",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "failed",
       "time" : {
-        "start" : 1622151975805,
-        "stop" : 1622152033365,
-        "duration" : 57560
+        "start" : 1622226471198,
+        "stop" : 1622226523979,
+        "duration" : 52781
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Create new course project topic (example #2)",
-      "uid" : "21e6ae8a9002a290",
+      "uid" : "9c9bb2b15f2d544f",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "passed",
       "time" : {
-        "start" : 1622152033409,
-        "stop" : 1622152065227,
-        "duration" : 31818
+        "start" : 1622226524033,
+        "stop" : 1622226556947,
+        "duration" : 32914
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Create new course project topic (example #3)",
-      "uid" : "3b49f588ecfefef5",
+      "uid" : "69c4f40cc26911c1",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622152065268,
-        "stop" : 1622152105950,
-        "duration" : 40682
+        "start" : 1622226556984,
+        "stop" : 1622226589192,
+        "duration" : 32208
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Student select course project topic (example #1)",
-      "uid" : "684ec38d8657aeb0",
+      "uid" : "ab10ddeb4a648031",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152155387,
-        "stop" : 1622152197483,
-        "duration" : 42096
+        "start" : 1622226635865,
+        "stop" : 1622226669651,
+        "duration" : 33786
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Student select course project topic (example #2)",
-      "uid" : "92792e2e26cc26cd",
+      "uid" : "4e39826f8a94be1a",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152197519,
-        "stop" : 1622152229874,
-        "duration" : 32355
+        "start" : 1622226669692,
+        "stop" : 1622226702928,
+        "duration" : 33236
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Student select course project topic (example #3)",
-      "uid" : "c08e26b5d9dfd70d",
+      "uid" : "1ffd62a113331ee4",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152229898,
-        "stop" : 1622152264801,
-        "duration" : 34903
+        "start" : 1622226702950,
+        "stop" : 1622226736193,
+        "duration" : 33243
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Confirm student on course project topic (example #1)",
-      "uid" : "59c7119a53abdafe",
+      "uid" : "634e439b564c6b1e",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152306973,
-        "stop" : 1622152345174,
-        "duration" : 38201
+        "start" : 1622226777549,
+        "stop" : 1622226823282,
+        "duration" : 45733
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Confirm student on course project topic (example #2)",
-      "uid" : "3c3f7ab33f257f72",
+      "uid" : "7dc66227e45b8ef",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152345208,
-        "stop" : 1622152396365,
-        "duration" : 51157
+        "start" : 1622226823335,
+        "stop" : 1622226868076,
+        "duration" : 44741
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Confirm student on course project topic (example #3)",
-      "uid" : "6b32c1b0ac6b82d8",
+      "uid" : "1e3b2c133c5a8af9",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152396392,
-        "stop" : 1622152441556,
-        "duration" : 45164
+        "start" : 1622226868114,
+        "stop" : 1622226908977,
+        "duration" : 40863
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Assign course project topic to student (example #1)",
-      "uid" : "97874a2da76ea138",
+      "uid" : "92558e325922fbe8",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152490209,
-        "stop" : 1622152540442,
-        "duration" : 50233
+        "start" : 1622226957352,
+        "stop" : 1622227004077,
+        "duration" : 46725
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Assign course project topic to student (example #2)",
-      "uid" : "127c6a3c6d612fb8",
+      "uid" : "38c032e633d1167f",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "passed",
       "time" : {
-        "start" : 1622152540483,
-        "stop" : 1622152570874,
-        "duration" : 30391
+        "start" : 1622227004128,
+        "stop" : 1622227034697,
+        "duration" : 30569
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Assign course project topic to student (example #3)",
-      "uid" : "eaf10cd10b328c29",
+      "uid" : "e0cb890d49d40c99",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622152570901,
-        "stop" : 1622152607133,
-        "duration" : 36232
+        "start" : 1622227034732,
+        "stop" : 1622227060912,
+        "duration" : 26180
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Edit course project topic (example #1)",
-      "uid" : "2fa04bcc3cc8427e",
+      "uid" : "69771275ec19d8dc",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152652727,
-        "stop" : 1622152700423,
-        "duration" : 47696
+        "start" : 1622227102910,
+        "stop" : 1622227148335,
+        "duration" : 45425
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Edit course project topic (example #2)",
-      "uid" : "7d1b3e80fb3445e8",
+      "uid" : "29b727967f00965e",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622152700484,
-        "stop" : 1622152748157,
-        "duration" : 47673
+        "start" : 1622227148388,
+        "stop" : 1622227179055,
+        "duration" : 30667
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Edit course project topic (example #3)",
-      "uid" : "3374599590b7de0f",
+      "uid" : "a669e6135228ee25",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622152748191,
-        "stop" : 1622152787345,
-        "duration" : 39154
+        "start" : 1622227179088,
+        "stop" : 1622227214609,
+        "duration" : 35521
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Student see edited course project topic (example #1)",
-      "uid" : "b4670341e1c4a18b",
+      "uid" : "d70b710461f628ad",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152837019,
-        "stop" : 1622152869581,
-        "duration" : 32562
+        "start" : 1622227256458,
+        "stop" : 1622227301230,
+        "duration" : 44772
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Student see edited course project topic (example #2)",
-      "uid" : "a76b9250c0a91864",
+      "uid" : "2b0ab13d6849977",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152869610,
-        "stop" : 1622152901559,
-        "duration" : 31949
+        "start" : 1622227301276,
+        "stop" : 1622227334716,
+        "duration" : 33440
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Student see edited course project topic (example #3)",
-      "uid" : "d2af7b825013f56",
+      "uid" : "e4a9fe1059dec663",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152901582,
-        "stop" : 1622152933398,
-        "duration" : 31816
+        "start" : 1622227334734,
+        "stop" : 1622227367967,
+        "duration" : 33233
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete course project topic (example #1)",
-      "uid" : "d9a26c861f1f9d87",
+      "uid" : "1bc8833a9ac1705d",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152969906,
-        "stop" : 1622153016535,
-        "duration" : 46629
+        "start" : 1622227411849,
+        "stop" : 1622227456573,
+        "duration" : 44724
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete course project topic (example #2)",
-      "uid" : "789eb5d072675b5e",
+      "uid" : "46fe098010bcce02",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622153016588,
-        "stop" : 1622153068299,
-        "duration" : 51711
+        "start" : 1622227456621,
+        "stop" : 1622227493547,
+        "duration" : 36926
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete course project topic (example #3)",
-      "uid" : "a682b0b191593cd4",
+      "uid" : "34c02613ecb67b6e",
       "parentUid" : "ab7e858a41215593d3a76d121a3eefa3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622153068330,
-        "stop" : 1622153115330,
-        "duration" : 47000
+        "start" : 1622227493585,
+        "stop" : 1622227528321,
+        "duration" : 34736
       },
       "flaky" : false,
       "newFailed" : false,
@@ -924,354 +647,631 @@
     } ],
     "uid" : "ab7e858a41215593d3a76d121a3eefa3"
   }, {
+    "name" : "Graduation Project",
+    "children" : [ {
+      "name" : "Create new graduation project topic (example #1)",
+      "uid" : "3ab854aa14c265ea",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622226474959,
+        "stop" : 1622226501819,
+        "duration" : 26860
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Create new graduation project topic (example #2)",
+      "uid" : "1648e6d4c6d43ba5",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622226501855,
+        "stop" : 1622226527086,
+        "duration" : 25231
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Create new graduation project topic (example #3)",
+      "uid" : "59c6334b65db425f",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622226527115,
+        "stop" : 1622226556319,
+        "duration" : 29204
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Student select graduation project topic (example #1)",
+      "uid" : "ad886888814d3737",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622226594039,
+        "stop" : 1622226621392,
+        "duration" : 27353
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Student select graduation project topic (example #2)",
+      "uid" : "fb9e4120ee3944d8",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622226621420,
+        "stop" : 1622226647081,
+        "duration" : 25661
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Student select graduation project topic (example #3)",
+      "uid" : "a4f6eff1504997c0",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "failed",
+      "time" : {
+        "start" : 1622226647104,
+        "stop" : 1622226680444,
+        "duration" : 33340
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Confirm student on graduation project topic (example #1)",
+      "uid" : "236c9ee3f54f34b8",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622226724367,
+        "stop" : 1622226754465,
+        "duration" : 30098
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Confirm student on graduation project topic (example #2)",
+      "uid" : "c7a9dddd0d64ed98",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622226754494,
+        "stop" : 1622226783951,
+        "duration" : 29457
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Confirm student on graduation project topic (example #3)",
+      "uid" : "5354beba5abbd022",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "failed",
+      "time" : {
+        "start" : 1622226783984,
+        "stop" : 1622226823009,
+        "duration" : 39025
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Assign graduation project topic to student (example #1)",
+      "uid" : "40b570723d9eb038",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622226864162,
+        "stop" : 1622226889284,
+        "duration" : 25122
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Assign graduation project topic to student (example #2)",
+      "uid" : "8196c1b8a823ffb3",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622226889311,
+        "stop" : 1622226913970,
+        "duration" : 24659
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Assign graduation project topic to student (example #3)",
+      "uid" : "2b5da48c29629ca4",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622226914004,
+        "stop" : 1622226937528,
+        "duration" : 23524
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Edit graduation project topic (example #1)",
+      "uid" : "a955ad96747c05f9",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622226973651,
+        "stop" : 1622227000448,
+        "duration" : 26797
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Edit graduation project topic (example #2)",
+      "uid" : "417e5cbd6dae60e7",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622227000478,
+        "stop" : 1622227025630,
+        "duration" : 25152
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Edit graduation project topic (example #3)",
+      "uid" : "5b93796e466f0edc",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622227025673,
+        "stop" : 1622227053162,
+        "duration" : 27489
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Student see edited graduation Project topic (example #1)",
+      "uid" : "51d484cd42825314",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622227089302,
+        "stop" : 1622227115752,
+        "duration" : 26450
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Student see edited graduation Project topic (example #2)",
+      "uid" : "2286595d4cdda89e",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622227115792,
+        "stop" : 1622227139359,
+        "duration" : 23567
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Student see edited graduation Project topic (example #3)",
+      "uid" : "8dd6aa11a5a75eaa",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622227139384,
+        "stop" : 1622227165166,
+        "duration" : 25782
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Delete graduation project topic (example #1)",
+      "uid" : "5adbace3f1b8a5c2",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622227201046,
+        "stop" : 1622227231278,
+        "duration" : 30232
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Delete graduation project topic (example #2)",
+      "uid" : "3df80982d22f3e19",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622227231307,
+        "stop" : 1622227261474,
+        "duration" : 30167
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Delete graduation project topic (example #3)",
+      "uid" : "1b72c72b7b088792",
+      "parentUid" : "47d8346de2aa949cbe913967656ed0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622227261513,
+        "stop" : 1622227290472,
+        "duration" : 28959
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "47d8346de2aa949cbe913967656ed0a9"
+  }, {
     "name" : "Interactive Book",
     "children" : [ {
       "name" : "Create new interactive book topic (example #1)",
-      "uid" : "d09cd7229443b0ad",
+      "uid" : "9b078b4963548101",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "passed",
       "time" : {
-        "start" : 1622151980781,
-        "stop" : 1622152018196,
-        "duration" : 37415
+        "start" : 1622226476958,
+        "stop" : 1622226519068,
+        "duration" : 42110
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Create new interactive book topic (example #2)",
-      "uid" : "90d2400b42f5d7ea",
+      "uid" : "8538537af975a9c4",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "passed",
       "time" : {
-        "start" : 1622152018277,
-        "stop" : 1622152052123,
-        "duration" : 33846
+        "start" : 1622226519203,
+        "stop" : 1622226555558,
+        "duration" : 36355
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Create new interactive book topic (example #3)",
-      "uid" : "14ebc3a111451ed7",
+      "uid" : "5c15e3794f3351b5",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "passed",
       "time" : {
-        "start" : 1622152052178,
-        "stop" : 1622152087615,
-        "duration" : 35437
+        "start" : 1622226555610,
+        "stop" : 1622226596781,
+        "duration" : 41171
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add text to interactive book topic (example #1)",
-      "uid" : "1c5b3d24b474aed4",
+      "uid" : "72cdb0e9158a3051",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622152132054,
-        "stop" : 1622152178245,
-        "duration" : 46191
+        "start" : 1622226646652,
+        "stop" : 1622226682963,
+        "duration" : 36311
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add text to interactive book topic (example #2)",
-      "uid" : "514af9d0d2942319",
+      "uid" : "c83c4e7fb1d3437a",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622152178303,
-        "stop" : 1622152225529,
-        "duration" : 47226
+        "start" : 1622226683046,
+        "stop" : 1622226714655,
+        "duration" : 31609
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add text to interactive book topic (example #3)",
-      "uid" : "3538ce41991f28e1",
+      "uid" : "6575a13f117b0c98",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622152225552,
-        "stop" : 1622152263484,
-        "duration" : 37932
+        "start" : 1622226714701,
+        "stop" : 1622226748835,
+        "duration" : 34134
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Student see interactive book content (example #1)",
-      "uid" : "e0dd3c34938b943e",
+      "uid" : "9bb5a38222ae7bfa",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152313219,
-        "stop" : 1622152337001,
-        "duration" : 23782
+        "start" : 1622226788199,
+        "stop" : 1622226822010,
+        "duration" : 33811
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Student see interactive book content (example #2)",
-      "uid" : "e213a89c4ff6bb0a",
+      "uid" : "27a39a106d965e6b",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622152337045,
-        "stop" : 1622152358597,
-        "duration" : 21552
+        "start" : 1622226822053,
+        "stop" : 1622226848851,
+        "duration" : 26798
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Student see interactive book content (example #3)",
-      "uid" : "c2239a84190ea3cc",
+      "uid" : "12a0f2b1907bb6b8",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152358619,
-        "stop" : 1622152391250,
-        "duration" : 32631
+        "start" : 1622226848903,
+        "stop" : 1622226879214,
+        "duration" : 30311
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add interactive book child topic (example #1)",
-      "uid" : "4bbfe4a21862c2dc",
+      "uid" : "5629084c31895ce",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "passed",
       "time" : {
-        "start" : 1622152427409,
-        "stop" : 1622152462521,
-        "duration" : 35112
+        "start" : 1622226915996,
+        "stop" : 1622226958185,
+        "duration" : 42189
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add interactive book child topic (example #2)",
-      "uid" : "e612c0dc928f39a4",
+      "uid" : "5a07c6f8ce15b1d9",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "passed",
       "time" : {
-        "start" : 1622152462577,
-        "stop" : 1622152496919,
-        "duration" : 34342
+        "start" : 1622226958247,
+        "stop" : 1622226998083,
+        "duration" : 39836
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Add interactive book child topic (example #3)",
-      "uid" : "b582efe8c3bb2f11",
+      "uid" : "e9612b5517320081",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "passed",
       "time" : {
-        "start" : 1622152496988,
-        "stop" : 1622152538028,
-        "duration" : 41040
+        "start" : 1622226998140,
+        "stop" : 1622227044180,
+        "duration" : 46040
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Hide interactive book child topic (example #1)",
-      "uid" : "c156fc52b348d1ac",
+      "uid" : "5b85ebcbc50cb2c1",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "passed",
       "time" : {
-        "start" : 1622152583649,
-        "stop" : 1622152615227,
-        "duration" : 31578
+        "start" : 1622227092992,
+        "stop" : 1622227132285,
+        "duration" : 39293
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Hide interactive book child topic (example #2)",
-      "uid" : "d5ebf362d1a27e48",
+      "uid" : "6e27413723f8504a",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1622152615282,
-        "stop" : 1622152649334,
-        "duration" : 34052
+        "start" : 1622227132370,
+        "stop" : 1622227167268,
+        "duration" : 34898
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Hide interactive book child topic (example #3)",
-      "uid" : "afc459070736fe77",
+      "uid" : "d3db0df6e45bbfcb",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "passed",
       "time" : {
-        "start" : 1622152649395,
-        "stop" : 1622152681051,
-        "duration" : 31656
+        "start" : 1622227167353,
+        "stop" : 1622227206263,
+        "duration" : 38910
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Student cannot see hide interactive book (example #1)",
-      "uid" : "be169fb1bde0b658",
+      "uid" : "f3478e8988a973d2",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622152723623,
-        "stop" : 1622152757017,
-        "duration" : 33394
+        "start" : 1622227247602,
+        "stop" : 1622227279772,
+        "duration" : 32170
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Student cannot see hide interactive book (example #2)",
-      "uid" : "bbee1d6945718491",
+      "uid" : "df495c46dd77a2e",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152757053,
-        "stop" : 1622152788932,
-        "duration" : 31879
+        "start" : 1622227279867,
+        "stop" : 1622227313144,
+        "duration" : 33277
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Student cannot see hide interactive book (example #3)",
-      "uid" : "d5cd25613ae2ac48",
+      "uid" : "74b5c3282465399",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "failed",
       "time" : {
-        "start" : 1622152788950,
-        "stop" : 1622152820320,
-        "duration" : 31370
+        "start" : 1622227313202,
+        "stop" : 1622227344013,
+        "duration" : 30811
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete interactive book child topic (example #1)",
-      "uid" : "dc11c7c30f584716",
+      "uid" : "a7e3c3436dfc624d",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622152860048,
-        "stop" : 1622152899452,
-        "duration" : 39404
+        "start" : 1622227383152,
+        "stop" : 1622227420859,
+        "duration" : 37707
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete interactive book child topic (example #2)",
-      "uid" : "dad8f5a94af8254e",
+      "uid" : "fdc8121ab03e09db",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622152899512,
-        "stop" : 1622152931136,
-        "duration" : 31624
+        "start" : 1622227420910,
+        "stop" : 1622227457908,
+        "duration" : 36998
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete interactive book child topic (example #3)",
-      "uid" : "86031e2205597758",
+      "uid" : "75e5f92ddfe1c19b",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622152931174,
-        "stop" : 1622152963450,
-        "duration" : 32276
+        "start" : 1622227457991,
+        "stop" : 1622227492837,
+        "duration" : 34846
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Edit interactive book topic (example #1)",
-      "uid" : "1a547e7c014dcba",
+      "uid" : "aa9617e91ac944c6",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622153006339,
-        "stop" : 1622153050288,
-        "duration" : 43949
+        "start" : 1622227534697,
+        "stop" : 1622227571080,
+        "duration" : 36383
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Edit interactive book topic (example #2)",
-      "uid" : "f0266a526ba6ab5b",
+      "uid" : "dea8a0aa51e0a9a3",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "failed",
       "time" : {
-        "start" : 1622153050330,
-        "stop" : 1622153080850,
-        "duration" : 30520
+        "start" : 1622227571159,
+        "stop" : 1622227608342,
+        "duration" : 37183
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Edit interactive book topic (example #3)",
-      "uid" : "c26ba25986993144",
+      "uid" : "ca27d1434a0651d",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622153080888,
-        "stop" : 1622153117351,
-        "duration" : 36463
+        "start" : 1622227608520,
+        "stop" : 1622227654671,
+        "duration" : 46151
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete interactive book topic (example #1)",
-      "uid" : "657d94330f4e4376",
+      "uid" : "f00753f496968669",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1622153162716,
-        "stop" : 1622153207390,
-        "duration" : 44674
+        "start" : 1622227702365,
+        "stop" : 1622227735368,
+        "duration" : 33003
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete interactive book topic (example #2)",
-      "uid" : "9a3599e3ef313b60",
+      "uid" : "45bd115dcd8a83d4",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "passed",
       "time" : {
-        "start" : 1622153207436,
-        "stop" : 1622153237825,
-        "duration" : 30389
+        "start" : 1622227735416,
+        "stop" : 1622227766005,
+        "duration" : 30589
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete interactive book topic (example #3)",
-      "uid" : "d9bb04a8168730ac",
+      "uid" : "ab3bf55d6bde081b",
       "parentUid" : "f97f7458738e4e8a05b89f21d9effcc3",
       "status" : "passed",
       "time" : {
-        "start" : 1622153237873,
-        "stop" : 1622153263422,
-        "duration" : 25549
+        "start" : 1622227766055,
+        "stop" : 1622227794663,
+        "duration" : 28608
       },
       "flaky" : false,
       "newFailed" : false,
