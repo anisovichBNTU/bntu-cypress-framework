@@ -8,10 +8,10 @@
     "scripts": {
         "test": "cypress run --spec \"**/*.feature\"",
         "test:all": "cypress run --spec \"**/*.features\"",
-        "test:interactive": "npx cypress run --spec ./cypress/integration/interactiveBook/*.feature --browser chrome --env allure=true",
-        "test:eemc": "npx cypress run --spec ./cypress/integration/EEMC/*.feature --browser chrome --env allure=true",
-        "test:graduation": "npx cypress run --spec ./cypress/integration/graduationProject/*.feature --browser chrome --env allure=true",
-        "test:course": "npx cypress run --spec ./cypress/integration/courseProject/*.feature --browser chrome --env allure=true"
+        "test:interactive": "npx cypress run --spec ./cypress/integration/interactiveBook/*.feature --env allure=true",
+        "test:eemc": "npx cypress run --spec ./cypress/integration/EEMC/*.feature --env allure=true",
+        "test:graduation": "npx cypress run --spec ./cypress/integration/graduationProject/*.feature --env allure=true",
+        "test:course": "npx cypress run --spec ./cypress/integration/courseProject/*.feature --env allure=true"
     },
     "devDependencies": {
         "@cypress/webpack-preprocessor": "^5.7.0",
