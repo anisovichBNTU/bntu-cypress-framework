@@ -99,7 +99,7 @@ class ProjectTopicForm extends BaseForm {
     }
 
     selectTopic(topicName: string) {
-        cy.wait(Timeout.BASE_DELAY, { log: false });
+        cy.wait(Timeout.SELECT_TOPIC_DELAY, { log: false });
         this.topicSelectButton(this.getShortName(topicName)).click();
     }
 

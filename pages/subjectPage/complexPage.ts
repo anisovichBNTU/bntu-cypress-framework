@@ -157,7 +157,8 @@ class ComplexPage extends BasePage {
         this.fileButton.click();
         this.newSectionFileName.setValue(fileName);
         this.uploadFileInput.uploadFile(filePath);
-        this.newComplexNameSaveButton.click();
+        cy.wait(Timeout.FILE_UPLOAD_DELAY, { log: false });
+        this.newComplexNameSaveButton.doubleClick();
     }
 
     assertThatComplexIsDisplayed(name: string, isDisplayed = true) {

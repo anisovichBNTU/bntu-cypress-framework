@@ -244,6 +244,7 @@ jobs:
       - attach_workspace:
           at: ~/
       - run:
+        #git rm -rf .
           name: Deploy report 
           command: |
             git config --global user.email anisovich28@gmail.com
@@ -254,13 +255,14 @@ jobs:
             cd out
             git remote add deploy https://anisovichBNTU:anisovichBNTUcypress@github.com/anisovichBNTU/bntu-cypress-framework.git
             git checkout gh-pages || git checkout --orphan gh-pages
-            git rm -rf .
+            
             cd ..
+            mv allure-report "${CIRCLE_BUILD_NUM}allure-report"
 
-            cp -a allure-report out/.
+            cp -a "${CIRCLE_BUILD_NUM}allure-report" out/.
             cd out
 
-            git add ./allure-report
+            git add ./"${CIRCLE_BUILD_NUM}allure-report"
             git commit -m "Automated deployment to GitHub Pages" --allow-empty
 
             git push deploy gh-pages

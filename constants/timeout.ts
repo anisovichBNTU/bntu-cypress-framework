@@ -1,5 +1,7 @@
 export enum Timeout {
     BASE_DELAY = 1000,
+    FILE_UPLOAD_DELAY = 3000,
+    SELECT_TOPIC_DELAY = 2000,
     BASE_ADD_DELAY = 2500,
     COMPLEX_MAP_DELAY = 2500,
 }
