@@ -71,11 +71,13 @@ class InteractiveBookPage extends BasePage {
     }
 
     createNewBook(bookTitle: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.fillNewBookTitle(bookTitle);
         this.clickSaveNewBookTitle();
     }
 
     selectTopicOption(topicTitle: string, option: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.bookTopic(this.getShortName(topicTitle)).selectByVisibleText(option)
     }
 
@@ -93,18 +95,22 @@ class InteractiveBookPage extends BasePage {
     }
 
     openInteractiveBook(topicTitle: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.bookTopic(this.getShortName(topicTitle)).click();
     }
 
     openInteractiveBookParent(topicTitle: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.bookParentTopic(this.getShortName(topicTitle)).click();
     }
 
     openChildBookTopics(topicTitle: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.bookOpenChildButton(this.getShortName(topicTitle)).click();
     }
 
     openInteractiveBookToFill(topicTitle: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.bookTopic(this.getShortName(topicTitle)).doubleClick();
     }
 
@@ -119,6 +125,7 @@ class InteractiveBookPage extends BasePage {
     }
 
     assertThatTopicIsDisplayed(topicTitle: string, isDisplayed = true) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.bookTopic(this.getShortName(topicTitle)).waitForDisplayed({
             delay: Timeout.BASE_ADD_DELAY,
             reverse: !isDisplayed
@@ -126,17 +133,20 @@ class InteractiveBookPage extends BasePage {
     }
 
     assertThatTopicHideIconIsDisplayed(topicTitle: string, isDisplayed = true) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.bookTopicHideIconLabel(this.getShortName(topicTitle))
             .waitForDisplayed({ delay: Timeout.BASE_ADD_DELAY, reverse: !isDisplayed });
     }
 
     assertThatBookContentHasText(text: string[]) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         for (const textItem of text) {
             this.bookContentInput.waitUntilInnerTextMatches(this.getShortName(textItem));
         }
     }
 
     assertThatNotEditableBookContentHasText(text: string[], isDisplayed = true) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         if (isDisplayed) {
             for (const textItem of text) {
                 this.bookContentLabel.waitUntilInnerTextMatches(textItem);

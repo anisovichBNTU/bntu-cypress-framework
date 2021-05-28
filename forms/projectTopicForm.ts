@@ -75,14 +75,17 @@ class ProjectTopicForm extends BaseForm {
     }
 
     addNewTopic() {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.addTopicButton.click();
     }
 
     clickEditTopic(topicName: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.topicEditButton(this.getShortName(topicName)).click();
     }
 
     assignStudentToTopic(topicName: string, student: { group?: string, random?: boolean, name?: string, search?: boolean }) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.topicAssignButton(this.getShortName(topicName)).click();
         if (student.group) {
             studentListForm.selectGroup(student.group);
@@ -96,28 +99,34 @@ class ProjectTopicForm extends BaseForm {
     }
 
     selectTopic(topicName: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.topicSelectButton(this.getShortName(topicName)).click();
     }
 
     confirmTopic(topicName: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.topicConfirmButton(this.getShortName(topicName)).click();
     }
 
     cancelAssignmentToTopic(topicName: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.topicCancelAssignmentButton(this.getShortName(topicName)).click();
     }
 
     deleteTopic(topicName: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.topicDeleteButton(this.getShortName(topicName)).click();
     }
 
     assertThatTopicIsDisplayed(topicName: string, isDisplayed = true) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.topicNameLabel(this.getShortName(topicName)).waitForDisplayed({
             delay: Timeout.BASE_ADD_DELAY, reverse: !isDisplayed
         });
     }
 
     assertThatTopicHasStudent(topicName: string, studentName: string | RegExp, reverse = false) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         if (!reverse) {
             this.topicRowLabel(this.getShortName(topicName)).waitUntilInnerTextMatches(studentName,
                 { delay: Timeout.BASE_ADD_DELAY });

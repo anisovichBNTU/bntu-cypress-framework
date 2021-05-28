@@ -108,15 +108,18 @@ class ComplexPage extends BasePage {
     }
 
     clickAddNewComplex() {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.addComplexButton.click();
     }
 
     createNewComplex(name: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.fillNewComplexName(name);
         this.clickSaveNewComplex();
     }
 
     selectComplexAction(name: string, option: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.complexActionsSelect(this.getShortName(name)).selectByVisibleText(option);
     }
 
@@ -129,14 +132,17 @@ class ComplexPage extends BasePage {
     }
 
     openComplex(name: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.complexNameButton(this.getShortName(name)).click();
     }
 
     clickAddSection() {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.addSectionButton.click();
     }
 
     addNewFolderSection(sectionToAdd: string, folderName: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.sectionToAddSelect.selectByVisibleText(sectionToAdd);
         this.sectionAddHeaderLabel.doubleClick();
         this.folderButton.click();
@@ -145,6 +151,7 @@ class ComplexPage extends BasePage {
     }
 
     addNewFileSection(sectionToAdd: string, fileName: string, filePath: string) {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.sectionToAddSelect.selectByVisibleText(sectionToAdd);
         this.sectionAddHeaderLabel.doubleClick();
         this.fileButton.click();
