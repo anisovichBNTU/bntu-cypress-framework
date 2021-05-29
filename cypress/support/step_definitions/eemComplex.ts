@@ -1,5 +1,6 @@
 import { When, Then } from 'cypress-cucumber-preprocessor/steps';
 import { ComplexSection } from '../../../constants/complex';
+import { Timeout } from '../../../constants/timeout';
 import dialogForm from '../../../forms/dialogForm';
 import complexPage from '../../../pages/subjectPage/complexPage';
 
@@ -81,5 +82,6 @@ Then(/^I should see displayed added section "(.*)" on the complex form on EEM Co
 
 Then(/^I should see displayed added file "(.*)" on the complex form on EEM Complex page$/, (fileNameType: string) => {
     let name = complex.fileName[fileNameType];
+    cy.wait(Timeout.FILE_DISPLAYED_DELAY, { log: false });
     complexPage.assertThatComplexSectionIsDisplayed(name);
 });

@@ -1,3 +1,4 @@
+import { Timeout } from '../constants/timeout';
 import { Button } from '../elements';
 import BaseForm from './baseForm';
 
@@ -13,6 +14,7 @@ class DialogForm extends BaseForm {
     }
 
     clickAcceptButton() {
+        cy.wait(Timeout.BASE_DELAY, { log: false });
         this.acceptButton.click();
     }
 

@@ -4,7 +4,7 @@ Feature: Course Project
     Scenario Outline: Student select course project topic
         Given I am logged in with password to the platform as <StudentUser>
         When Select 'Subject' module on header on Main page
-        And Select "Test Subject Autotest" subject on Subject page
+        And Select "Subject for Autotests" subject on Subject page
         And Click "Курсовые проекты/работы" subject module on Subject page
         And Select "Темы проектов" tab on Course project page
         And Select topic "<ProjectName>" on Course project page

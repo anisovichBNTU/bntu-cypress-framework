@@ -75,7 +75,7 @@ class ProjectTopicForm extends BaseForm {
     }
 
     addNewTopic() {
-        cy.wait(Timeout.BASE_DELAY, { log: false });
+        cy.wait(Timeout.ADD_TOPIC_DELAY, { log: false });
         this.addTopicButton.click();
     }
 
@@ -109,7 +109,7 @@ class ProjectTopicForm extends BaseForm {
     }
 
     cancelAssignmentToTopic(topicName: string) {
-        cy.wait(Timeout.BASE_DELAY, { log: false });
+        cy.wait(Timeout.CANCEL_ASSIGNMENT_DELAY, { log: false });
         this.topicCancelAssignmentButton(this.getShortName(topicName)).click();
     }
 
