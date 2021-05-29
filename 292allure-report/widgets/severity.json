@@ -1,0 +1,971 @@
+[ {
+  "uid" : "784c0938670759ee",
+  "name" : "User can see the Map EEM Complex (example #3)",
+  "time" : {
+    "start" : 1622279366036,
+    "stop" : 1622279407458,
+    "duration" : 41422
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9f1c6da826b8f20e",
+  "name" : "Student select graduation project topic (example #3)",
+  "time" : {
+    "start" : 1622279331843,
+    "stop" : 1622279369517,
+    "duration" : 37674
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "479d4550a8bf699f",
+  "name" : "Add text to interactive book topic (example #3)",
+  "time" : {
+    "start" : 1622279325177,
+    "stop" : 1622279360139,
+    "duration" : 34962
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "848d4f8c656feb51",
+  "name" : "Open created EEM Complex (example #2)",
+  "time" : {
+    "start" : 1622279528306,
+    "stop" : 1622279560933,
+    "duration" : 32627
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2df93a3ea473d2ce",
+  "name" : "Create new graduation project topic (example #3)",
+  "time" : {
+    "start" : 1622279162958,
+    "stop" : 1622279214438,
+    "duration" : 51480
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3bd5cb79466673cc",
+  "name" : "Delete interactive book child topic (example #2)",
+  "time" : {
+    "start" : 1622280043888,
+    "stop" : 1622280080441,
+    "duration" : 36553
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2216646eeb54553f",
+  "name" : "Student see interactive book content (example #3)",
+  "time" : {
+    "start" : 1622279464687,
+    "stop" : 1622279497890,
+    "duration" : 33203
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "16849438422d89c1",
+  "name" : "Student select course project topic (example #3)",
+  "time" : {
+    "start" : 1622279344304,
+    "stop" : 1622279374527,
+    "duration" : 30223
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1cc3b0f6458e5712",
+  "name" : "Create new interactive book topic (example #1)",
+  "time" : {
+    "start" : 1622279098316,
+    "stop" : 1622279141775,
+    "duration" : 43459
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d53584507ece8782",
+  "name" : "Delete EEM Complex (example #2)",
+  "time" : {
+    "start" : 1622280385912,
+    "stop" : 1622280428895,
+    "duration" : 42983
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d66c2215afd318f7",
+  "name" : "Edit EEM Complex (example #4)",
+  "time" : {
+    "start" : 1622280272921,
+    "stop" : 1622280299887,
+    "duration" : 26966
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6aaabf66e50efe34",
+  "name" : "Student see interactive book content (example #2)",
+  "time" : {
+    "start" : 1622279431841,
+    "stop" : 1622279464663,
+    "duration" : 32822
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7d2955eb9bb758c",
+  "name" : "Add interactive book child topic (example #1)",
+  "time" : {
+    "start" : 1622279535533,
+    "stop" : 1622279576550,
+    "duration" : 41017
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b85ff2d039f8a3c",
+  "name" : "Student select graduation project topic (example #2)",
+  "time" : {
+    "start" : 1622279304259,
+    "stop" : 1622279331809,
+    "duration" : 27550
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "331f0c0aad9f0db4",
+  "name" : "Add interactive book child topic (example #3)",
+  "time" : {
+    "start" : 1622279617444,
+    "stop" : 1622279660997,
+    "duration" : 43553
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "527b43191928a00",
+  "name" : "User can see the Map EEM Complex (example #2)",
+  "time" : {
+    "start" : 1622279333012,
+    "stop" : 1622279366015,
+    "duration" : 33003
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc43da149f31d34e",
+  "name" : "Assign course project topic to student (example #3)",
+  "time" : {
+    "start" : 1622279641648,
+    "stop" : 1622279672421,
+    "duration" : 30773
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92ae78e6aed5ccfa",
+  "name" : "Create new graduation project topic (example #1)",
+  "time" : {
+    "start" : 1622279101912,
+    "stop" : 1622279134611,
+    "duration" : 32699
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d85a15a45c6e157",
+  "name" : "Student see edited course project topic (example #3)",
+  "time" : {
+    "start" : 1622279921520,
+    "stop" : 1622279954161,
+    "duration" : 32641
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c491a22b158d85f5",
+  "name" : "Delete interactive book child topic (example #3)",
+  "time" : {
+    "start" : 1622280080496,
+    "stop" : 1622280116565,
+    "duration" : 36069
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc025861f5fe955c",
+  "name" : "Delete EEM Complex (example #1)",
+  "time" : {
+    "start" : 1622280341316,
+    "stop" : 1622280385865,
+    "duration" : 44549
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a66204ef81f22539",
+  "name" : "Student select graduation project topic (example #1)",
+  "time" : {
+    "start" : 1622279256397,
+    "stop" : 1622279304214,
+    "duration" : 47817
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "58b4e1ea38802fc2",
+  "name" : "Assign graduation project topic to student (example #2)",
+  "time" : {
+    "start" : 1622279589926,
+    "stop" : 1622279626652,
+    "duration" : 36726
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d81cf845c49b12be",
+  "name" : "Add text to interactive book topic (example #2)",
+  "time" : {
+    "start" : 1622279290433,
+    "stop" : 1622279325131,
+    "duration" : 34698
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "878ed2580630f4c",
+  "name" : "Create new course project topic (example #1)",
+  "time" : {
+    "start" : 1622279100135,
+    "stop" : 1622279139728,
+    "duration" : 39593
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d8a562cdcd0229c",
+  "name" : "Student cannot see hide interactive book (example #2)",
+  "time" : {
+    "start" : 1622279905183,
+    "stop" : 1622279936868,
+    "duration" : 31685
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85b92bef011c8cb6",
+  "name" : "Student see edited course project topic (example #2)",
+  "time" : {
+    "start" : 1622279888349,
+    "stop" : 1622279921425,
+    "duration" : 33076
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "924ff377076ef3a2",
+  "name" : "Delete interactive book child topic (example #1)",
+  "time" : {
+    "start" : 1622280007371,
+    "stop" : 1622280043833,
+    "duration" : 36462
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "625201df36ed1d6e",
+  "name" : "Delete course project topic (example #2)",
+  "time" : {
+    "start" : 1622280031155,
+    "stop" : 1622280069256,
+    "duration" : 38101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "948950b000e9618d",
+  "name" : "User can see the Map EEM Complex (example #4)",
+  "time" : {
+    "start" : 1622279407512,
+    "stop" : 1622279442271,
+    "duration" : 34759
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd6a5c254c4bda53",
+  "name" : "Student cannot see hide interactive book (example #3)",
+  "time" : {
+    "start" : 1622279936921,
+    "stop" : 1622279969987,
+    "duration" : 33066
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d3ae41101d6a1d02",
+  "name" : "Confirm student on course project topic (example #1)",
+  "time" : {
+    "start" : 1622279416928,
+    "stop" : 1622279460810,
+    "duration" : 43882
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3aebef63e6f6b27d",
+  "name" : "Assign course project topic to student (example #1)",
+  "time" : {
+    "start" : 1622279582671,
+    "stop" : 1622279612456,
+    "duration" : 29785
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "74c48107328f6ad7",
+  "name" : "Add folder to EEM Complex section (example #1)",
+  "time" : {
+    "start" : 1622279682820,
+    "stop" : 1622279728095,
+    "duration" : 45275
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3bcc0bc9de581a3",
+  "name" : "Assign graduation project topic to student (example #3)",
+  "time" : {
+    "start" : 1622279626706,
+    "stop" : 1622279665143,
+    "duration" : 38437
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b05e006cfc74ecba",
+  "name" : "Open created EEM Complex (example #3)",
+  "time" : {
+    "start" : 1622279560956,
+    "stop" : 1622279602811,
+    "duration" : 41855
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe5089327040194a",
+  "name" : "Edit graduation project topic (example #1)",
+  "time" : {
+    "start" : 1622279704969,
+    "stop" : 1622279730623,
+    "duration" : 25654
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ea0e926cf789acbd",
+  "name" : "Edit EEM Complex (example #1)",
+  "time" : {
+    "start" : 1622280182719,
+    "stop" : 1622280209226,
+    "duration" : 26507
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b286961672edc09e",
+  "name" : "Edit graduation project topic (example #3)",
+  "time" : {
+    "start" : 1622279754031,
+    "stop" : 1622279789895,
+    "duration" : 35864
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "db69784ac4a51798",
+  "name" : "Delete EEM Complex (example #4)",
+  "time" : {
+    "start" : 1622280468411,
+    "stop" : 1622280511990,
+    "duration" : 43579
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e4dc9a9303a1b97",
+  "name" : "Hide interactive book child topic (example #3)",
+  "time" : {
+    "start" : 1622279788632,
+    "stop" : 1622279826761,
+    "duration" : 38129
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a44508de679c633",
+  "name" : "Delete interactive book topic (example #2)",
+  "time" : {
+    "start" : 1622280332603,
+    "stop" : 1622280361717,
+    "duration" : 29114
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eec954a15e67f635",
+  "name" : "Create new course project topic (example #2)",
+  "time" : {
+    "start" : 1622279139754,
+    "stop" : 1622279172928,
+    "duration" : 33174
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c0b7554ba8ad371d",
+  "name" : "Edit interactive book topic (example #2)",
+  "time" : {
+    "start" : 1622280191638,
+    "stop" : 1622280225235,
+    "duration" : 33597
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b96fe19c4f344e35",
+  "name" : "Create new interactive book topic (example #3)",
+  "time" : {
+    "start" : 1622279175778,
+    "stop" : 1622279214847,
+    "duration" : 39069
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b6f2b525c64be05",
+  "name" : "Confirm student on course project topic (example #2)",
+  "time" : {
+    "start" : 1622279460855,
+    "stop" : 1622279495263,
+    "duration" : 34408
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a911a3887f11909a",
+  "name" : "Hide interactive book child topic (example #2)",
+  "time" : {
+    "start" : 1622279748547,
+    "stop" : 1622279788568,
+    "duration" : 40021
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b462b4d1592801e",
+  "name" : "Add folder to EEM Complex section (example #3)",
+  "time" : {
+    "start" : 1622279771533,
+    "stop" : 1622279812316,
+    "duration" : 40783
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "298818aa44b03d76",
+  "name" : "Add text to interactive book topic (example #1)",
+  "time" : {
+    "start" : 1622279258003,
+    "stop" : 1622279290380,
+    "duration" : 32377
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f923d24773a94ad",
+  "name" : "Create new course project topic (example #3)",
+  "time" : {
+    "start" : 1622279172955,
+    "stop" : 1622279210380,
+    "duration" : 37425
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e28edf0f8db4b57d",
+  "name" : "Student see interactive book content (example #1)",
+  "time" : {
+    "start" : 1622279398448,
+    "stop" : 1622279431777,
+    "duration" : 33329
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "68c889deb66969d7",
+  "name" : "Assign course project topic to student (example #2)",
+  "time" : {
+    "start" : 1622279612479,
+    "stop" : 1622279641621,
+    "duration" : 29142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "17f2a1aea6e928c8",
+  "name" : "Student see edited course project topic (example #1)",
+  "time" : {
+    "start" : 1622279854604,
+    "stop" : 1622279888295,
+    "duration" : 33691
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "abde64d8a575ca3b",
+  "name" : "Add folder to EEM Complex section (example #4)",
+  "time" : {
+    "start" : 1622279812397,
+    "stop" : 1622279851466,
+    "duration" : 39069
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d45036c13ae14ec9",
+  "name" : "Student select course project topic (example #1)",
+  "time" : {
+    "start" : 1622279259338,
+    "stop" : 1622279310946,
+    "duration" : 51608
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "ac80878a628cda42",
+  "name" : "Create new EEM Complex (example #4)",
+  "time" : {
+    "start" : 1622279214406,
+    "stop" : 1622279240653,
+    "duration" : 26247
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "25930fa4df64635",
+  "name" : "Edit course project topic (example #1)",
+  "time" : {
+    "start" : 1622279712486,
+    "stop" : 1622279743932,
+    "duration" : 31446
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e375bf0379187c7",
+  "name" : "Edit EEM Complex (example #2)",
+  "time" : {
+    "start" : 1622280209247,
+    "stop" : 1622280233209,
+    "duration" : 23962
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f7401d64fea85c8",
+  "name" : "Add file to EEM Complex section (example #3)",
+  "time" : {
+    "start" : 1622280027076,
+    "stop" : 1622280068511,
+    "duration" : 41435
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f72c4fada21e14e6",
+  "name" : "Student see edited graduation Project topic (example #1)",
+  "time" : {
+    "start" : 1622279825938,
+    "stop" : 1622279852492,
+    "duration" : 26554
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bde553a3e9e96e16",
+  "name" : "Edit course project topic (example #3)",
+  "time" : {
+    "start" : 1622279776868,
+    "stop" : 1622279811623,
+    "duration" : 34755
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f46ed4133003ad1",
+  "name" : "Confirm student on graduation project topic (example #2)",
+  "time" : {
+    "start" : 1622279451801,
+    "stop" : 1622279481403,
+    "duration" : 29602
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f43c12525cf560a1",
+  "name" : "Student see edited graduation Project topic (example #2)",
+  "time" : {
+    "start" : 1622279852518,
+    "stop" : 1622279876715,
+    "duration" : 24197
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b56605cfb036fb5",
+  "name" : "Open created EEM Complex (example #1)",
+  "time" : {
+    "start" : 1622279492840,
+    "stop" : 1622279528264,
+    "duration" : 35424
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "484956349fffe3ff",
+  "name" : "Delete course project topic (example #1)",
+  "time" : {
+    "start" : 1622279992907,
+    "stop" : 1622280031128,
+    "duration" : 38221
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4a71edef8a5a01a",
+  "name" : "Create new EEM Complex (example #3)",
+  "time" : {
+    "start" : 1622279161468,
+    "stop" : 1622279214353,
+    "duration" : 52885
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "79744dbb37563084",
+  "name" : "Add interactive book child topic (example #2)",
+  "time" : {
+    "start" : 1622279576628,
+    "stop" : 1622279617366,
+    "duration" : 40738
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9f445105b39883f0",
+  "name" : "Student select course project topic (example #2)",
+  "time" : {
+    "start" : 1622279311046,
+    "stop" : 1622279344276,
+    "duration" : 33230
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "facc2ccd8719125b",
+  "name" : "Create new EEM Complex (example #2)",
+  "time" : {
+    "start" : 1622279133908,
+    "stop" : 1622279161445,
+    "duration" : 27537
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf8fe7669b368f2",
+  "name" : "Create new graduation project topic (example #2)",
+  "time" : {
+    "start" : 1622279134639,
+    "stop" : 1622279162931,
+    "duration" : 28292
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "774c990801acaba9",
+  "name" : "User can see the Map EEM Complex (example #1)",
+  "time" : {
+    "start" : 1622279290061,
+    "stop" : 1622279332981,
+    "duration" : 42920
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "547da92d38069114",
+  "name" : "Delete interactive book topic (example #3)",
+  "time" : {
+    "start" : 1622280361747,
+    "stop" : 1622280410128,
+    "duration" : 48381
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc12f7ea377d4c5a",
+  "name" : "Delete graduation project topic (example #3)",
+  "time" : {
+    "start" : 1622280011352,
+    "stop" : 1622280050644,
+    "duration" : 39292
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d35f4c889b1c2c29",
+  "name" : "Add file to EEM Complex section (example #1)",
+  "time" : {
+    "start" : 1622279905603,
+    "stop" : 1622279976196,
+    "duration" : 70593
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d9e97eb4f6ad534c",
+  "name" : "Edit interactive book topic (example #3)",
+  "time" : {
+    "start" : 1622280225282,
+    "stop" : 1622280263329,
+    "duration" : 38047
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "4eaab8df309837a0",
+  "name" : "Student see edited graduation Project topic (example #3)",
+  "time" : {
+    "start" : 1622279876739,
+    "stop" : 1622279909853,
+    "duration" : 33114
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "51d0abb6c33d524e",
+  "name" : "Create new EEM Complex (example #1)",
+  "time" : {
+    "start" : 1622279094590,
+    "stop" : 1622279133881,
+    "duration" : 39291
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd3e02a1ae0fd971",
+  "name" : "Confirm student on graduation project topic (example #3)",
+  "time" : {
+    "start" : 1622279481433,
+    "stop" : 1622279518012,
+    "duration" : 36579
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "293e5acaf52655e1",
+  "name" : "Student cannot see hide interactive book (example #1)",
+  "time" : {
+    "start" : 1622279871819,
+    "stop" : 1622279905149,
+    "duration" : 33330
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e2fa3ba4c3659894",
+  "name" : "Edit graduation project topic (example #2)",
+  "time" : {
+    "start" : 1622279730650,
+    "stop" : 1622279753993,
+    "duration" : 23343
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf432f97343aebd5",
+  "name" : "Delete graduation project topic (example #1)",
+  "time" : {
+    "start" : 1622279945212,
+    "stop" : 1622279979099,
+    "duration" : 33887
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ade3c71404ed0f96",
+  "name" : "Edit EEM Complex (example #3)",
+  "time" : {
+    "start" : 1622280233230,
+    "stop" : 1622280272883,
+    "duration" : 39653
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e339b0831ee57aaf",
+  "name" : "Delete interactive book topic (example #1)",
+  "time" : {
+    "start" : 1622280302926,
+    "stop" : 1622280332553,
+    "duration" : 29627
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4344152e50e5170b",
+  "name" : "Add file to EEM Complex section (example #4)",
+  "time" : {
+    "start" : 1622280068580,
+    "stop" : 1622280118457,
+    "duration" : 49877
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15ecb4820fbf7bad",
+  "name" : "Add file to EEM Complex section (example #2)",
+  "time" : {
+    "start" : 1622279976249,
+    "stop" : 1622280027038,
+    "duration" : 50789
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ac176cecc480df36",
+  "name" : "Hide interactive book child topic (example #1)",
+  "time" : {
+    "start" : 1622279707316,
+    "stop" : 1622279748490,
+    "duration" : 41174
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4cf77ecbc8ce0d01",
+  "name" : "Delete graduation project topic (example #2)",
+  "time" : {
+    "start" : 1622279979129,
+    "stop" : 1622280011328,
+    "duration" : 32199
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "36804c5aa0c32352",
+  "name" : "Confirm student on course project topic (example #3)",
+  "time" : {
+    "start" : 1622279495278,
+    "stop" : 1622279538418,
+    "duration" : 43140
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d27b59ea58dd4ec",
+  "name" : "Create new interactive book topic (example #2)",
+  "time" : {
+    "start" : 1622279141836,
+    "stop" : 1622279175744,
+    "duration" : 33908
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df5d03d81cbdf038",
+  "name" : "Delete EEM Complex (example #3)",
+  "time" : {
+    "start" : 1622280428914,
+    "stop" : 1622280468391,
+    "duration" : 39477
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "97978f162317f661",
+  "name" : "Edit course project topic (example #2)",
+  "time" : {
+    "start" : 1622279743956,
+    "stop" : 1622279776843,
+    "duration" : 32887
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "97a53a2e8ed5a9ce",
+  "name" : "Open created EEM Complex (example #4)",
+  "time" : {
+    "start" : 1622279602849,
+    "stop" : 1622279635731,
+    "duration" : 32882
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8eef52dbca7d8434",
+  "name" : "Delete course project topic (example #3)",
+  "time" : {
+    "start" : 1622280069280,
+    "stop" : 1622280107279,
+    "duration" : 37999
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4659f900b17c8c7",
+  "name" : "Confirm student on graduation project topic (example #1)",
+  "time" : {
+    "start" : 1622279410623,
+    "stop" : 1622279451711,
+    "duration" : 41088
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "44afa03f194d3fe3",
+  "name" : "Add folder to EEM Complex section (example #2)",
+  "time" : {
+    "start" : 1622279728127,
+    "stop" : 1622279771505,
+    "duration" : 43378
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "29975dac3506f813",
+  "name" : "Edit interactive book topic (example #1)",
+  "time" : {
+    "start" : 1622280155823,
+    "stop" : 1622280191572,
+    "duration" : 35749
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2fd1d34b08661a3e",
+  "name" : "Assign graduation project topic to student (example #1)",
+  "time" : {
+    "start" : 1622279558936,
+    "stop" : 1622279589892,
+    "duration" : 30956
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
