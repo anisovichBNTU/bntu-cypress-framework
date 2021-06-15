@@ -20,7 +20,7 @@ class InteractiveBookPage extends BasePage {
     constructor() {
         super(/web\/viewer\/subject.*libBook/);
 
-        this.addBookButton = new Button('.mat-drawer .flex-search-btn-holder button',
+        this.addBookButton = new Button('.mat-drawer .flex-search-btn-holder button[ng-reflect-message="Добавление нового учебника"]',
             'Interactive book: Add new book button', { intoIFrame: true });
 
         this.newBookTitleInput = new TextArea('.cdk-overlay-pane .ck-editor__editable',

@@ -22,7 +22,6 @@ When(/^Select "(.*)" option on "(.*)" book context menu on Interactive book page
             dialogForm.clickAcceptButton();
             break;
         default:
-        // throw new Error("error");    
     }
 });
 
@@ -104,7 +103,6 @@ Then(/^I should see book topic "(.*)" in book content on Interactive book page$/
     let topics = topicNameType.split(', ');
     topics = topics.map((topicType) => {
         return book.bookTopicName[topicType]
-        // .replace(/\s+/g, ' ').trim();
     });
     interactiveBookPage.assertThatBookContentHasText(topics);
 });
@@ -118,7 +116,6 @@ Then(/^Student should see book topic "(.*)" in book content on Interactive book 
     let topics = topicNameType.split(', ');
     topics = topics.map((topicType) => {
         return book.bookTopicName[topicType]
-        // .replace(/\s+/g, ' ').trim();
     });
     interactiveBookPage.assertThatNotEditableBookContentHasText(topics);
 });
@@ -127,7 +124,6 @@ Then(/^Student should not see book topic "(.*)" in book content on Interactive b
     let topics = topicNameType.split(', ');
     topics = topics.map((topicType) => {
         return book.bookTopicName[topicType]
-        // .replace(/\s+/g, ' ').trim();
     });
     interactiveBookPage.assertThatNotEditableBookContentHasText(topics, false);
 });
