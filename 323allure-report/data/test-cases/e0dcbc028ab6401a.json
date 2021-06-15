@@ -1,0 +1,821 @@
+{
+  "uid" : "e0dcbc028ab6401a",
+  "name" : "Student cannot see hide interactive book (example #3)",
+  "fullName" : "Student cannot see hide interactive book (example #3)",
+  "historyId" : "f24bd3188e6ae5b556732aed041f329a",
+  "time" : {
+    "start" : 1623748361180,
+    "stop" : 1623748388342,
+    "duration" : 27162
+  },
+  "status" : "failed",
+  "statusMessage" : "expected 'Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long NameVText in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? ' to include 'Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? '",
+  "statusTrace" : "AssertionError: expected 'Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long NameVText in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? ' to include 'Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? '\n    at Label../elements/element.ts.Element.waitUntilInnerTextMatches (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/6studentCannotSeeHideInteractiveBookContent.feature:1333:28)\n    at InteractiveBookPage../pages/subjectPage/interactiveBookPage.ts.InteractiveBookPage.assertThatNotEditableBookContentHasText (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/6studentCannotSeeHideInteractiveBookContent.feature:44670:39)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/6studentCannotSeeHideInteractiveBookContent.feature:682:35)\n    at Context.resolveAndRunStepDefinition (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/6studentCannotSeeHideInteractiveBookContent.feature:12327:9)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/6studentCannotSeeHideInteractiveBookContent.feature:11625:35)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected 'Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long NameVText in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? ' to include 'Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? '",
+    "statusTrace" : "AssertionError: expected 'Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long NameVText in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? ' to include 'Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? Text in interactive book 123 !@#$%^&*()_? '\n    at Label../elements/element.ts.Element.waitUntilInnerTextMatches (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/6studentCannotSeeHideInteractiveBookContent.feature:1333:28)\n    at InteractiveBookPage../pages/subjectPage/interactiveBookPage.ts.InteractiveBookPage.assertThatNotEditableBookContentHasText (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/6studentCannotSeeHideInteractiveBookContent.feature:44670:39)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/6studentCannotSeeHideInteractiveBookContent.feature:682:35)\n    at Context.resolveAndRunStepDefinition (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/6studentCannotSeeHideInteractiveBookContent.feature:12327:9)\n    at Context.eval (https://educats.by/__cypress/tests?p=cypress/integration/interactiveBook/6studentCannotSeeHideInteractiveBookContent.feature:11625:35)",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1623748361181,
+        "stop" : 1623748361212,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I am logged in with password to the platform as testStudentAutotest3",
+      "time" : {
+        "start" : 1623748361218,
+        "stop" : 1623748371427,
+        "duration" : 10209
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit (\"https://educats.by/\")",
+        "time" : {
+          "start" : 1623748361249,
+          "stop" : 1623748364535,
+          "duration" : 3286
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1623748364535,
+          "stop" : 1623748364535,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1623748364535,
+          "stop" : 1623748365126,
+          "duration" : 591
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/login?returnUrl=%2Fweb%2Fdashboard** to match /login/ assert",
+        "time" : {
+          "start" : 1623748365125,
+          "stop" : 1623748365125,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/login?returnUrl=%2Fweb%2Fdashboard new url",
+        "time" : {
+          "start" : 1623748365125,
+          "stop" : 1623748365125,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"testStudentAutotest3\" to \"Username\" then",
+        "time" : {
+          "start" : 1623748366264,
+          "stop" : 1623748366264,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Set value \"testStudentAutotest3\" to \"Password\" then",
+        "time" : {
+          "start" : 1623748367387,
+          "stop" : 1623748367387,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Click by \"Log In button\" then",
+        "time" : {
+          "start" : 1623748367956,
+          "stop" : 1623748367956,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1623748367956,
+          "stop" : 1623748368605,
+          "duration" : 649
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/web/dashboard** to match /web\\/dashboard/ assert",
+        "time" : {
+          "start" : 1623748368604,
+          "stop" : 1623748368604,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1623748368605,
+          "stop" : 1623748368605,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/web/dashboard new url",
+        "time" : {
+          "start" : 1623748368605,
+          "stop" : 1623748368605,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Profile/GetProfileInfoById/13336",
+        "time" : {
+          "start" : 1623748368605,
+          "stop" : 1623748368605,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/catService/chat/GetAllChats?userId=13336",
+        "time" : {
+          "start" : 1623748368605,
+          "stop" : 1623748368605,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/catService/chat/GetAllGroups?userId=13336&role=student",
+        "time" : {
+          "start" : 1623748368605,
+          "stop" : 1623748368605,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Services/CoreService.svc/GetAllGroupsLite/",
+        "time" : {
+          "start" : 1623748368605,
+          "stop" : 1623748368605,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/calendar/ Frame Load",
+        "time" : {
+          "start" : 1623748371193,
+          "stop" : 1623748371193,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Element \"Main page: Schedule label\" is displaying\" then",
+        "time" : {
+          "start" : 1623748371425,
+          "stop" : 1623748371425,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 18,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "When Select 'Subject' module on header on Main page",
+      "time" : {
+        "start" : 1623748371427,
+        "stop" : 1623748373008,
+        "duration" : 1581
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Header: Subjects button\" then",
+        "time" : {
+          "start" : 1623748372003,
+          "stop" : 1623748372003,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "url",
+        "time" : {
+          "start" : 1623748372003,
+          "stop" : 1623748373006,
+          "duration" : 1003
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expected **https://educats.by/web/viewer/main** to match /web\\/viewer\\/main/ assert",
+        "time" : {
+          "start" : 1623748373005,
+          "stop" : 1623748373005,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Account/UserSessionCheck",
+        "time" : {
+          "start" : 1623748373005,
+          "stop" : 1623748373005,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "https://educats.by/web/viewer/main new url",
+        "time" : {
+          "start" : 1623748373006,
+          "stop" : 1623748373006,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://educats.by/Services/Subjects/SubjectsService.svc/GetUserSubjects/13336",
+        "time" : {
+          "start" : 1623748373006,
+          "stop" : 1623748373006,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Select \"Subject for Autotests\" subject on Subject page",
+      "time" : {
+        "start" : 1623748373008,
+        "stop" : 1623748376853,
+        "duration" : 3845
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Selected item \"Subject for Autotests\"\" then",
+        "time" : {
+          "start" : 1623748374254,
+          "stop" : 1623748374254,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "frameLoaded",
+        "time" : {
+          "start" : 1623748374856,
+          "stop" : 1623748376842,
+          "duration" : 1986
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "https://educats.by/subject/news Frame Load",
+          "time" : {
+            "start" : 1623748376842,
+            "stop" : 1623748376842,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Frame is loaded then",
+        "time" : {
+          "start" : 1623748376849,
+          "stop" : 1623748376849,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Select option in \"Subject page: subject select\" by value \"Subject for Autotests\" then",
+        "time" : {
+          "start" : 1623748376849,
+          "stop" : 1623748376849,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Click \"Интерактивный учебник\" subject module on Subject page",
+      "time" : {
+        "start" : 1623748376853,
+        "stop" : 1623748377890,
+        "duration" : 1037
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Subject page: module \"Интерактивный учебник\"\" then",
+        "time" : {
+          "start" : 1623748377463,
+          "stop" : 1623748377463,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "frameLoaded",
+        "time" : {
+          "start" : 1623748377869,
+          "stop" : 1623748377886,
+          "duration" : 17
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Frame is loaded then",
+        "time" : {
+          "start" : 1623748377888,
+          "stop" : 1623748377888,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then I should see hide book topic \"ChildLongValue\" on Interactive book page",
+      "time" : {
+        "start" : 1623748377890,
+        "stop" : 1623748381606,
+        "duration" : 3716
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "wait (\"2500\")",
+        "time" : {
+          "start" : 1623748378892,
+          "stop" : 1623748381395,
+          "duration" : 2503
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Element \"Interactive book: Book topic (Book child topic 23$56 Book child topic 23$56 Book child topic 23456 Book child )\" is not displaying\" then",
+        "time" : {
+          "start" : 1623748381604,
+          "stop" : 1623748381604,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "When Open book topic \"LongValue\" on Interactive book page",
+      "time" : {
+        "start" : 1623748381606,
+        "stop" : 1623748383183,
+        "duration" : 1577
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click by \"Interactive book: Book topic (Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very )\" then",
+        "time" : {
+          "start" : 1623748383181,
+          "stop" : 1623748383181,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then Student should see book topic \"LongValue\" in book content on Interactive book page",
+      "time" : {
+        "start" : 1623748383183,
+        "stop" : 1623748384830,
+        "duration" : 1647
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get text of \"Interactive book: Book content label (not editable)\": \"Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very ...\" then",
+        "time" : {
+          "start" : 1623748384824,
+          "stop" : 1623748384824,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Inner text of \"Interactive book: Book content label (not editable)\" is include to \"Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very Long NameV\" then",
+        "time" : {
+          "start" : 1623748384829,
+          "stop" : 1623748384829,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then Student should not see book topic \"ChildLongValue\" in book content on Interactive book page",
+      "time" : {
+        "start" : 1623748384830,
+        "stop" : 1623748386484,
+        "duration" : 1654
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get text of \"Interactive book: Book content label (not editable)\": \"Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very ...\" then",
+        "time" : {
+          "start" : 1623748386480,
+          "stop" : 1623748386480,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then Student should see correct book content \"LongValue\" on Interactive book page",
+      "time" : {
+        "start" : 1623748386484,
+        "stop" : 1623748388342,
+        "duration" : 1858
+      },
+      "status" : "failed",
+      "steps" : [ {
+        "name" : "Get text of \"Interactive book: Book content label (not editable)\": \"Very Long Name Very Long Name Very Long Name Very Long Name Very Long Name Very ...\" then",
+        "time" : {
+          "start" : 1623748388128,
+          "stop" : 1623748388128,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "name" : "interactiveBook/6studentCannotSeeHideInteractiveBookContent.feature.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    }, {
+      "uid" : "2bbafd45f33a9f24",
+      "name" : "interactiveBook/6studentCannotSeeHideInteractiveBookContent.feature:2021-06-15T09:13:08.137Z",
+      "source" : "2bbafd45f33a9f24.png",
+      "type" : "image/png",
+      "size" : 173665
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 49,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Interactive Book"
+  }, {
+    "name" : "feature",
+    "value" : "Interactive Book"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e0dcbc028ab6401a.json",
+  "parameterValues" : [ ]
+}
